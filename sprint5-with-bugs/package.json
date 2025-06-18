@@ -1,0 +1,58 @@
+{
+  "name": "toolshop-playwright-demo",
+  "version": "1.0.0",
+  "description": "Playwright demo for Toolshop e-commerce application",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=\"Mobile Chrome\"",
+    "test:parallel": "playwright test --workers=4",
+    "test:report": "playwright test --reporter=html && playwright show-report",
+    "test:trace": "playwright test --trace on",
+    "test:codegen": "playwright codegen http://localhost:4200",
+    "install:browsers": "playwright install",
+    "install:browsers-deps": "playwright install --with-deps",
+    "show:report": "playwright show-report",
+    "show:trace": "playwright show-trace test-results/trace.zip",
+    "setup": "npm install && npm run install:browsers",
+    "start:ui": "cd UI && npm start",
+    "start:api": "cd API && php artisan serve",
+    "demo:full": "npm run test:report",
+    "demo:smoke": "npm run test:smoke -- --reporter=html",
+    "demo:codegen": "npm run test:codegen"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "automation",
+    "demo",
+    "toolshop"
+  ],
+  "author": "Software Testing Course Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/practice-software-testing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/practice-software-testing/issues"
+  },
+  "homepage": "https://github.com/your-org/practice-software-testing#readme"
+}
