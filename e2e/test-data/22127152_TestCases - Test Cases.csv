@@ -1,0 +1,198 @@
+Test Case ID,Title,Preconditions,Inputs,Test Steps,Expected Result,Type: EP or BVA,Actual Result,Result ,BugID
+TC_CONTACT_001,Verify successful form submission with valid inputs (non-logged in user),User is on the Contact page and not logged in,"First Name = ""John""
+Last Name = ""Doe""
+Email = ""john.doe@example.com""
+Subject = ""Customer service""
+Message = ""This is a test message that meets the minimum character requirement of fifty characters exactly.""
+No attachment","1. Navigate to Contact page
+2. Enter valid first name ""John""
+3. Enter valid last name ""Doe""
+4. Enter valid email ""john.doe@example.com""
+5. Select ""Customer service"" from subject dropdown
+6. Enter message with exactly 50 characters
+7. Click ""Send"" button",Form is submitted successfully with confirmation message,"EP (Valid EC5.2, EC5.3, EC5.7, EC5.12, EC5.14) and BVA (Minimum valid length)","The form was submitted successfully. A confirmation message was displayed indicating that the message was sent. All entered fields were accepted, and no validation errors occurred.",Pass,
+TC_CONTACT_002,Verify successful form submission with valid inputs (logged in user),User is on the Contact page and logged in,"Subject = ""Customer service""
+Message = ""This is a test message that meets the minimum character requirement of fifty characters exactly.""
+No attachment","1. Navigate to Contact page while logged in
+2. Verify greeting is displayed with user name
+3. Select ""Customer service"" from subject dropdown
+4. Enter message with exactly 50 characters
+5. Click ""Send"" button",Form is submitted successfully with confirmation message,"EP (Valid EC5.1, EC5.12, EC5.14) and BVA (Minimum valid length)","The form was submitted successfully. A confirmation message was displayed indicating that the message was sent. All entered fields were accepted, and no validation errors occurred.",Pass,
+TC_CONTACT_003,Verify form validation with empty first name (non-logged in user),User is on the Contact page and not logged in,"First Name = """" (empty)
+Other fields valid including message with 50+ characters","1. Navigate to Contact page
+2. Leave first name field empty
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form submission fails with error message for first name field,EP (Invalid EC5.4) and BVA (Just below minimum),"Form submission failed as expected. An error message ""First name is required"" was displayed below the first name field. No submission occurred.",Pass,
+TC_CONTACT_004,Verify form validation with invalid email format (non-logged in user),User is on the Contact page and not logged in,"Email = ""invalid-email""
+Other fields valid including message with 50+ characters","1. Navigate to Contact page
+2. Enter ""invalid-email"" in email field
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form submission fails with error message for email field,EP (Invalid EC5.9),"Form submission failed. An error message was displayed:
+
+""Email ""invalid-email"" does not comply with addr-spec of RFC 2822. Symfony\Component\Mime\Exception\RfcComplianceException /var/www/vendor/symfony/mime/Address.php 54 [object Object], [object Object], ...""
+
+The error appears to originate from the backend and includes technical exception details rather than a user-friendly email validation message.","Fail (validation error message not user-friendly, backend exception exposed to user)",BUG_01
+TC_CONTACT_005,Verify form validation with no subject selected,User is on the Contact page (either logged in or not),"Subject = ""Select a subject"" (default)
+Other fields valid including message with 50+ characters","1. Navigate to Contact page
+2. Leave subject dropdown at default ""Select a subject""
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form submission fails with error message for subject field,EP (Invalid EC5.13),"Form submission failed as expected. An error message ""Subject is required"" was displayed below the subject dropdown. No submission occurred.",Pass,
+TC_CONTACT_006,Verify form validation with empty message,User is on the Contact page (either logged in or not),"Message = """" (empty)
+Other fields valid","1. Navigate to Contact page
+2. Leave message field empty
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form submission fails with error message for message field,EP (Invalid EC5.15),"Form submission failed as expected. An error message ""Message is required"" was displayed below the message field. No submission occurred.",Pass,
+TC_CONTACT_007,Verify form validation with message below minimum length,User is on the Contact page (either logged in or not),"Message = ""This message is too short."" (23 characters)
+Other fields valid","1. Navigate to Contact page
+2. Enter message with 23 characters (below 50 minimum)
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form submission fails with error message about minimum message length,EP (Invalid EC5.16) and BVA (Below minimum),"Form submission failed as expected. An error message ""Message must be minimal 50 characters"" was displayed below the message field. No submission occurred.",Pass,
+TC_CONTACT_008,Verify form validation with message at exact minimum length,User is on the Contact page (either logged in or not),"Message = [Exactly 50 characters]
+Other fields valid","1. Navigate to Contact page
+2. Enter message with exactly 50 characters
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form is submitted successfully with confirmation message,BVA (Minimum valid length),"Form was submitted successfully. A confirmation message was displayed indicating that the message was sent. All entered fields were accepted, and no validation errors occurred.",Pass,
+TC_CONTACT_009,Verify form validation with message at exact maximum length,User is on the Contact page (either logged in or not),"Message = [Exactly 250 characters]
+Other fields valid","1. Navigate to Contact page
+2. Enter message with exactly 250 characters
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form is submitted successfully with confirmation message,BVA (Maximum valid length),"Form was submitted successfully. A confirmation message was displayed indicating that the message was sent. All entered fields were accepted, and no validation errors occurred.",Pass,
+TC_CONTACT_010,Verify form validation with message exceeding maximum length,User is on the Contact page (either logged in or not),"Message = [251 characters]
+Other fields valid","1. Navigate to Contact page
+2. Enter message with 251 characters (exceeding 250 maximum)
+3. Fill all other required fields with valid data
+4. Click ""Send"" button",Form submission fails with error message about maximum message length,EP (Invalid EC5.17) and BVA (Just above maximum),"Form submission failed as expected. An error message ""The message field must not be greater than 250 characters."" was displayed below the message field. No submission occurred.",Pass,
+TC_CONTACT_011,Verify form submission with attachment well below maximum size,User is on the Contact page (either logged in or not),"All required fields valid including message with 50+ characters
+Attachment = 400KB TXT file (well below maximum)","1. Navigate to Contact page
+2. Fill all required fields with valid data
+3. Upload a 400KB TXT file
+4. Click ""Send"" button",Form is submitted successfully with confirmation message,EP (Valid EC5.18) and BVA (Well below maximum),"Form was submitted successfully. A confirmation message was displayed indicating that the message was sent. All entered fields were accepted, and no validation errors occurred.",Pass,
+TC_CONTACT_012,Verify form validation with attachment significantly exceeding maximum size,User is on the Contact page (either logged in or not),"All required fields valid including message with 50+ characters
+Attachment = 600MB TXT file (significantly above maximum)","1. Navigate to Contact page
+2. Fill all required fields with valid data
+3. Upload a 600MB TXT file
+4. Click ""Send"" button",System displays error message about file size exceeding limit,EP (Invalid EC5.20) and BVA (Significantly above maximum),"Form submission failed as expected. An error message ""File should be smaller than 500KB."" was displayed below the attachment field. No submission occurred.",Pass,
+TC_CONTACT_013,Verify form validation with invalid file type,User is on the Contact page (either logged in or not),"All required fields valid including message with 50+ characters
+Attachment = .exe file","1. Navigate to Contact page
+2. Fill all required fields with valid data
+3. Attempt to upload an .exe file
+4. Click ""Send"" button",System either prevents selection of invalid file type or displays error message,EP (Invalid EC5.19),"Form submission failed as expected. An error message ""The file extension is incorrect, we only accept txt files."" was displayed. No submission occurred.",Pass,
+TC_CONTACT_014,Verify form submission with valid PDF file,User is on the Contact page (either logged in or not),"All required fields valid including message with 50+ characters
+Attachment = 400KB PDF file (well below 500KB limit)","1. Navigate to Contact page
+2. Fill all required fields with valid data
+3. Upload a 400KB PDF file
+4. Click ""Send"" button",Form should be submitted successfully with confirmation message,EP (Valid EC5.18),"Form submission failed. An error message ""The file extension is incorrect, we only accept txt files."" was displayed. The system rejected the PDF file, even though the file size was within limit.","Fail (System does not accept PDF files as expected; current file type validation allows only TXT files)
+
+",BUG_02
+TC_CONTACT_015,Verify form submission with valid JPG file,User is on the Contact page (either logged in or not),"All required fields valid including message with 50+ characters
+Attachment = 400KB JPG file (well below 500KB limit)","1. Navigate to Contact page
+2. Fill all required fields with valid data
+3. Upload a 400KB JPG file
+4. Click ""Send"" button",Form should be submitted successfully with confirmation message,EP (Valid EC5.18),"Form submission failed. An error message ""The file extension is incorrect, we only accept txt files."" was displayed. The system rejected the JPG file, even though the file size was within limit.","Fail (System does not accept JPG files as expected; current file type validation allows only TXT files)
+
+",BUG_03
+TC_CART_001,Verify quantity update with valid value,User has an item in cart,Updated quantity = 5 (within stock limit),"1. Navigate to cart page
+2. Change quantity from current value to 5
+3. Observe cart behavior","Quantity updates to 5, total price recalculates correctly (quantity × price)",EP (Valid EC1.1),"When quantity was updated to 5, the grand total (sum of all products) recalculated correctly. However, the total field for the individual product row remained at 0 and did not reflect the updated quantity × price calculation.","Fail (Row-level total did not update as expected, only overall total was recalculated)
+
+",BUG_04
+TC_CART_002,Verify quantity update with minimum valid value,User has an item in cart,Updated quantity = 1,"1. Navigate to cart page
+2. Change quantity to 1
+3. Observe cart behavior","Quantity updates to 1, total price recalculates correctly",BVA (Lower boundary),"When the quantity was updated to 1, the overall cart total updated correctly. However, the total price field for the individual product row remained at 0 instead of showing the correct amount (1 × unit price).","Fail (Row-level total did not reflect the updated quantity × price calculation)
+
+",BUG_05
+TC_CART_003,Verify quantity update with empty value,User has an item in cart,"Updated quantity = """" (empty)","1. Navigate to cart page
+2. Clear the quantity field (leave empty)
+3. Observe system response","System displays specific error message about invalid quantity, prevents update",EP (Invalid EC1.2),"When the quantity field was cleared and submitted (empty), the field remained empty. The row-level total stayed at 0, and the overall cart total also recalculated to 0. No specific error message was displayed to indicate invalid quantity input. The system allowed the empty value without proper validation.","Fail (System did not prevent empty quantity input and failed to display expected validation message)
+
+",BUG_06
+TC_CART_004,Verify quantity update with zero value,User has an item in cart,Updated quantity = 0,"1. Navigate to cart page
+2. Change quantity to 0
+3. Observe system response","System displays specific error message about invalid quantity, prevents update",EP (Invalid EC1.3) and BVA (Just below minimum),"When the quantity was updated to 0 and submitted, the field accepted the value 0. The row-level total stayed at 0, and the overall cart total recalculated to 0. No specific error message was displayed to indicate that 0 is an invalid quantity. The system allowed the invalid input instead of preventing the update.","Fail (System did not validate or reject 0 quantity as invalid; expected validation message was not shown)
+
+",BUG_07
+TC_CART_005,Verify quantity update with negative value,User has an item in cart,Updated quantity = -2,"1. Navigate to cart page
+2. Change quantity to -2
+3. Observe system response","System displays specific error message about negative quantity, prevents update",EP (Invalid EC1.4),"When a negative quantity (-2) was entered, the quantity field accepted the negative value and displayed it. The row-level total remained at 0, while the overall cart total stayed at the previous correct total from the last valid positive quantity. No error message was displayed to prevent or reject the negative quantity input.","Fail (System allowed negative quantity without validation; expected error message was not shown)
+
+",BUG_08
+TC_CART_006,Verify item removal when multiple items exist,User has multiple items in cart,N/A,"1. Navigate to cart page
+2. Click delete button for one item
+3. Observe cart behavior","Selected item is removed, cart updates, total recalculates, checkout still enabled",EP (Valid EC1.8),"When clicking the delete button for an item, no action occurred. The selected item was not removed from the cart. The cart contents, total amount, and checkout state remained unchanged. The delete button appears non-functional.","Fail (Delete button did not perform item removal as expected)
+
+",BUG_09
+TC_CART_007,Verify item removal when only one item exists,User has only one item in cart,N/A,"1. Navigate to cart page
+2. Click delete button for the only item
+3. Observe cart behavior","Item is removed, cart becomes empty, checkout button is disabled","EP (Invalid EC1.9, EC1.11)","When clicking the delete button for the only item in the cart, no action occurred. The item was not removed, and the cart remained unchanged. The delete button did not function.","Fail (Delete button did not perform item removal as expected when only one item exists)
+
+",BUG_10
+TC_CART_008,Verify checkout button state with empty cart,User has an empty cart,N/A,"1. Navigate to cart page with empty cart
+2. Observe checkout button state","""Proceed to checkout"" button is disabled or clicking it produces an error message",EP (Invalid EC1.11),"When navigating to the cart page with an empty cart, the message ""The cart is empty. Nothing to display."" was shown. The ""Proceed to checkout"" button was not displayed.",Pass,
+TC_SIGNIN_001,Verify sign-in with valid credentials,"User is at Sign In step of checkout, not logged in","Email = valid registered email
+Password = correct password","1. Enter valid email
+2. Enter correct password
+3. Click to proceed",User is authenticated and proceeds to Address step,"EP (Valid EC2.1, EC2.5, EC2.9)","After entering valid email and correct password, the system displayed the message:
+
+""Hello [name], you are already logged in. You can proceed to checkout.""
+A button to proceed to the next step was shown, allowing the user to continue.",Pass,
+TC_SIGNIN_002,Verify sign-in with empty email,"User is at Sign In step of checkout, not logged in","Email = """" (empty)
+Password = any value","1. Leave email field empty
+2. Enter any password
+3. Click to proceed","System displays error message for email field, prevents proceeding",EP (Invalid EC2.2),"Form submission failed as expected. An error message ""Email is required."" was displayed below the email field. The system prevented proceeding.",Pass,
+TC_SIGNIN_003,Verify sign-in with invalid email format,"User is at Sign In step of checkout, not logged in","Email = ""invalid-email"" (missing @ and domain)
+Password = any value","1. Enter ""invalid-email"" in email field
+2. Enter any password
+3. Click to proceed","System displays error message about invalid email format, prevents proceeding",EP (Invalid EC2.3),"Form submission failed as expected. An error message ""Email format is invalid."" was displayed below the email field. The system prevented proceeding.",Pass,
+TC_SIGNIN_004,Verify sign-in with empty password,"User is at Sign In step of checkout, not logged in","Email = valid registered email
+Password = """" (empty)","1. Enter valid email
+2. Leave password field empty
+3. Click to proceed","System displays error message for password field, prevents proceeding",EP (Invalid EC2.6) and BVA (Just below minimum),"Form submission failed as expected. An error message ""Password is required."" was displayed below the password field. The system prevented proceeding.",Pass,
+TC_SIGNIN_005,Verify sign-in step for already logged-in user,User is logged in and at Sign In step of checkout,N/A,"1. Navigate to Sign In step while logged in
+2. Observe page content","Page displays greeting with user name and button to proceed, no login form",EP (Valid EC2.8),"When navigating to the Sign In step while already logged in, the system displayed:
+
+""Hello [name], you are already logged in. You can proceed to checkout.""
+
+No login form was displayed, and a button to proceed was available.",Pass,
+TC_ADDRESS_001,Verify address submission with all fields completed,User is at Address step of checkout,"Address = ""123 Main St""
+City = ""Anytown""
+State = ""Anystate""
+Country = ""United States""
+Postcode = ""12345""","1. Enter all address fields with valid data
+2. Click to proceed",System accepts input and proceeds to Payment step,EP (Valid EC3.1),"After entering all address fields with valid data and clicking proceed, the system successfully accepted the input and advanced to the Payment step.",Pass,
+TC_ADDRESS_002,Verify address submission with missing address field,User is at Address step of checkout,"Address = """" (empty)
+Other fields valid","1. Leave address field empty
+2. Fill all other fields with valid data
+3. Click to proceed","System displays error message for address field, prevents proceeding",EP (Invalid EC3.2),"Form submission failed as expected. An error message ""Address is required."" was displayed below the address field. The system prevented proceeding to the next step.",Pass,
+TC_ADDRESS_003,Verify address submission with missing city field,User is at Address step of checkout,"City = """" (empty)
+Other fields valid","1. Leave city field empty
+2. Fill all other fields with valid data
+3. Click to proceed","System displays error message for city field, prevents proceeding",EP (Invalid EC3.2),"Form submission failed as expected. An error message ""City is required."" was displayed below the address field. The system prevented proceeding to the next step.",Pass,
+TC_ADDRESS_004,Verify address submission with minimum valid input length,User is at Address step of checkout,"All fields with single character (e.g., ""A"")","1. Enter single character in all address fields
+2. Click to proceed",System either accepts input and proceeds or displays specific validation errors,BVA (Minimum valid length),"When entering a single character in all address fields and submitting, an empty error box was displayed below the City field. No specific error message text was shown. Upon increasing the input length to more than 6 characters, the empty error box disappeared, suggesting a hidden minimum length validation, but no proper error message was displayed to guide the user.","Fail (Validation triggered but error message not properly displayed; unclear feedback for user)
+
+",BUG_11
+TC_PAYMENT_001,Verify payment submission with all valid inputs,User is at Payment step of checkout,"Payment method = Valid selection
+Account name = ""John Doe""
+Account number = ""1234567890""","1. Select a payment method
+2. Enter valid account name
+3. Enter valid account number
+4. Click confirm button","Payment is processed, order is confirmed","EP (Valid EC4.1, EC4.3, EC4.5)","When selecting a valid payment method and entering valid account name and number, the payment was successfully processed and the order was confirmed — as expected.
+However, when selecting the option ""Errror 304 - Missing payment gateway"", and entering valid account name and number, the system still displayed ""payment successful"" and confirmed the order, instead of handling the missing gateway error.",Fail (System incorrectly allowed payment submission despite selecting an invalid/misconfigured payment option; missing gateway error not handled.),BUG_12
+TC_PAYMENT_002,Verify payment submission with no payment method selected,User is at Payment step of checkout,"Payment method = No selection
+Account name = ""John Doe""
+Account number = ""1234567890""","1. Leave payment method unselected
+2. Enter valid account name
+3. Enter valid account number
+4. Click confirm button","System displays error message for payment method, prevents confirmation",EP (Invalid EC4.2),"When no payment method was selected, the ""Confirm"" button remained disabled. The system prevented submission without requiring any additional error message.",Pass,
+TC_PAYMENT_003,Verify payment submission with empty account name,User is at Payment step of checkout,"Payment method = Valid selection
+Account name = """" (empty)
+Account number = ""1234567890""","1. Select a payment method
+2. Leave account name field empty
+3. Enter valid account number
+4. Click confirm button","System displays error message for account name, prevents confirmation",EP (Invalid EC4.4) and BVA (Just below minimum),"Form submission failed as expected. An error message ""Account name is required."" was displayed below the account name field. The system prevented confirmation.",Pass,
+TC_PAYMENT_004,Verify payment submission with empty account number,User is at Payment step of checkout,"Payment method = Valid selection
+Account name = ""John Doe""
+Account number = """" (empty)","1. Select a payment method
+2. Enter valid account name
+3. Leave account number field empty
+4. Click confirm button","System displays error message for account number, prevents confirmation",EP (Invalid EC4.6),"Form submission failed as expected. An error message ""Account number is required."" was displayed below the account number field. The system prevented confirmation.",Pass,
