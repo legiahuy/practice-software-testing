@@ -67,24 +67,161 @@ test.describe("Toolshop E-commerce Demo @demo", () => {
     await expect(page.locator('[data-test="search-submit"]')).toBeVisible();
   });
 
-  // 2. MULTI-BROWSER TESTING DEMO
-  test("should work across different browsers @cross-browser", async ({
+  // 2. COMPREHENSIVE MULTI-BROWSER TESTING DEMO - "Write once, test everywhere"
+  test("should demonstrate write-once-test-everywhere @multi-browser", async ({
     browserName,
   }) => {
+    // Same test code runs on Chromium, Firefox, and Safari
     await page.goto("http://localhost:4200");
 
-    // Test responsive design across browsers
-    await page.setViewportSize({ width: 768, height: 1024 });
-    await expect(page.locator("nav")).toBeVisible();
+    // 1. Test responsive design validation
+    const viewports = [
+      { width: 1920, height: 1080, name: "Desktop" },
+      { width: 1024, height: 768, name: "Tablet" },
+      { width: 375, height: 667, name: "Mobile" },
+    ];
 
-    // Test mobile view
-    await page.setViewportSize({ width: 375, height: 667 });
-    await expect(page.locator("nav")).toBeVisible();
+    for (const viewport of viewports) {
+      await page.setViewportSize(viewport);
+      console.log(`Testing ${viewport.name} viewport on ${browserName}`);
 
-    // Browser-specific assertions
-    if (browserName === "chromium") {
-      await expect(page.locator(".chrome-specific")).toBeVisible();
+      // Verify navigation is always accessible based on viewport
+      if (viewport.width >= 768) {
+        // Desktop and tablet: check for expanded navigation
+        await expect(page.locator("#navbarSupportedContent")).toBeVisible();
+      } else {
+        // Mobile: check for hamburger menu button
+        await expect(
+          page.getByRole("button", { name: "Toggle navigation" })
+        ).toBeVisible();
+      }
+
+      if (viewport.width >= 1024) {
+        // Test search functionality across viewports
+        await page.locator('[data-test="search-query"]').click();
+        await page.locator('[data-test="search-query"]').fill("hammer");
+        await page.locator('[data-test="search-submit"]').click();
+        await expect(page.locator('[data-test="search-term"]')).toContainText(
+          "hammer"
+        );
+      }
     }
+
+    // 2. Browser-specific feature testing
+    await page.goto("http://localhost:4200/#/auth/login");
+
+    if (browserName === "chromium") {
+      // Test Chrome-specific features
+      console.log("Testing Chrome-specific features");
+
+      // Test Chrome's autofill capabilities
+      await page.locator('[data-test="email"]').fill("test@example.com");
+      await page.locator('[data-test="password"]').fill("password123");
+
+      // Chrome has better autofill support
+      await expect(page.locator('[data-test="email"]')).toHaveValue(
+        "test@example.com"
+      );
+
+      // Test Chrome's smooth scrolling behavior
+      await page.evaluate(() => {
+        window.scrollTo({ top: 500, behavior: "smooth" });
+      });
+      await page.waitForTimeout(1000); // Wait for smooth scroll
+    } else if (browserName === "firefox") {
+      // Test Firefox-specific features
+      console.log("Testing Firefox-specific features");
+
+      // Firefox has different form validation behavior
+      await page.locator('[data-test="email"]').fill("invalid-email");
+      await page.locator('[data-test="password"]').fill("wrong-password");
+      await page.locator('[data-test="login-submit"]').click();
+
+      // Firefox shows validation errors differently - check for error message
+      await expect(
+        page.locator("text=Invalid email or password")
+      ).toBeVisible();
+
+      // Test Firefox's scroll behavior
+      await page.evaluate(() => {
+        window.scrollTo(0, 300);
+      });
+    } else if (browserName === "webkit") {
+      // Test Safari-specific features
+      console.log("Testing Safari-specific features");
+
+      // Safari has different touch behavior on desktop
+      await page.locator('[data-test="email"]').fill("safari@example.com");
+
+      // Test Safari's form behavior - check if email field is properly filled
+      await expect(page.locator('[data-test="email"]')).toHaveValue(
+        "safari@example.com"
+      );
+
+      // Test Safari's CSS rendering differences
+      const emailInput = page.locator('[data-test="email"]');
+      const computedStyles = await emailInput.evaluate((el) => ({
+        webkitAppearance: window.getComputedStyle(el).webkitAppearance,
+        webkitBorderRadius: window.getComputedStyle(el).webkitBorderRadius,
+        webkitBoxShadow: window.getComputedStyle(el).webkitBoxShadow,
+      }));
+
+      console.log(`Safari input styles:`, computedStyles);
+
+      // Safari has different CSS rendering
+      const element = page.locator("#navbarSupportedContent");
+      const backgroundColor = await element.evaluate(
+        (el) => window.getComputedStyle(el).backgroundColor
+      );
+      console.log(`Safari navbar background: ${backgroundColor}`);
+    }
+
+    // Test browser-specific CSS and rendering differences
+    await page.goto("http://localhost:4200");
+    const searchBox = page.locator('[data-test="search-query"]');
+    const searchBoxStyles = await searchBox.evaluate((el) => ({
+      borderRadius: window.getComputedStyle(el).borderRadius,
+      boxShadow: window.getComputedStyle(el).boxShadow,
+      fontFamily: window.getComputedStyle(el).fontFamily,
+    }));
+
+    console.log(`${browserName} search box styles:`, searchBoxStyles);
+
+    // Test browser-specific JavaScript behavior
+    const jsResult = await page.evaluate(() => {
+      // Test browser-specific JavaScript features
+      const features = {
+        hasIntersectionObserver: typeof IntersectionObserver !== "undefined",
+        hasResizeObserver: typeof ResizeObserver !== "undefined",
+        hasWebGL: !!window.WebGLRenderingContext,
+        userAgent: navigator.userAgent,
+      };
+      return features;
+    });
+
+    console.log(`${browserName} JavaScript features:`, jsResult);
+
+    // 3. Verify core functionality works identically across browsers
+    const toggleButton = page.getByRole("button", {
+      name: "Toggle navigation",
+    });
+    if (await toggleButton.isVisible()) {
+      await toggleButton.click();
+    }
+    await page.locator('[data-test="nav-sign-in"]').click();
+    await expect(page).toHaveURL(/.*auth\/login/);
+
+    // Test form interactions (should work the same on all browsers)
+    await page
+      .locator('[data-test="email"]')
+      .fill("customer@practicesoftwaretesting.com");
+
+    await page.locator('[data-test="password"]').fill("welcome01");
+
+    await page.locator('[data-test="login-submit"]').click();
+    await expect(page.locator('[data-test="page-title"]')).toContainText(
+      "My account"
+    );
   });
 
   // 3. USER INTERACTION DEMO - Registration flow
