@@ -1,0 +1,29 @@
+TestCaseID,FirstName,LastName,DOB,Street,City,State,Country,PostalCode,Phone,Email,Password
+REG-VAL-01,Alice,Smith,1995-01-15,456 Elm St.,London,London,GB,EC1A1BB,07123456789,alice.smith@example.co.uk,Password1!
+REG-VAL-02,Bob,O'Neil,1980-12-31,789 Oak Ave.,Dublin,Leinster,IE,D02X285,0851234567,bob.oneil@example.ie,Secure@2024
+REG-VAL-03,李,王,2000-02-28,1 Zhong Rd.,Beijing,Beijing,CN,100000,13800138000,li.wang@example.cn,密码Abc123!
+REG-VAL-04,Marie-Claire,DuPont,1992-07-04,22 Rue de Paris,Paris,Ile-de-France,FR,75001,0612345678,marie.dupont@example.fr,MonMot2@
+REG-VAL-05,Test,User,2010-11-11,Test St.,Test City,Test State,TL,12345,1234567890,test.user+test@example.com,Test@12345
+REG-INV-01,1234,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,invalidemail,NoSpecialChar1
+REG-INV-02,Alice,,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice@example.com,Short1!
+REG-INV-03,,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,smith@example.com,Password1!
+REG-INV-04,Alice,Smith,1990-13-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Password1!
+REG-INV-05,Alice,Smith,1990-01-32,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Password1!
+REG-INV-06,Alice,Smith,2015-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Password1!
+REG-INV-07,Alice,Smith,1990-01-01,Main St.,City,State,Country,ABCDE,1234567890,alice.smith@example.com,Password1!
+REG-INV-08,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,abcdefghij,alice.smith@example.com,Password1!
+REG-INV-09,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smithatexample.com,Password1!
+REG-INV-10,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,password
+REG-INV-11,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,PASSWORD1!
+REG-INV-12,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Password
+REG-INV-13,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,12345678
+REG-INV-14,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Ab1!
+REG-INV-15,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Ab1@345678Ab1@345678Ab1@345678Ab1@345678Ab1@345678Ab1@345678Ab1@345678Ab1@345678Ab1@345678Ab1@345678
+REG-EDGE-01,A,Smith,1990-01-01,Main St.,City,State,Country,00000,1,alice.smith@example.com,Ab1@345678
+REG-EDGE-02,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Ab1@345678
+REG-EDGE-03,Alice,Smith,1899-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Ab1@345678
+REG-EDGE-04,Alice,Smith,2026-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Ab1@345678
+REG-EDGE-05,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,12345678901234567890,alice.smith@example.com,Ab1@345678
+REG-EDGE-06,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com,Ab1@345678
+REG-EDGE-07,Alice,Smith,1990-01-01,Main St.,City,State,Country,00000,1234567890,alice.smith@example.com,Ab1@345678
+DUP-REG-01,Alice,Smith,1995-01-15,456 Elm St.,London,London,GB,EC1A1BB,07123456789,alice.smith@example.co.uk,Password1!
