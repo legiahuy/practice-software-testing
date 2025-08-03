@@ -1,0 +1,72 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Practice Software Testing - Toolshop":
+    - /url: /
+    - img
+  - menubar "Main menu":
+    - menuitem "Home":
+      - link "Home":
+        - /url: "#/contact"
+    - menuitem "Categories":
+      - button "Categories"
+    - menuitem "Contakt":
+      - link "Contakt":
+        - /url: "#/contact"
+    - menuitem "Sign in":
+      - link "Sign in":
+        - /url: "#/auth/login"
+    - menuitem "cart":
+      - link "cart":
+        - /url: "#/checkout"
+        - text:  5
+- list:
+  - listitem: Cart 1
+  - listitem: Sign in 2
+  - listitem: Address 3
+  - listitem: Payment 4
+- table:
+  - rowgroup:
+    - row "Item Quantity Price Total Total":
+      - columnheader "Item"
+      - columnheader
+      - columnheader "Quantity"
+      - columnheader "Price"
+      - columnheader "Total"
+      - columnheader "Total"
+  - rowgroup:
+    - row "Combination Pliers $14.15 $00.00 ":
+      - cell "Combination Pliers"
+      - cell
+      - cell:
+        - spinbutton: "5"
+      - cell "$14.15"
+      - cell "$00.00"
+      - cell ""
+  - rowgroup:
+    - row "Total $70.75":
+      - cell
+      - cell
+      - cell
+      - cell "Total":
+        - strong: Total
+      - cell "$70.75"
+      - cell
+- button "Proceed to checkout"
+- paragraph:
+  - text: This is a DEMO application (
+  - link "GitHub repo":
+    - /url: https://github.com/testsmith-io/practice-software-testing
+  - text: ), used for software testing training purpose. |
+  - link "Support this project":
+    - /url: https://testwithroy.com/b/support
+  - text: "| Banner photo by"
+  - link "Barn Images":
+    - /url: https://unsplash.com/@barnimages
+  - text: "on"
+  - link "Unsplash":
+    - /url: https://unsplash.com/photos/t5YUoHW6zRo
+  - text: .
+- alert: Oeps, something went wrong.
+```

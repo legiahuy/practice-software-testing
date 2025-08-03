@@ -1,7 +1,7 @@
 test_id,title,precondition,test_step,product_ids,quantity_update,email,password,address,city,state,country,postcode,payment_method,account_name,account_number,expected_result,should_pass
-TC_CART_001,Verify quantity update with valid value,User has an item in cart,cart,"1",5,,,,,,,,,,,Quantity updates to 5 and total price recalculates correctly,true
+TC_CART_001,Verify quantity update with valid value,User has an item in cart,cart,"1",5,,,,,,,,,,,Quantity updates to 5 and individual product total (quantity × price) recalculates correctly,true
 TC_CART_002,Verify quantity update with minimum valid value,User has an item in cart,cart,"6",1,,,,,,,,,,,Quantity updates to 1 and total price recalculates correctly,true
-TC_CART_003,Verify quantity update with empty value,User has an item in cart,cart,"1","",,,,,,,,,,,System displays error message about invalid quantity,false
+TC_CART_003,Verify checkout is blocked with empty quantity value,User has an item in cart,cart,"1","",,,,,,,,,,,System should prevent checkout and display error message about invalid quantity,false
 TC_CART_004,Verify quantity update with zero value,User has an item in cart,cart,"6",0,,,,,,,,,,,System displays error message about invalid quantity,false
 TC_CART_005,Verify quantity update with negative value,User has an item in cart,cart,"1",-2,,,,,,,,,,,System displays error message about negative quantity,false
 TC_CART_006,Verify item removal when multiple items exist,User has multiple items in cart,cart,"1,6",delete_first,,,,,,,,,,,Selected item is removed and cart updates correctly,true

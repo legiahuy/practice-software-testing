@@ -20,7 +20,7 @@
     "test:checkout:signin": "CHECKOUT_TEST_CASES=TC_SIGNIN_001,TC_SIGNIN_002,TC_SIGNIN_003,TC_SIGNIN_004,TC_SIGNIN_005 playwright test src/tests/checkout-flow.spec.ts",
     "test:checkout:address": "CHECKOUT_TEST_CASES=TC_ADDRESS_001,TC_ADDRESS_002,TC_ADDRESS_003,TC_ADDRESS_004 playwright test src/tests/checkout-flow.spec.ts",
     "test:checkout:payment": "CHECKOUT_TEST_CASES=TC_PAYMENT_001,TC_PAYMENT_002,TC_PAYMENT_003,TC_PAYMENT_004,TC_PAYMENT_005,TC_PAYMENT_006,TC_PAYMENT_007,TC_PAYMENT_008,TC_PAYMENT_009,TC_PAYMENT_010 playwright test src/tests/checkout-flow.spec.ts",
-    "report": "playwright show-report",
+    "report": "playwright show-report playwright-report",
     "trace": "playwright show-trace",
     "codegen": "playwright codegen http://localhost:4200",
     "codegen:checkout": "playwright codegen http://localhost:4200/#/checkout"

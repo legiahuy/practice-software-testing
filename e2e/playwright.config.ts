@@ -14,7 +14,7 @@ export default defineConfig({
   /* Test execution settings */
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: 0, // Disable retries to avoid running tests multiple times
   workers: process.env.CI ? 1 : 4,
   
   /* Test timeout settings */
@@ -22,10 +22,10 @@ export default defineConfig({
   
   /* Reporter configuration with custom reporter */
   reporter: [
-    ["html", { outputFolder: "../playwright-report", open: "never" }],
-    ["json", { outputFile: "../test-reports/results.json" }],
+    ["html", { outputFolder: "playwright-report", open: "on-failure" }],
+    ["json", { outputFile: "test-reports/results.json" }],
     ["list"],
-    ["../src/reporters/test-reporter.ts"]
+    ["./src/reporters/test-reporter.ts"]
   ],
   
   /* Shared settings for all projects */
@@ -73,5 +73,5 @@ export default defineConfig({
   ],
   
   /* Output folder for test artifacts */
-  outputDir: "../test-results",
+  outputDir: "test-results",
 });

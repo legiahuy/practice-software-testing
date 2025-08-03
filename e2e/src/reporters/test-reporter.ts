@@ -32,11 +32,11 @@ export class ContactFormReporter implements Reporter {
 
   onBegin() {
     this.startTime = new Date();
-    console.log("\n📋 Contact Form Test Execution Started\n");
+    console.log("\n📋 Test Execution Started\n");
   }
 
   onTestEnd(test: TestCase, result: TestResult) {
-    const testIdMatch = test.title.match(/^(TC_CONTACT_\d+):/);
+    const testIdMatch = test.title.match(/^(TC_[A-Z]+_\d+):/);
     const testId = testIdMatch ? testIdMatch[1] : "UNKNOWN";
 
     const summary: TestSummary = {

@@ -99,7 +99,7 @@ test.describe("Contact Form - Data Driven Tests", () => {
 
       // Take screenshot for test evidence
       await page.screenshot({
-        path: join(__dirname, "../../screenshots", `${data.test_id}.png`),
+        path: join(__dirname, "../../screenshots/contact", `${data.test_id}.png`),
         fullPage: true,
       });
     });

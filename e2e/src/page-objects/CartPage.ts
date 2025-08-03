@@ -12,12 +12,13 @@ export class CartPage {
     cartEmpty: '[data-test="cart-empty"]',
     totalPrice: '[data-test="cart-total"]',
     itemPrice: '[data-test="product-price"]',
+    productTotal: '[data-test="line-price"]',
     quantityError: '[data-test="quantity-error"]',
   };
 
   // Navigation
   async navigate() {
-    await this.page.goto("/#/cart");
+    await this.page.goto("/#/checkout");
     await this.page.waitForLoadState("networkidle");
   }
 
@@ -25,12 +26,15 @@ export class CartPage {
   async updateQuantity(productName: string, quantity: string) {
     const row = this.page.locator(this.selectors.productRow(productName));
     const quantityInput = row.locator(this.selectors.productQuantity);
-    
+
     // Clear and fill new quantity
     await quantityInput.click();
-    await quantityInput.fill('');
-    await quantityInput.fill(quantity);
+    await quantityInput.clear();
     
+    if (quantity !== "") {
+      await quantityInput.fill(quantity);
+    }
+
     // Blur to trigger update
     await quantityInput.blur();
     await this.page.waitForTimeout(300);
@@ -65,7 +69,7 @@ export class CartPage {
 
   async getTotalPrice(): Promise<string> {
     const totalElement = this.page.locator(this.selectors.totalPrice);
-    return await totalElement.textContent() || '';
+    return (await totalElement.textContent()) || "";
   }
 
   async hasQuantityError(): Promise<boolean> {
@@ -85,7 +89,19 @@ export class CartPage {
   }
 
   async getCartItemCount(): Promise<number> {
-    const rows = await this.page.locator('tbody tr').count();
+    const rows = await this.page.locator("tbody tr").count();
     return rows;
+  }
+
+  async getProductTotal(productName: string): Promise<string> {
+    const row = this.page.locator(this.selectors.productRow(productName));
+    const totalElement = row.locator(this.selectors.productTotal);
+    return (await totalElement.textContent()) || "";
+  }
+
+  async getProductPrice(productName: string): Promise<string> {
+    const row = this.page.locator(this.selectors.productRow(productName));
+    const priceElement = row.locator(this.selectors.itemPrice);
+    return (await priceElement.textContent()) || "";
   }
 }

@@ -184,6 +184,11 @@ npm run test:checkout -- --debug
 - Screenshots in `screenshots/`
 - Custom reporter output in console
 
+## Known Issues
+
+### Bug Found: TC_CART_001 - Individual Product Total Not Updating
+When updating quantity in the cart, the individual product total (quantity × price) remains at $0.00 instead of calculating correctly. The grand total updates properly, but the line item total does not reflect the quantity change.
+
 ## Known Limitations
 
 1. Stock validation not implemented
