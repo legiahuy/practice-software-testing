@@ -1,9 +1,12 @@
 {
-  "name": "contact-form-tests",
+  "name": "practice-software-testing-e2e",
   "version": "1.0.0",
-  "description": "Data-driven Playwright tests for Contact Form",
+  "description": "Data-driven Playwright tests for Practice Software Testing",
   "scripts": {
-    "test": "playwright test src/tests/contact-form.spec.ts",
+    "test": "playwright test",
+    "test:contact": "playwright test src/tests/contact-form.spec.ts",
+    "test:checkout": "playwright test src/tests/checkout-flow.spec.ts",
+    "test:all": "playwright test",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
     "test:headed": "playwright test --headed",
@@ -11,11 +14,16 @@
     "test:firefox": "playwright test --project=firefox",
     "test:safari": "playwright test --project=webkit",
     "test:mobile": "playwright test --project='Mobile Chrome'",
-    "test:runner": "ts-node run-contact-tests.ts",
-    "test:single": "CONTACT_TEST_CASES=$TEST_ID playwright test",
+    "test:contact:single": "CONTACT_TEST_CASES=$TEST_ID playwright test src/tests/contact-form.spec.ts",
+    "test:checkout:single": "CHECKOUT_TEST_CASES=$TEST_ID playwright test src/tests/checkout-flow.spec.ts",
+    "test:checkout:cart": "CHECKOUT_TEST_CASES=TC_CART_001,TC_CART_002,TC_CART_003,TC_CART_004,TC_CART_005,TC_CART_006,TC_CART_007,TC_CART_008 playwright test src/tests/checkout-flow.spec.ts",
+    "test:checkout:signin": "CHECKOUT_TEST_CASES=TC_SIGNIN_001,TC_SIGNIN_002,TC_SIGNIN_003,TC_SIGNIN_004,TC_SIGNIN_005 playwright test src/tests/checkout-flow.spec.ts",
+    "test:checkout:address": "CHECKOUT_TEST_CASES=TC_ADDRESS_001,TC_ADDRESS_002,TC_ADDRESS_003,TC_ADDRESS_004 playwright test src/tests/checkout-flow.spec.ts",
+    "test:checkout:payment": "CHECKOUT_TEST_CASES=TC_PAYMENT_001,TC_PAYMENT_002,TC_PAYMENT_003,TC_PAYMENT_004,TC_PAYMENT_005,TC_PAYMENT_006,TC_PAYMENT_007,TC_PAYMENT_008,TC_PAYMENT_009,TC_PAYMENT_010 playwright test src/tests/checkout-flow.spec.ts",
     "report": "playwright show-report",
     "trace": "playwright show-trace",
-    "codegen": "playwright codegen http://localhost:4200/contact"
+    "codegen": "playwright codegen http://localhost:4200",
+    "codegen:checkout": "playwright codegen http://localhost:4200/#/checkout"
   },
   "keywords": [
     "playwright",
