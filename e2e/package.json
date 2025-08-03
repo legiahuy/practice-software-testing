@@ -1,0 +1,29 @@
+{
+  "name": "contact-form-tests",
+  "version": "1.0.0",
+  "description": "Data-driven Playwright tests for Contact Form",
+  "scripts": {
+    "test": "playwright test src/tests/contact-form.spec.ts",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome'",
+    "test:runner": "ts-node run-contact-tests.ts",
+    "test:single": "CONTACT_TEST_CASES=$TEST_ID playwright test",
+    "report": "playwright show-report",
+    "trace": "playwright show-trace",
+    "codegen": "playwright codegen http://localhost:4200/contact"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "contact-form",
+    "data-driven"
+  ],
+  "author": "QA Automation Team",
+  "license": "MIT"
+}

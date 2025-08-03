@@ -11,7 +11,7 @@
    - Forgot your password
 5. User (If user is signed in)
    - My Account
-   - My Favorits
+   - My Favorites
    - My Profile
      - Update profile
      - Change password
