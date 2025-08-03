@@ -2,8 +2,8 @@ test_id,title,precondition,test_step,product_ids,quantity_update,email,password,
 TC_CART_001,Verify quantity update with valid value,User has an item in cart,cart,"1",5,,,,,,,,,,,Quantity updates to 5 and individual product total (quantity × price) recalculates correctly,true
 TC_CART_002,Verify quantity update with minimum valid value,User has an item in cart,cart,"6",1,,,,,,,,,,,Quantity updates to 1 and total price recalculates correctly,true
 TC_CART_003,Verify checkout is blocked with empty quantity value,User has an item in cart,cart,"1","",,,,,,,,,,,System should prevent checkout and display error message about invalid quantity,false
-TC_CART_004,Verify quantity update with zero value,User has an item in cart,cart,"6",0,,,,,,,,,,,System displays error message about invalid quantity,false
-TC_CART_005,Verify quantity update with negative value,User has an item in cart,cart,"1",-2,,,,,,,,,,,System displays error message about negative quantity,false
+TC_CART_004,Verify checkout is blocked with zero quantity value,User has an item in cart,cart,"6",0,,,,,,,,,,,System should prevent checkout with zero quantity,false
+TC_CART_005,Verify checkout is blocked with negative quantity value,User has an item in cart,cart,"1",-2,,,,,,,,,,,System should prevent checkout with negative quantity,false
 TC_CART_006,Verify item removal when multiple items exist,User has multiple items in cart,cart,"1,6",delete_first,,,,,,,,,,,Selected item is removed and cart updates correctly,true
 TC_CART_007,Verify item removal when only one item exists,User has only one item in cart,cart,"1",delete_all,,,,,,,,,,,Cart becomes empty and checkout button is disabled,true
 TC_CART_008,Verify checkout button state with empty cart,User has an empty cart,cart,"",check_empty,,,,,,,,,,,Proceed to checkout button is disabled,true

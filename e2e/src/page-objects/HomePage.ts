@@ -42,7 +42,14 @@ export class HomePage {
 
   // Helper to add multiple products
   async addMultipleProductsToCart(productIds: string[]) {
-    for (const productId of productIds) {
+    for (let i = 0; i < productIds.length; i++) {
+      const productId = productIds[i];
+      
+      // Navigate to home page if not the first product
+      if (i > 0) {
+        await this.navigate();
+      }
+      
       await this.addProductToCart(productId);
       // Small delay between products
       await this.page.waitForTimeout(300);

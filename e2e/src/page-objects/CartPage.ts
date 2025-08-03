@@ -7,7 +7,7 @@ export class CartPage {
   private selectors = {
     productQuantity: '[data-test="product-quantity"]',
     productRow: (productName: string) => `tr:has-text("${productName}")`,
-    deleteButton: '[data-test="product-delete"]',
+    deleteButton: 'a', // Delete button is actually a link within the row
     proceedButton: '[data-test="proceed-1"]',
     cartEmpty: '[data-test="cart-empty"]',
     totalPrice: '[data-test="cart-total"]',
@@ -59,6 +59,11 @@ export class CartPage {
   async isProceedButtonEnabled(): Promise<boolean> {
     const button = this.page.locator(this.selectors.proceedButton);
     return await button.isEnabled();
+  }
+
+  async isProceedButtonVisible(): Promise<boolean> {
+    const button = this.page.locator(this.selectors.proceedButton);
+    return await button.isVisible();
   }
 
   async getProductQuantity(productName: string): Promise<string> {

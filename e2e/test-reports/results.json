@@ -146,8 +146,8 @@
           "column": 6,
           "specs": [
             {
-              "title": "TC_CART_001: Verify quantity update with valid value",
-              "ok": false,
+              "title": "TC_CART_008: Verify checkout button state with empty cart",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -160,408 +160,37 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 3269,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
-                        "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 29,
-                          "line": 215
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 29,
-                            "line": 215
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 1774,
+                      "errors": [],
                       "stdout": [
                         {
-                          "text": "Running selected test cases: TC_CART_001, TC_CART_002\n"
+                          "text": "Running selected test cases: TC_CART_008\n"
                         },
                         {
-                          "text": "Testing product: Combination Pliers (ID: 1)\n"
+                          "text": "Testing empty cart state...\n"
                         },
                         {
-                          "text": "BUG DETECTED: Expected product total $70.75, but got $0.00\n"
+                          "text": "Proceed button visible: false\n"
+                        },
+                        {
+                          "text": "PASS: Proceed to checkout button is correctly hidden/disabled for empty cart\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_CART_008.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-03T16:46:25.197Z",
+                      "startTime": "2025-08-03T17:21:16.196Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 29,
-                        "line": 215
-                      }
-                    },
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 3022,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
-                        "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 29,
-                          "line": 215
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 29,
-                            "line": 215
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Running selected test cases: TC_CART_001, TC_CART_002\n"
-                        },
-                        {
-                          "text": "Testing product: Combination Pliers (ID: 1)\n"
-                        },
-                        {
-                          "text": "BUG DETECTED: Expected product total $70.75, but got $0.00\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2025-08-03T16:46:29.598Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry1/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry1/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry1/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry1/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 29,
-                        "line": 215
-                      }
-                    },
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 2885,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
-                        "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 29,
-                          "line": 215
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 29,
-                            "line": 215
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Running selected test cases: TC_CART_001, TC_CART_002\n"
-                        },
-                        {
-                          "text": "Testing product: Combination Pliers (ID: 1)\n"
-                        },
-                        {
-                          "text": "BUG DETECTED: Expected product total $70.75, but got $0.00\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 2,
-                      "startTime": "2025-08-03T16:46:33.409Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry2/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry2/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium-retry2/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 29,
-                        "line": 215
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-ae2bcf655b7edd008410",
-              "file": "src/tests/checkout-flow.spec.ts",
-              "line": 55,
-              "column": 9
-            },
-            {
-              "title": "TC_CART_002: Verify quantity update with minimum valid value",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 5000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 2928,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
-                        "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 29,
-                          "line": 215
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 29,
-                            "line": 215
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Running selected test cases: TC_CART_001, TC_CART_002\n"
-                        },
-                        {
-                          "text": "Testing product: Claw Hammer with Shock Reduction Grip (ID: 6)\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-03T16:46:36.993Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 29,
-                        "line": 215
-                      }
-                    },
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 2966,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
-                        "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 29,
-                          "line": 215
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 29,
-                            "line": 215
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Running selected test cases: TC_CART_001, TC_CART_002\n"
-                        },
-                        {
-                          "text": "Testing product: Claw Hammer with Shock Reduction Grip (ID: 6)\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2025-08-03T16:46:40.604Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry1/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry1/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry1/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry1/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 29,
-                        "line": 215
-                      }
-                    },
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 2945,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
-                        "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 29,
-                          "line": 215
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 29,
-                            "line": 215
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 213 |\u001b[39m         }\n \u001b[90m 214 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 216 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 217 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 218 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:215:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Running selected test cases: TC_CART_001, TC_CART_002\n"
-                        },
-                        {
-                          "text": "Testing product: Claw Hammer with Shock Reduction Grip (ID: 6)\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 2,
-                      "startTime": "2025-08-03T16:46:44.416Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry2/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry2/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium-retry2/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 29,
-                        "line": 215
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "7c552112240084f7484f-9fa523558d5150237eff",
+              "id": "7c552112240084f7484f-9cbace6dfc0581435d4e",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -573,11 +202,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-03T16:46:24.854Z",
-    "duration": 22961.802,
-    "expected": 0,
+    "startTime": "2025-08-03T17:21:15.849Z",
+    "duration": 3403.9559999999997,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }
