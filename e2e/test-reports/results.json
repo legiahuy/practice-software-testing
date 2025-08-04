@@ -133,608 +133,20 @@
   },
   "suites": [
     {
-      "title": "src/tests/contact-form.spec.ts",
-      "file": "src/tests/contact-form.spec.ts",
+      "title": "src/tests/checkout-flow.spec.ts",
+      "file": "src/tests/checkout-flow.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
-        {
-          "title": "List available test cases",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 10000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\nAvailable test cases:\n"
-                    },
-                    {
-                      "text": "=====================\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_005: Verify form validation with no subject selected\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_006: Verify form validation with empty message\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_007: Verify form validation with message below minimum length\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_008: Verify form validation with message at exact minimum length\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_009: Verify form validation with message at exact maximum length\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_010: Verify form validation with message exceeding maximum length\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_011: Verify form submission with attachment well below maximum size\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_013: Verify form validation with invalid file type\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_014: Verify form submission with valid PDF file\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_015: Verify form submission with valid JPG file\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_017: Verify successful form submission with 'Return' subject\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_019: Verify successful form submission with 'Payments' subject\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_020: Verify successful form submission with 'Warranty' subject\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject\n"
-                    },
-                    {
-                      "text": "TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject\n"
-                    },
-                    {
-                      "text": "\nTo run specific tests, use: CONTACT_TEST_CASES=\"TC_CONTACT_001,TC_CONTACT_002\" npm test\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-08-04T05:22:07.376Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "7047ddc989c1e31e80c9-b2d2f7d1dbba561ff391",
-          "file": "src/tests/contact-form.spec.ts",
-          "line": 120,
-          "column": 5
-        }
-      ],
+      "specs": [],
       "suites": [
         {
-          "title": "Contact Form - Data Driven Tests",
-          "file": "src/tests/contact-form.spec.ts",
-          "line": 11,
+          "title": "Multi-Step Checkout Flow - Data Driven Tests",
+          "file": "src/tests/checkout-flow.spec.ts",
+          "line": 37,
           "column": 6,
           "specs": [
             {
-              "title": "TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2475,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Running all test cases\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:07.316Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-8708cc609667db91fdd4",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1196,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_002: Logged in as customer@practicesoftwaretesting.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:10.280Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-556777b0e69841b8b446",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 11322,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_003 - first_name error: First name is required\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:11.478Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-538e2642b5969838737f",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 18616,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:22.803Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-bd8ad40e707f60700008",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_005: Verify form validation with no subject selected",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 11281,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_005 - subject error: Subject is required\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:41.421Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-e40fedec1424c54ccdfb",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_006: Verify form validation with empty message",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 11213,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_006 - message error: Message is required\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:52.705Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-7c9d0958295ae1fc5214",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_007: Verify form validation with message below minimum length",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 12584,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Running all test cases\n"
-                        },
-                        {
-                          "text": "TC_CONTACT_007 - message error: Message must be minimal 50 characters\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:07.374Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-1e6ea72b18817b71cb24",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_008: Verify form validation with message at exact minimum length",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1168,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:20.390Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-b8c8f7d1219cad6dbb2f",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_009: Verify form validation with message at exact maximum length",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1047,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:21.560Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-36955488bf390fb4c594",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_010: Verify form validation with message exceeding maximum length",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 18620,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:22.608Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-8431c0ab8b80c2cb8098",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_011: Verify form submission with attachment well below maximum size",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1210,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:41.230Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-607baa36c205a3a39ad9",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 11288,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_012 - attachment error: File should be smaller than 500KB.\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:42.443Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-c7c3052b26e8bd66095c",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_013: Verify form validation with invalid file type",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 19863,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Running all test cases\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:07.368Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-55f5fde1fd189e85f47c",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_014: Verify form submission with valid PDF file",
+              "title": "TC_CART_001: Verify quantity update with valid value",
               "ok": false,
               "tags": [],
               "tests": [
@@ -742,73 +154,83 @@
                   "timeout": 10000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6055,
+                      "duration": 2943,
                       "error": {
-                        "message": "Error: Expected success message for TC_CONTACT_014\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: Expected success message for TC_CONTACT_014\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts:69:75",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:313:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
                         "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                          "column": 75,
-                          "line": 69
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 29,
+                          "line": 313
                         },
-                        "snippet": "\u001b[0m \u001b[90m 67 |\u001b[39m         \u001b[90m// Expect success\u001b[39m\n \u001b[90m 68 |\u001b[39m         \u001b[36mconst\u001b[39m isSuccess \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m contactPage\u001b[33m.\u001b[39misSuccessMessageVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m         expect(isSuccess\u001b[33m,\u001b[39m \u001b[32m`Expected success message for ${data.test_id}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m           \u001b[36mtrue\u001b[39m\n \u001b[90m 71 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 311 |\u001b[39m         }\n \u001b[90m 312 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 313 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 314 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 315 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 316 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                            "column": 75,
-                            "line": 69
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 29,
+                            "line": 313
                           },
-                          "message": "Error: Expected success message for TC_CONTACT_014\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 67 |\u001b[39m         \u001b[90m// Expect success\u001b[39m\n \u001b[90m 68 |\u001b[39m         \u001b[36mconst\u001b[39m isSuccess \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m contactPage\u001b[33m.\u001b[39misSuccessMessageVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m         expect(isSuccess\u001b[33m,\u001b[39m \u001b[32m`Expected success message for ${data.test_id}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m           \u001b[36mtrue\u001b[39m\n \u001b[90m 71 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts:69:75\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 311 |\u001b[39m         }\n \u001b[90m 312 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 313 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 314 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 315 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 316 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:313:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
                         }
                       ],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing product: Combination Pliers (ID: 1)\n"
+                        },
+                        {
+                          "text": "BUG DETECTED: Expected product total $70.75, but got $0.00\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:22:27.669Z",
+                      "startTime": "2025-08-04T05:45:10.548Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-4e164-mission-with-valid-PDF-file-chromium/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-Mobile-Chrome/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-4e164-mission-with-valid-PDF-file-chromium/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-Mobile-Chrome/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-4e164-mission-with-valid-PDF-file-chromium/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-Mobile-Chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                        "column": 75,
-                        "line": 69
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 29,
+                        "line": 313
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7047ddc989c1e31e80c9-732336de6e132c11f8d1",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
+              "id": "7c552112240084f7484f-ea2e5eb1f6b9f5154d8c",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
               "column": 9
             },
             {
-              "title": "TC_CONTACT_015: Verify form submission with valid JPG file",
+              "title": "TC_CART_002: Verify quantity update with minimum valid value",
               "ok": false,
               "tags": [],
               "tests": [
@@ -816,378 +238,575 @@
                   "timeout": 10000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6087,
+                      "duration": 2400,
                       "error": {
-                        "message": "Error: Expected success message for TC_CONTACT_015\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: Expected success message for TC_CONTACT_015\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts:69:75",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:313:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
                         "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                          "column": 75,
-                          "line": 69
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 29,
+                          "line": 313
                         },
-                        "snippet": "\u001b[0m \u001b[90m 67 |\u001b[39m         \u001b[90m// Expect success\u001b[39m\n \u001b[90m 68 |\u001b[39m         \u001b[36mconst\u001b[39m isSuccess \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m contactPage\u001b[33m.\u001b[39misSuccessMessageVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m         expect(isSuccess\u001b[33m,\u001b[39m \u001b[32m`Expected success message for ${data.test_id}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m           \u001b[36mtrue\u001b[39m\n \u001b[90m 71 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 311 |\u001b[39m         }\n \u001b[90m 312 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 313 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 314 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 315 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 316 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                            "column": 75,
-                            "line": 69
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 29,
+                            "line": 313
                           },
-                          "message": "Error: Expected success message for TC_CONTACT_015\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 67 |\u001b[39m         \u001b[90m// Expect success\u001b[39m\n \u001b[90m 68 |\u001b[39m         \u001b[36mconst\u001b[39m isSuccess \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m contactPage\u001b[33m.\u001b[39misSuccessMessageVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m         expect(isSuccess\u001b[33m,\u001b[39m \u001b[32m`Expected success message for ${data.test_id}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m           \u001b[36mtrue\u001b[39m\n \u001b[90m 71 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts:69:75\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 311 |\u001b[39m         }\n \u001b[90m 312 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 313 |\u001b[39m         expect(actualTotal)\u001b[33m.\u001b[39mtoBe(expectedTotal)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 314 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 315 |\u001b[39m         \u001b[90m// For invalid quantity tests\u001b[39m\n \u001b[90m 316 |\u001b[39m         \u001b[36mif\u001b[39m (data\u001b[33m.\u001b[39mquantity_update \u001b[33m===\u001b[39m \u001b[32m\"\"\u001b[39m) {\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:313:29)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "Running all test cases\n"
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing product: Claw Hammer with Shock Reduction Grip (ID: 6)\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:22:34.100Z",
+                      "startTime": "2025-08-04T05:45:14.223Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-f4935-mission-with-valid-JPG-file-chromium/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-Mobile-Chrome/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-f4935-mission-with-valid-JPG-file-chromium/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-Mobile-Chrome/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-f4935-mission-with-valid-JPG-file-chromium/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-Mobile-Chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                        "column": 75,
-                        "line": 69
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 29,
+                        "line": 313
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7047ddc989c1e31e80c9-16e66365b85ea282e13b",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
+              "id": "7c552112240084f7484f-97877c49e4c26ed91f8e",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
               "column": 9
             },
             {
-              "title": "TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1135,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Running all test cases\n"
-                        },
-                        {
-                          "text": "TC_CONTACT_016: Logged in as customer@practicesoftwaretesting.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:40.670Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-fe884f8c61deb76f682c",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_017: Verify successful form submission with 'Return' subject",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1062,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_017: Logged in as customer@practicesoftwaretesting.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:41.924Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-96d299bd78194c30c542",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",
+              "title": "TC_CART_003: Verify checkout is blocked with empty quantity value",
               "ok": false,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 10000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 974,
+                      "duration": 2616,
                       "error": {
-                        "message": "Error: Expected no success message for TC_CONTACT_018\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
-                        "stack": "Error: Expected no success message for TC_CONTACT_018\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts:82:11",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:367:41)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
                         "location": {
-                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                          "column": 11,
-                          "line": 82
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 41,
+                          "line": 367
                         },
-                        "snippet": "\u001b[0m \u001b[90m 80 |\u001b[39m           isSuccess\u001b[33m,\u001b[39m\n \u001b[90m 81 |\u001b[39m           \u001b[32m`Expected no success message for ${data.test_id}`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m         )\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m\n \u001b[90m 84 |\u001b[39m         \u001b[90m// Verify at least one error is shown\u001b[39m\n \u001b[90m 85 |\u001b[39m         \u001b[36mconst\u001b[39m hasErrors \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m contactPage\u001b[33m.\u001b[39mhasAnyError()\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 365 |\u001b[39m\n \u001b[90m 366 |\u001b[39m               \u001b[90m// Test fails - we shouldn't be able to proceed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 367 |\u001b[39m               expect(loginPageAppeared)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 368 |\u001b[39m             } \u001b[36melse\u001b[39m {\n \u001b[90m 369 |\u001b[39m               \u001b[90m// Good - we stayed on cart page\u001b[39m\n \u001b[90m 370 |\u001b[39m               console\u001b[33m.\u001b[39mlog(\u001b[32m\"Good: System blocked checkout with empty quantity\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                            "column": 11,
-                            "line": 82
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 41,
+                            "line": 367
                           },
-                          "message": "Error: Expected no success message for TC_CONTACT_018\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 80 |\u001b[39m           isSuccess\u001b[33m,\u001b[39m\n \u001b[90m 81 |\u001b[39m           \u001b[32m`Expected no success message for ${data.test_id}`\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m         )\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m\n \u001b[90m 84 |\u001b[39m         \u001b[90m// Verify at least one error is shown\u001b[39m\n \u001b[90m 85 |\u001b[39m         \u001b[36mconst\u001b[39m hasErrors \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m contactPage\u001b[33m.\u001b[39mhasAnyError()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts:82:11\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 365 |\u001b[39m\n \u001b[90m 366 |\u001b[39m               \u001b[90m// Test fails - we shouldn't be able to proceed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 367 |\u001b[39m               expect(loginPageAppeared)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 368 |\u001b[39m             } \u001b[36melse\u001b[39m {\n \u001b[90m 369 |\u001b[39m               \u001b[90m// Good - we stayed on cart page\u001b[39m\n \u001b[90m 370 |\u001b[39m               console\u001b[33m.\u001b[39mlog(\u001b[32m\"Good: System blocked checkout with empty quantity\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:367:41)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "TC_CONTACT_018: Logged in as customer@practicesoftwaretesting.com\n"
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing product: Combination Pliers (ID: 1)\n"
+                        },
+                        {
+                          "text": "Testing empty quantity - should prevent checkout\n"
+                        },
+                        {
+                          "text": "Current quantity after clearing: \"\"\n"
+                        },
+                        {
+                          "text": "URL before proceed: http://localhost:4200/#/checkout\n"
+                        },
+                        {
+                          "text": "Attempting to proceed to checkout with empty quantity...\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_CART_003: System allowed checkout with empty quantity!\n"
+                        },
+                        {
+                          "text": "Navigated to login page - should have been blocked\n"
+                        },
+                        {
+                          "text": "URL changed to: http://localhost:4200/#/checkout\n"
+                        },
+                        {
+                          "text": "Unexpected error during test: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest \u001b[90m(/Users/bonpaul/Downloads/Github/practice-software-testing/\u001b[39me2e/src/tests/checkout-flow.spec.ts:367:41\u001b[90m)\u001b[39m\n    at \u001b[90m/Users/bonpaul/Downloads/Github/practice-software-testing/\u001b[39me2e/src/tests/checkout-flow.spec.ts:76:11 {\n  matcherResult: {\n    actual: \u001b[33mtrue\u001b[39m,\n    expected: \u001b[33mfalse\u001b[39m,\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m'\u001b[39m,\n    name: \u001b[32m'toBe'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@28'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBe'\u001b[39m,\n    title: \u001b[32m'toBe'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts'\u001b[39m,\n      line: \u001b[33m367\u001b[39m,\n      column: \u001b[33m41\u001b[39m,\n      function: \u001b[32m'executeCartTest'\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@28'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1754286319624\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:367:41)\\n'\u001b[39m +\n        \u001b[32m'    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:22:42.987Z",
+                      "startTime": "2025-08-04T05:45:17.081Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-e0259-1-Subject-not-found-subject-chromium/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-Mobile-Chrome/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-e0259-1-Subject-not-found-subject-chromium/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-Mobile-Chrome/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-e0259-1-Subject-not-found-subject-chromium/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-Mobile-Chrome/error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/contact-form.spec.ts",
-                        "column": 11,
-                        "line": 82
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 41,
+                        "line": 367
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7047ddc989c1e31e80c9-6dd011594df1bddcdc00",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
+              "id": "7c552112240084f7484f-5766da3b4ac49ec68fe3",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
               "column": 9
             },
             {
-              "title": "TC_CONTACT_019: Verify successful form submission with 'Payments' subject",
-              "ok": true,
+              "title": "TC_CART_004: Verify checkout is blocked with zero quantity value",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 10000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 6,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1721,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 2519,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:416:39)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 39,
+                          "line": 416
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 414 |\u001b[39m\n \u001b[90m 415 |\u001b[39m             \u001b[90m// Test fails - we shouldn't be able to proceed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 416 |\u001b[39m             expect(loginPageAppeared)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 417 |\u001b[39m           } \u001b[36melse\u001b[39m {\n \u001b[90m 418 |\u001b[39m             \u001b[90m// Good - we stayed on cart page\u001b[39m\n \u001b[90m 419 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 39,
+                            "line": 416
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 414 |\u001b[39m\n \u001b[90m 415 |\u001b[39m             \u001b[90m// Test fails - we shouldn't be able to proceed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 416 |\u001b[39m             expect(loginPageAppeared)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 417 |\u001b[39m           } \u001b[36melse\u001b[39m {\n \u001b[90m 418 |\u001b[39m             \u001b[90m// Good - we stayed on cart page\u001b[39m\n \u001b[90m 419 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:416:39)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
-                          "text": "Running all test cases\n"
+                          "text": "Running all checkout test cases\n"
                         },
                         {
-                          "text": "TC_CONTACT_019: Logged in as customer@practicesoftwaretesting.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:07.394Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-d9b736270b32a7376292",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1100,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_020: Logged in as customer@practicesoftwaretesting.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:09.527Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-47a49b24cbcaa212e6aa",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 10000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1099,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_021: Logged in as customer@practicesoftwaretesting.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-08-04T05:22:10.629Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7047ddc989c1e31e80c9-b676cfb99d8688fb2858",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
-              "column": 9
-            },
-            {
-              "title": "TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 11263,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "TC_CONTACT_022: Logged in as customer@practicesoftwaretesting.com\n"
+                          "text": "Testing product: Claw Hammer with Shock Reduction Grip (ID: 6)\n"
                         },
                         {
-                          "text": "TC_CONTACT_022 - subject error: Subject is required\n"
+                          "text": "Testing invalid quantity: \"0\" - should prevent checkout\n"
+                        },
+                        {
+                          "text": "Attempting to proceed to checkout with invalid quantity...\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_CART_004: System allowed checkout with invalid quantity: 0\n"
+                        },
+                        {
+                          "text": "Navigated to login page - should have been blocked\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:22:11.730Z",
+                      "startTime": "2025-08-04T05:45:20.165Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 39,
+                        "line": 416
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-a53794e4b9215d66920f",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_CART_005: Verify checkout is blocked with negative quantity value",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2527,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:416:39)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 39,
+                          "line": 416
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 414 |\u001b[39m\n \u001b[90m 415 |\u001b[39m             \u001b[90m// Test fails - we shouldn't be able to proceed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 416 |\u001b[39m             expect(loginPageAppeared)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 417 |\u001b[39m           } \u001b[36melse\u001b[39m {\n \u001b[90m 418 |\u001b[39m             \u001b[90m// Good - we stayed on cart page\u001b[39m\n \u001b[90m 419 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 39,
+                            "line": 416
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 414 |\u001b[39m\n \u001b[90m 415 |\u001b[39m             \u001b[90m// Test fails - we shouldn't be able to proceed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 416 |\u001b[39m             expect(loginPageAppeared)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 417 |\u001b[39m           } \u001b[36melse\u001b[39m {\n \u001b[90m 418 |\u001b[39m             \u001b[90m// Good - we stayed on cart page\u001b[39m\n \u001b[90m 419 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:416:39)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing product: Combination Pliers (ID: 1)\n"
+                        },
+                        {
+                          "text": "Testing invalid quantity: \"-2\" - should prevent checkout\n"
+                        },
+                        {
+                          "text": "Attempting to proceed to checkout with invalid quantity...\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_CART_005: System allowed checkout with invalid quantity: -2\n"
+                        },
+                        {
+                          "text": "Navigated to login page - should have been blocked\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:23.186Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 39,
+                        "line": 416
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-0a46ef32d970ac191483",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_CART_006: Verify item removal when multiple items exist",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3052,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:169:28)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 28,
+                          "line": 169
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 167 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 168 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 169 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 170 |\u001b[39m\n \u001b[90m 171 |\u001b[39m       \u001b[90m// Get initial count\u001b[39m\n \u001b[90m 172 |\u001b[39m       \u001b[36mconst\u001b[39m initialCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mgetCartItemCount()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 28,
+                            "line": 169
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 167 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 168 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 169 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 170 |\u001b[39m\n \u001b[90m 171 |\u001b[39m       \u001b[90m// Get initial count\u001b[39m\n \u001b[90m 172 |\u001b[39m       \u001b[36mconst\u001b[39m initialCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mgetCartItemCount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:169:28)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing delete functionality for: Combination Pliers\n"
+                        },
+                        {
+                          "text": "Product \"Combination Pliers\" exists before delete: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:26.157Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 28,
+                        "line": 169
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-99ec4c9a094b05a0349e",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_CART_007: Verify item removal when only one item exists",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2110,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:229:28)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 28,
+                          "line": 229
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 227 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 228 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 229 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 230 |\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[90m// Click delete button\u001b[39m\n \u001b[90m 232 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 28,
+                            "line": 229
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 227 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 228 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 229 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 230 |\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[90m// Click delete button\u001b[39m\n \u001b[90m 232 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:229:28)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing delete last item: Combination Pliers\n"
+                        },
+                        {
+                          "text": "Product \"Combination Pliers\" exists before delete: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:29.686Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 28,
+                        "line": 229
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-346c973c7e939c24a18f",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_CART_008: Verify checkout button state with empty cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1593,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Testing empty cart state...\n"
+                        },
+                        {
+                          "text": "Proceed button visible: false\n"
+                        },
+                        {
+                          "text": "PASS: Proceed to checkout button is correctly hidden/disabled for empty cart\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_CART_008.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:10.552Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1195,9 +814,877 @@
                   "status": "expected"
                 }
               ],
-              "id": "7047ddc989c1e31e80c9-ff88d4ff8649266795a8",
-              "file": "src/tests/contact-form.spec.ts",
-              "line": 26,
+              "id": "7c552112240084f7484f-d03e02959e124c7bf5fa",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_SIGNIN_001: Verify sign-in with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3794,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_SIGNIN_001.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:12.510Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-f7f79e05380aad3b27ce",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_SIGNIN_002: Verify sign-in with empty email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3678,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_SIGNIN_002 - Email error: false, Password error: false, Login error: true\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_SIGNIN_002.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:16.306Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-4316538da71c7ffb40b1",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_SIGNIN_003: Verify sign-in with invalid email format",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3776,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_SIGNIN_003 - Email error: false, Password error: false, Login error: true\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_SIGNIN_003.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:19.987Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-fffb890509e2e5df9f3d",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_SIGNIN_004: Verify sign-in with empty password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3804,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_SIGNIN_004 - Email error: false, Password error: false, Login error: true\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_SIGNIN_004.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:23.765Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-74fbf3936682e8e48604",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_SIGNIN_005: Verify sign-in with incorrect password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3710,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_SIGNIN_005 - Email error: false, Password error: false, Login error: true\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_SIGNIN_005.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:27.572Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-9fb44e0c5c1838daf55e",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_001: Verify address submission with all fields completed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3959,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_001.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:31.284Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-c764c3b6b249bb1fcadc",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_002: Verify address submission with missing address field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4527,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_002 - Proceed button disabled: true\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_002 - Has errors: true\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_002 - Alerts visible: [ \u001b[32m' Address is required. '\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_002.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:10.562Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-852840b9b744c8102d36",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_003: Verify address submission with missing city field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3941,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_ADDRESS_003 - Proceed button disabled: true\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_003 - Has errors: true\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_003 - Alerts visible: [ \u001b[32m' City is required. '\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_003.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:15.443Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-d88711a8a67085742f97",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_004: Verify address submission with minimum valid input length",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 3797,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:552:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 32,
+                          "line": 552
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 550 |\u001b[39m         \u001b[90m// The expected result says \"displays specific validation errors\"\u001b[39m\n \u001b[90m 551 |\u001b[39m         \u001b[90m// But we're getting empty error boxes, so this should FAIL\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 552 |\u001b[39m         expect(alertsWithText)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail, documenting the bug\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 553 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 554 |\u001b[39m         \u001b[90m// The button should be disabled when there are validation errors\u001b[39m\n \u001b[90m 555 |\u001b[39m         expect(isDisabled)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 32,
+                            "line": 552
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 550 |\u001b[39m         \u001b[90m// The expected result says \"displays specific validation errors\"\u001b[39m\n \u001b[90m 551 |\u001b[39m         \u001b[90m// But we're getting empty error boxes, so this should FAIL\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 552 |\u001b[39m         expect(alertsWithText)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// This will fail, documenting the bug\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 553 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 554 |\u001b[39m         \u001b[90m// The button should be disabled when there are validation errors\u001b[39m\n \u001b[90m 555 |\u001b[39m         expect(isDisabled)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:552:32)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Test TC_ADDRESS_004 - Proceed button disabled: true\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_004 - Has errors: true\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_004 - Alerts visible: [ \u001b[32m''\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_004 - Empty error boxes found: 1\n"
+                        },
+                        {
+                          "text": "Test TC_ADDRESS_004 - Alerts with text found: 0\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_ADDRESS_004: System displays empty error box instead of specific validation error message for minimum length\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:19.386Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 32,
+                        "line": 552
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-bcc680a978a43d453046",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_001: Verify payment submission with all valid inputs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3605,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_001.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:23.627Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-704df71af0e7140900ca",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_002: Verify payment submission with no payment method selected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8033,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_PAYMENT_002 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 0, Payment successful: false\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_002.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:27.343Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-5684fcbae9cb6394ef67",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_003: Verify payment submission with empty account name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8298,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_PAYMENT_003 - Payment error: false, Account name error: true, Account number error: false, Error alerts: 1, Payment successful: false\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_003.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:35.378Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-d875a4c4469b3df84fd0",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_004: Verify payment submission with empty account number",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8313,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test TC_PAYMENT_004 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 0, Payment successful: false\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_004.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:43.677Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-a2798320d78456db42cf",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_005: Verify successful payment with 'Bank Transfer' method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4004,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running all checkout test cases\n"
+                        },
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_005.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:10.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-6927226c099492bde682",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_006: Verify successful payment with 'Cash on Delivery' method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3478,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_006.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:14.920Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-13bbdb16e25c148d1400",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_007: Verify successful payment with 'Credit Card' method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3498,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_007.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:18.401Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-a283307b6841d5efe3cc",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_008: Verify successful payment with 'Buy Now Pay Later' method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3465,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_008.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:21.901Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-a0a0833cf092e74bda86",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_009: Verify successful payment with 'Gift Card' method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3410,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_009.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:25.368Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7c552112240084f7484f-d2e236a0e16bb678907c",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_PAYMENT_010: Verify payment submission with 'Errror 304 - Missing Payment Gateway' method",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 4355,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:650:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:94:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 35,
+                          "line": 650
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 648 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 649 |\u001b[39m         \u001b[90m// This should fail - payment should not be successful with error payment method\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 650 |\u001b[39m         expect(paymentSuccessful)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 651 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 652 |\u001b[39m         \u001b[90m// Should have some kind of error indication\u001b[39m\n \u001b[90m 653 |\u001b[39m         expect(\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 35,
+                            "line": 650
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 648 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 649 |\u001b[39m         \u001b[90m// This should fail - payment should not be successful with error payment method\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 650 |\u001b[39m         expect(paymentSuccessful)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 651 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 652 |\u001b[39m         \u001b[90m// Should have some kind of error indication\u001b[39m\n \u001b[90m 653 |\u001b[39m         expect(\u001b[0m\n\u001b[2m    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:650:35)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:94:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Test TC_PAYMENT_010 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 1, Payment successful: true\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_PAYMENT_010: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T05:45:28.781Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 35,
+                        "line": 650
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-aadec6cc7b372d791f8c",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
               "column": 9
             }
           ]
@@ -1207,11 +1694,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-04T05:22:06.849Z",
-    "duration": 57099.473000000005,
-    "expected": 20,
+    "startTime": "2025-08-04T05:45:10.144Z",
+    "duration": 41873.935000000005,
+    "expected": 18,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 9,
     "flaky": 0
   }
 }
