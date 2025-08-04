@@ -77,7 +77,7 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
           break;
 
         case "signin":
-          await executeSignInTest(data, cartPage, signInPage);
+          await executeSignInTest(data, cartPage, signInPage, page);
           break;
 
         case "address":
@@ -381,7 +381,8 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
   async function executeSignInTest(
     data: CheckoutTestData,
     cartPage: CartPage,
-    signInPage: CheckoutSignInPage
+    signInPage: CheckoutSignInPage,
+    page: any
   ) {
     await cartPage.navigate();
     await cartPage.proceedToCheckout();
@@ -402,11 +403,17 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
       expect(await signInPage.isProceedButtonVisible()).toBe(true);
       expect(await signInPage.hasLoginError()).toBe(false);
     } else {
+      // Wait for error to appear
+      await page.waitForTimeout(1000);
+      
       // Should see errors
       const hasEmailError = await signInPage.hasEmailError();
       const hasPasswordError = await signInPage.hasPasswordError();
       const hasLoginError = await signInPage.hasLoginError();
-
+      
+      // Debug logging
+      console.log(`Test ${data.test_id} - Email error: ${hasEmailError}, Password error: ${hasPasswordError}, Login error: ${hasLoginError}`);
+      
       expect(hasEmailError || hasPasswordError || hasLoginError).toBe(true);
     }
   }

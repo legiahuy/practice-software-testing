@@ -146,7 +146,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "TC_CART_008: Verify checkout button state with empty cart",
+              "title": "TC_ADDRESS_001: Verify address form with all valid inputs",
               "ok": true,
               "tags": [],
               "tests": [
@@ -161,28 +161,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1774,
+                      "duration": 3399,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Running selected test cases: TC_CART_008\n"
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
                         },
                         {
-                          "text": "Testing empty cart state...\n"
-                        },
-                        {
-                          "text": "Proceed button visible: false\n"
-                        },
-                        {
-                          "text": "PASS: Proceed to checkout button is correctly hidden/disabled for empty cart\n"
-                        },
-                        {
-                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_CART_008.png\n"
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_001.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-03T17:21:16.196Z",
+                      "startTime": "2025-08-04T03:41:53.328Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -190,7 +181,594 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-9cbace6dfc0581435d4e",
+              "id": "7c552112240084f7484f-05c403a1bdaba04fd2c7",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_002: Verify address form with empty address field",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2820,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T03:41:57.010Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2911,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-04T03:42:00.152Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2739,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-04T03:42:03.572Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-bcd2d-rm-with-empty-address-field-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-bea1d7161454840c3e94",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_003: Verify address form with empty city field",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2859,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T03:42:06.707Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    },
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2922,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-04T03:42:09.995Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2771,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-04T03:42:13.493Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-f330e--form-with-empty-city-field-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-58ec2ef510034b836b54",
+              "file": "src/tests/checkout-flow.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC_ADDRESS_004: Verify address form with invalid postcode",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 5000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2806,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-04T03:42:16.673Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2925,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-04T03:42:19.891Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2767,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "location": {
+                          "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                          "column": 47,
+                          "line": 451
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                            "column": 47,
+                            "line": 451
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 449 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 450 |\u001b[39m       \u001b[90m// Should see validation errors\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 451 |\u001b[39m       expect(\u001b[36mawait\u001b[39m addressPage\u001b[33m.\u001b[39mhasAnyError())\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 452 |\u001b[39m     }\n \u001b[90m 453 |\u001b[39m   }\n \u001b[90m 454 |\u001b[39m\u001b[0m\n\u001b[2m    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:451:47)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-04T03:42:23.320Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5145a--form-with-invalid-postcode-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
+                        "column": 47,
+                        "line": 451
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7c552112240084f7484f-38ecafbf36b467c3f7fd",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -202,11 +780,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-03T17:21:15.849Z",
-    "duration": 3403.9559999999997,
+    "startTime": "2025-08-04T03:41:53.017Z",
+    "duration": 33192.024000000005,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 3,
     "flaky": 0
   }
 }

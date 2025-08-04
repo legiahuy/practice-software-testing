@@ -11,7 +11,7 @@ export class CheckoutSignInPage {
     proceedButton: '[data-test="proceed-2"]',
     emailError: '[data-test="email-error"]',
     passwordError: '[data-test="password-error"]',
-    loginError: '[data-test="login-error"]',
+    loginError: '.alert',
     registerLink: '[data-test="register-link"]',
   };
 
@@ -50,7 +50,20 @@ export class CheckoutSignInPage {
   }
 
   async hasLoginError(): Promise<boolean> {
-    return await this.page.locator(this.selectors.loginError).isVisible();
+    // Check for generic alert with login error message
+    const alertLocator = this.page.locator(this.selectors.loginError);
+    const alertVisible = await alertLocator.isVisible();
+    
+    if (alertVisible) {
+      const alertText = await alertLocator.textContent();
+      // Check if it contains login-related error messages
+      return alertText?.includes('Invalid email or password') || 
+             alertText?.includes('Email is required') ||
+             alertText?.includes('Password is required') ||
+             alertText?.includes('Email format is invalid') || false;
+    }
+    
+    return false;
   }
 
   async getEmailError(): Promise<string | null> {
