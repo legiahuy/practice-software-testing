@@ -103,9 +103,111 @@ The checkout process directly impacts:
 
 ---
 
-## 3. Automation Implementation
+## 3. Automation Implementation (3-4 pages)
 
-### 3.1 Framework Architecture
+### 3.1 Step-by-Step Automation Process
+
+#### Step 1: Project Setup
+
+**Project Structure Creation**
+
+The automation project was structured following industry best practices with clear separation of concerns:
+
+```
+practice-software-testing/
+├── e2e/                          # Main automation directory
+│   ├── src/
+│   │   ├── page-objects/        # Page Object Model classes  
+│   │   │   ├── ContactPage.ts
+│   │   │   ├── HomePage.ts
+│   │   │   ├── CartPage.ts
+│   │   │   ├── CheckoutSigninPage.ts
+│   │   │   ├── CheckoutAddressPage.ts
+│   │   │   └── CheckoutPaymentPage.ts
+│   │   ├── tests/               # Test specification files
+│   │   │   ├── contact-form.spec.ts
+│   │   │   └── checkout-flow.spec.ts
+│   │   ├── test-data/           # Data-driven test files
+│   │   │   ├── contact_test_data.csv
+│   │   │   └── checkout_test_data.csv
+│   │   ├── utils/               # Helper utilities
+│   │   │   └── TestDataLoader.ts
+│   │   └── reporters/           # Custom reporting
+│   │       └── test-reporter.ts
+│   ├── test-files/              # File upload test assets
+│   ├── screenshots/             # Test execution evidence
+│   └── test-reports/            # Generated reports
+```
+
+**Dependencies and Libraries Installation**
+
+The project uses Playwright as the primary automation framework with TypeScript for type safety:
+
+```bash
+# Core automation framework
+npm install @playwright/test --save-dev
+
+# TypeScript support
+npm install typescript --save-dev
+npm install @types/node --save-dev
+
+# CSV parsing for data-driven testing
+npm install csv-parse --save-dev
+
+# Environment variable management
+npm install dotenv --save-dev
+```
+
+Package.json configuration:
+```json
+{
+  "scripts": {
+    "test": "playwright test",
+    "test:contact": "playwright test contact-form.spec.ts",
+    "test:checkout": "playwright test checkout-flow.spec.ts",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "typescript": "^5.0.0",
+    "csv-parse": "^5.5.0",
+    "dotenv": "^16.3.0"
+  }
+}
+```
+
+**Configuration File Setup**
+
+Two main configuration files were created:
+
+1. **playwright.config.ts** - Main configuration for checkout tests
+2. **playwright-contact.config.ts** - Specialized configuration for contact form tests
+
+Key configuration elements:
+```typescript
+export default defineConfig({
+  testDir: './e2e/src/tests',
+  fullyParallel: true,
+  retries: 0,
+  workers: 4,
+  timeout: 30 * 1000,
+  
+  use: {
+    baseURL: process.env.BASE_URL || 'http://localhost:4200',
+    trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure'
+  },
+  
+  projects: [
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
+    { name: 'webkit', use: { ...devices['Desktop Safari'] } }
+  ]
+});
+```
+
+### 3.2 Framework Architecture
 
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
