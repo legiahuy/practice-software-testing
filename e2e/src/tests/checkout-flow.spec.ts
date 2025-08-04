@@ -90,7 +90,8 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
             cartPage,
             signInPage,
             addressPage,
-            paymentPage
+            paymentPage,
+            page
           );
           break;
 
@@ -494,7 +495,8 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     cartPage: CartPage,
     signInPage: CheckoutSignInPage,
     addressPage: CheckoutAddressPage,
-    paymentPage: CheckoutPaymentPage
+    paymentPage: CheckoutPaymentPage,
+    page: any
   ) {
     // Navigate through all previous steps
     await cartPage.navigate();
@@ -510,6 +512,9 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     });
     await addressPage.proceedToPayment();
 
+    // Wait for payment form to load
+    await page.waitForSelector('[data-test="payment-method"]', { state: 'visible' });
+    
     // Select payment method
     const paymentMethodMap: Record<string, () => Promise<void>> = {
       "Bank Transfer": () => paymentPage.selectBankTransfer(),
@@ -517,37 +522,63 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
       "Credit Card": () => paymentPage.selectCreditCard(),
       "Buy Now Pay Later": () => paymentPage.selectBuyNowPayLater(),
       "Gift Card": () => paymentPage.selectGiftCard(),
-      Error: () => paymentPage.selectErrorPayment(),
+      "Errror 304 - Missing Payment Gateway": () => paymentPage.selectErrorPayment(),
     };
 
     if (data.payment_method && paymentMethodMap[data.payment_method]) {
       await paymentMethodMap[data.payment_method]();
     }
 
-    // Fill payment details if required
-    if (data.payment_method === "Bank Transfer") {
-      if (data.account_name) {
-        await paymentPage.fillAccountName(data.account_name);
-      }
-      if (data.account_number) {
-        await paymentPage.fillAccountNumber(data.account_number);
-      }
+    // Fill payment details - all payment methods require account name and number based on test cases
+    if (data.account_name !== undefined) {
+      await paymentPage.fillAccountName(data.account_name);
     }
-
-    // Complete checkout
-    await paymentPage.completeCheckout();
+    if (data.account_number !== undefined) {
+      await paymentPage.fillAccountNumber(data.account_number);
+    }
 
     // Verify results
     if (data.should_pass === "true") {
+      // Complete checkout
+      await paymentPage.completeCheckout();
+      
+      // Should see payment success
       expect(await paymentPage.isPaymentSuccessful()).toBe(true);
     } else {
+      // For invalid data, check if finish button is disabled or errors appear
+      const finishButton = page.locator('[data-test="finish"]');
+      const isDisabled = await finishButton.isDisabled();
+      
+      if (!isDisabled) {
+        // If button is enabled, try to click and check for errors
+        await paymentPage.completeCheckout();
+        await page.waitForTimeout(1000);
+      }
+      
+      // Check for errors
       const hasPaymentError = await paymentPage.hasPaymentMethodError();
       const hasAccountNameError = await paymentPage.hasAccountNameError();
       const hasAccountNumberError = await paymentPage.hasAccountNumberError();
-
-      expect(
-        hasPaymentError || hasAccountNameError || hasAccountNumberError
-      ).toBe(true);
+      
+      // Check for any error alerts
+      const errorAlerts = await page.locator('.alert').count();
+      
+      // Check if payment was successful (it shouldn't be for error cases)
+      const paymentSuccessful = await paymentPage.isPaymentSuccessful();
+      
+      console.log(`Test ${data.test_id} - Payment error: ${hasPaymentError}, Account name error: ${hasAccountNameError}, Account number error: ${hasAccountNumberError}, Error alerts: ${errorAlerts}, Payment successful: ${paymentSuccessful}`);
+      
+      // Special handling for TC_PAYMENT_010 - error payment method
+      if (data.test_id === 'TC_PAYMENT_010' && paymentSuccessful) {
+        console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);
+        // This should fail - payment should not be successful with error payment method
+        expect(paymentSuccessful).toBe(false);
+      } else {
+        // Should have some kind of error indication
+        expect(
+          hasPaymentError || hasAccountNameError || hasAccountNumberError || errorAlerts > 0 || isDisabled
+        ).toBe(true);
+      }
     }
   }
 

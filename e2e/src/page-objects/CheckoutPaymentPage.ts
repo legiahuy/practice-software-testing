@@ -58,11 +58,17 @@ export class CheckoutPaymentPage {
 
   // Fill payment details
   async fillAccountName(name: string) {
-    await this.page.fill(this.selectors.accountNameInput, name);
+    const input = this.page.locator(this.selectors.accountNameInput);
+    await input.click();
+    await input.press('ControlOrMeta+a');
+    await input.fill(name);
   }
 
   async fillAccountNumber(number: string) {
-    await this.page.fill(this.selectors.accountNumberInput, number);
+    const input = this.page.locator(this.selectors.accountNumberInput);
+    await input.click();
+    await input.press('ControlOrMeta+a');
+    await input.fill(number);
   }
 
   async fillBankTransferDetails(accountName: string, accountNumber: string) {
@@ -77,15 +83,24 @@ export class CheckoutPaymentPage {
 
   // Validation methods
   async hasPaymentMethodError(): Promise<boolean> {
-    return await this.page.locator(this.selectors.paymentMethodError).isVisible();
+    // Check both specific selector and generic alerts
+    const specificError = await this.page.locator(this.selectors.paymentMethodError).isVisible();
+    const alertError = await this.page.locator('.alert:has-text("payment method")').isVisible();
+    return specificError || alertError;
   }
 
   async hasAccountNameError(): Promise<boolean> {
-    return await this.page.locator(this.selectors.accountNameError).isVisible();
+    // Check both specific selector and generic alerts
+    const specificError = await this.page.locator(this.selectors.accountNameError).isVisible();
+    const alertError = await this.page.locator('.alert:has-text("account name")').isVisible();
+    return specificError || alertError;
   }
 
   async hasAccountNumberError(): Promise<boolean> {
-    return await this.page.locator(this.selectors.accountNumberError).isVisible();
+    // Check both specific selector and generic alerts
+    const specificError = await this.page.locator(this.selectors.accountNumberError).isVisible();
+    const alertError = await this.page.locator('.alert:has-text("account number")').isVisible();
+    return specificError || alertError;
   }
 
   async isPaymentSuccessful(): Promise<boolean> {

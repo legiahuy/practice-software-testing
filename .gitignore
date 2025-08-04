@@ -7,3 +7,9 @@ node_modules/
 .scannerwork/
 mutation.html
 stryker.log
+
+
+*.png
+*.jpeg
+playwright-report/
+test-reports/

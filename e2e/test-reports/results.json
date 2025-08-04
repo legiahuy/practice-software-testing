@@ -57,7 +57,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 5000
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -73,7 +73,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 5000
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -89,7 +89,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 5000
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -105,7 +105,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 5000
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -121,7 +121,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 5000
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -146,12 +146,12 @@
           "column": 6,
           "specs": [
             {
-              "title": "TC_ADDRESS_001: Verify address submission with all fields completed",
+              "title": "TC_PAYMENT_001: Verify payment submission with all valid inputs",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 5000,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -161,19 +161,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4328,
+                      "duration": 3668,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                          "text": "Running all checkout test cases\n"
                         },
                         {
-                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_001.png\n"
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_001.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T04:16:44.755Z",
+                      "startTime": "2025-08-04T04:40:46.317Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -181,18 +181,18 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-ee0bbb591e19c7de2568",
+              "id": "7c552112240084f7484f-dd93c04710deacabcb6a",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
             },
             {
-              "title": "TC_ADDRESS_002: Verify address submission with missing address field",
+              "title": "TC_PAYMENT_002: Verify payment submission with no payment method selected",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 5000,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -202,25 +202,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3950,
+                      "duration": 7976,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Test TC_ADDRESS_002 - Proceed button disabled: true\n"
+                          "text": "Test TC_PAYMENT_002 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 0, Payment successful: false\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_002 - Has errors: true\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_002 - Alerts visible: [ \u001b[32m' Address is required. '\u001b[39m ]\n"
-                        },
-                        {
-                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_002.png\n"
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_002.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T04:16:49.342Z",
+                      "startTime": "2025-08-04T04:40:50.267Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -228,18 +222,18 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-127ff41d3fcd0eadd6c2",
+              "id": "7c552112240084f7484f-51466545af3864db0965",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
             },
             {
-              "title": "TC_ADDRESS_003: Verify address submission with missing city field",
+              "title": "TC_PAYMENT_003: Verify payment submission with empty account name",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 5000,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -249,25 +243,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4382,
+                      "duration": 8369,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Test TC_ADDRESS_003 - Proceed button disabled: true\n"
+                          "text": "Test TC_PAYMENT_003 - Payment error: false, Account name error: true, Account number error: false, Error alerts: 1, Payment successful: false\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_003 - Has errors: true\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_003 - Alerts visible: [ \u001b[32m' City is required. '\u001b[39m ]\n"
-                        },
-                        {
-                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_ADDRESS_003.png\n"
+                          "text": "Screenshot saved to: /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/screenshots/checkout/TC_PAYMENT_003.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T04:16:53.295Z",
+                      "startTime": "2025-08-04T04:40:58.245Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -275,18 +263,18 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-4a9d8d6e6d8cb0af2f66",
+              "id": "7c552112240084f7484f-26816d084ab7082dd36f",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
             },
             {
-              "title": "TC_ADDRESS_004: Verify address submission with minimum valid input length",
+              "title": "TC_PAYMENT_010: Verify payment submission with 'Errror 304 - Missing Payment Gateway' method",
               "ok": false,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 5000,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -296,234 +284,198 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3890,
+                      "duration": 4206,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:483:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:575:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:88:11",
                         "location": {
                           "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 32,
-                          "line": 483
+                          "column": 35,
+                          "line": 575
                         },
-                        "snippet": "  481 |         // The expected result says \"displays specific validation errors\"\n  482 |         // But we're getting empty error boxes, so this should FAIL\n> 483 |         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug\n      |                                ^\n  484 |       } else {\n  485 |         // The button should be disabled when there are validation errors\n  486 |         expect(isDisabled).toBe(true);"
+                        "snippet": "  573 |         console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);\n  574 |         // This should fail - payment should not be successful with error payment method\n> 575 |         expect(paymentSuccessful).toBe(false);\n      |                                   ^\n  576 |       } else {\n  577 |         // Should have some kind of error indication\n  578 |         expect("
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 32,
-                            "line": 483
+                            "column": 35,
+                            "line": 575
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  481 |         // The expected result says \"displays specific validation errors\"\n  482 |         // But we're getting empty error boxes, so this should FAIL\n> 483 |         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug\n      |                                ^\n  484 |       } else {\n  485 |         // The button should be disabled when there are validation errors\n  486 |         expect(isDisabled).toBe(true);\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:483:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  573 |         console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);\n  574 |         // This should fail - payment should not be successful with error payment method\n> 575 |         expect(paymentSuccessful).toBe(false);\n      |                                   ^\n  576 |       } else {\n  577 |         // Should have some kind of error indication\n  578 |         expect(\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:575:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:88:11"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "Test TC_ADDRESS_004 - Proceed button disabled: true\n"
+                          "text": "Test TC_PAYMENT_010 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 1, Payment successful: true\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_004 - Has errors: true\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Alerts visible: [ \u001b[32m''\u001b[39m ]\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Empty error boxes found: 1\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Alerts with text found: 0\n"
-                        },
-                        {
-                          "text": "BUG DETECTED in TC_ADDRESS_004: System displays empty error box instead of specific validation error message for minimum length\n"
+                          "text": "BUG DETECTED in TC_PAYMENT_010: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T04:16:57.678Z",
+                      "startTime": "2025-08-04T04:41:06.615Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
                         "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 32,
-                        "line": 483
+                        "column": 35,
+                        "line": 575
                       }
                     },
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 4191,
+                      "duration": 4458,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:483:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:575:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:88:11",
                         "location": {
                           "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 32,
-                          "line": 483
+                          "column": 35,
+                          "line": 575
                         },
-                        "snippet": "  481 |         // The expected result says \"displays specific validation errors\"\n  482 |         // But we're getting empty error boxes, so this should FAIL\n> 483 |         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug\n      |                                ^\n  484 |       } else {\n  485 |         // The button should be disabled when there are validation errors\n  486 |         expect(isDisabled).toBe(true);"
+                        "snippet": "  573 |         console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);\n  574 |         // This should fail - payment should not be successful with error payment method\n> 575 |         expect(paymentSuccessful).toBe(false);\n      |                                   ^\n  576 |       } else {\n  577 |         // Should have some kind of error indication\n  578 |         expect("
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 32,
-                            "line": 483
+                            "column": 35,
+                            "line": 575
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  481 |         // The expected result says \"displays specific validation errors\"\n  482 |         // But we're getting empty error boxes, so this should FAIL\n> 483 |         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug\n      |                                ^\n  484 |       } else {\n  485 |         // The button should be disabled when there are validation errors\n  486 |         expect(isDisabled).toBe(true);\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:483:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  573 |         console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);\n  574 |         // This should fail - payment should not be successful with error payment method\n> 575 |         expect(paymentSuccessful).toBe(false);\n      |                                   ^\n  576 |       } else {\n  577 |         // Should have some kind of error indication\n  578 |         expect(\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:575:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:88:11"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                          "text": "Running all checkout test cases\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_004 - Proceed button disabled: true\n"
+                          "text": "Test TC_PAYMENT_010 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 1, Payment successful: true\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_004 - Has errors: true\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Alerts visible: [ \u001b[32m''\u001b[39m ]\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Empty error boxes found: 1\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Alerts with text found: 0\n"
-                        },
-                        {
-                          "text": "BUG DETECTED in TC_ADDRESS_004: System displays empty error box instead of specific validation error message for minimum length\n"
+                          "text": "BUG DETECTED in TC_PAYMENT_010: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2025-08-04T04:17:02.086Z",
+                      "startTime": "2025-08-04T04:41:11.222Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry1/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry1/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry1/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry1/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry1/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry1/error-context.md"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry1/trace.zip"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry1/trace.zip"
                         }
                       ],
                       "errorLocation": {
                         "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 32,
-                        "line": 483
+                        "column": 35,
+                        "line": 575
                       }
                     },
                     {
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3828,
+                      "duration": 4309,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:483:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:575:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:88:11",
                         "location": {
                           "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 32,
-                          "line": 483
+                          "column": 35,
+                          "line": 575
                         },
-                        "snippet": "  481 |         // The expected result says \"displays specific validation errors\"\n  482 |         // But we're getting empty error boxes, so this should FAIL\n> 483 |         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug\n      |                                ^\n  484 |       } else {\n  485 |         // The button should be disabled when there are validation errors\n  486 |         expect(isDisabled).toBe(true);"
+                        "snippet": "  573 |         console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);\n  574 |         // This should fail - payment should not be successful with error payment method\n> 575 |         expect(paymentSuccessful).toBe(false);\n      |                                   ^\n  576 |       } else {\n  577 |         // Should have some kind of error indication\n  578 |         expect("
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 32,
-                            "line": 483
+                            "column": 35,
+                            "line": 575
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  481 |         // The expected result says \"displays specific validation errors\"\n  482 |         // But we're getting empty error boxes, so this should FAIL\n> 483 |         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug\n      |                                ^\n  484 |       } else {\n  485 |         // The button should be disabled when there are validation errors\n  486 |         expect(isDisabled).toBe(true);\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:483:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  573 |         console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);\n  574 |         // This should fail - payment should not be successful with error payment method\n> 575 |         expect(paymentSuccessful).toBe(false);\n      |                                   ^\n  576 |       } else {\n  577 |         // Should have some kind of error indication\n  578 |         expect(\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:575:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:88:11"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "Running selected test cases: TC_ADDRESS_001, TC_ADDRESS_002, TC_ADDRESS_003, TC_ADDRESS_004\n"
+                          "text": "Running all checkout test cases\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_004 - Proceed button disabled: true\n"
+                          "text": "Test TC_PAYMENT_010 - Payment error: false, Account name error: false, Account number error: false, Error alerts: 1, Payment successful: true\n"
                         },
                         {
-                          "text": "Test TC_ADDRESS_004 - Has errors: true\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Alerts visible: [ \u001b[32m''\u001b[39m ]\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Empty error boxes found: 1\n"
-                        },
-                        {
-                          "text": "Test TC_ADDRESS_004 - Alerts with text found: 0\n"
-                        },
-                        {
-                          "text": "BUG DETECTED in TC_ADDRESS_004: System displays empty error box instead of specific validation error message for minimum length\n"
+                          "text": "BUG DETECTED in TC_PAYMENT_010: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 2,
-                      "startTime": "2025-08-04T04:17:06.871Z",
+                      "startTime": "2025-08-04T04:41:16.187Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry2/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry2/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry2/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry2/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium-retry2/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium-retry2/error-context.md"
                         }
                       ],
                       "errorLocation": {
                         "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 32,
-                        "line": 483
+                        "column": 35,
+                        "line": 575
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-8860a3159c3a316b48c6",
+              "id": "7c552112240084f7484f-8e3be20540f751516ec2",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -535,8 +487,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-04T04:16:44.423Z",
-    "duration": 26390.161,
+    "startTime": "2025-08-04T04:40:45.977Z",
+    "duration": 34632.543999999994,
     "expected": 3,
     "skipped": 0,
     "unexpected": 1,
