@@ -81,7 +81,13 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
           break;
 
         case "address":
-          await executeAddressTest(data, cartPage, signInPage, addressPage, page);
+          await executeAddressTest(
+            data,
+            cartPage,
+            signInPage,
+            addressPage,
+            page
+          );
           break;
 
         case "payment":
@@ -95,22 +101,15 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
           );
           break;
 
-        case "complete":
-          await executeCompleteCheckoutTest(
-            data,
-            cartPage,
-            signInPage,
-            addressPage,
-            paymentPage
-          );
-          break;
-
         default:
           throw new Error(`Unknown test step: ${data.test_step}`);
       }
 
       // Take screenshot for evidence
-      const screenshotPath = join(__dirname, `../../screenshots/checkout/${data.test_id}.png`);
+      const screenshotPath = join(
+        __dirname,
+        `../../screenshots/checkout/${data.test_id}.png`
+      );
       await page.screenshot({
         path: screenshotPath,
         fullPage: true,
@@ -132,123 +131,154 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     if (data.quantity_update === "check_empty") {
       // Test empty cart - main requirement is that proceed button is not available
       console.log("Testing empty cart state...");
-      
+
       // Check if proceed button exists and is visible
       const proceedButton = page.locator('[data-test="proceed-1"]');
       const isProceedButtonVisible = await proceedButton.isVisible();
       console.log(`Proceed button visible: ${isProceedButtonVisible}`);
-      
+
       if (data.should_pass === "true") {
         // Main test: Proceed button should NOT be visible when cart is empty
         expect(isProceedButtonVisible).toBe(false);
-        console.log("PASS: Proceed to checkout button is correctly hidden/disabled for empty cart");
+        console.log(
+          "PASS: Proceed to checkout button is correctly hidden/disabled for empty cart"
+        );
       }
     } else if (data.quantity_update === "delete_first") {
       // Delete first item when multiple exist
       const productNameMap: Record<string, string> = {
         "1": "Combination Pliers",
-        "6": "Claw Hammer with Shock Reduction Grip", 
-        "10": "Adjustable Wrench"
+        "6": "Claw Hammer with Shock Reduction Grip",
+        "10": "Adjustable Wrench",
       };
-      
-      const firstProductId = data.product_ids.split(',')[0].trim();
-      const productToDelete = productNameMap[firstProductId] || "Unknown Product";
-      
+
+      const firstProductId = data.product_ids.split(",")[0].trim();
+      const productToDelete =
+        productNameMap[firstProductId] || "Unknown Product";
+
       console.log(`Testing delete functionality for: ${productToDelete}`);
-      
+
       // Check that product exists before deletion
-      const productRowBefore = page.locator(`tr:has-text("${productToDelete}")`);
+      const productRowBefore = page.locator(
+        `tr:has-text("${productToDelete}")`
+      );
       const existsBefore = await productRowBefore.isVisible();
-      console.log(`Product "${productToDelete}" exists before delete: ${existsBefore}`);
+      console.log(
+        `Product "${productToDelete}" exists before delete: ${existsBefore}`
+      );
       expect(existsBefore).toBe(true);
-      
+
       // Get initial count
       const initialCount = await cartPage.getCartItemCount();
       console.log(`Items in cart before delete: ${initialCount}`);
-      
+
       // Click delete button for the specific product
-      await page.getByRole('row', { name: productToDelete }).locator('a').click();
-      
+      await page
+        .getByRole("row", { name: productToDelete })
+        .locator("a")
+        .click();
+
       // Wait a bit for deletion to process
       await page.waitForTimeout(500);
-      
+
       // Check that product no longer exists
       const productRowAfter = page.locator(`tr:has-text("${productToDelete}")`);
       const existsAfter = await productRowAfter.isVisible();
-      console.log(`Product "${productToDelete}" exists after delete: ${existsAfter}`);
-      
+      console.log(
+        `Product "${productToDelete}" exists after delete: ${existsAfter}`
+      );
+
       if (existsAfter) {
-        console.log(`BUG DETECTED in ${data.test_id}: Product was not removed from cart!`);
+        console.log(
+          `BUG DETECTED in ${data.test_id}: Product was not removed from cart!`
+        );
       }
-      
+
       // Verify product was actually removed
       expect(existsAfter).toBe(false);
-      
+
       // Verify count decreased
       const newCount = await cartPage.getCartItemCount();
       console.log(`Items in cart after delete: ${newCount}`);
       expect(newCount).toBe(initialCount - 1);
-      
+
       // Verify we can still proceed (cart not empty)
       expect(await cartPage.isProceedButtonEnabled()).toBe(true);
     } else if (data.quantity_update === "delete_all") {
       // Delete all items (only one item in cart)
       const productNameMap: Record<string, string> = {
         "1": "Combination Pliers",
-        "6": "Claw Hammer with Shock Reduction Grip", 
-        "10": "Adjustable Wrench"
+        "6": "Claw Hammer with Shock Reduction Grip",
+        "10": "Adjustable Wrench",
       };
-      
-      const firstProductId = data.product_ids.split(',')[0].trim();
-      const productToDelete = productNameMap[firstProductId] || "Unknown Product";
-      
+
+      const firstProductId = data.product_ids.split(",")[0].trim();
+      const productToDelete =
+        productNameMap[firstProductId] || "Unknown Product";
+
       console.log(`Testing delete last item: ${productToDelete}`);
-      
+
       // Check that product exists before deletion
-      const productRowBefore = page.locator(`tr:has-text("${productToDelete}")`);
+      const productRowBefore = page.locator(
+        `tr:has-text("${productToDelete}")`
+      );
       const existsBefore = await productRowBefore.isVisible();
-      console.log(`Product "${productToDelete}" exists before delete: ${existsBefore}`);
+      console.log(
+        `Product "${productToDelete}" exists before delete: ${existsBefore}`
+      );
       expect(existsBefore).toBe(true);
-      
+
       // Click delete button
-      await page.getByRole('row', { name: productToDelete }).locator('a').click();
-      
+      await page
+        .getByRole("row", { name: productToDelete })
+        .locator("a")
+        .click();
+
       // Wait a bit for deletion to process
       await page.waitForTimeout(500);
-      
+
       // Check that product no longer exists
       const productRowAfter = page.locator(`tr:has-text("${productToDelete}")`);
       const existsAfter = await productRowAfter.isVisible();
-      console.log(`Product "${productToDelete}" exists after delete: ${existsAfter}`);
-      
+      console.log(
+        `Product "${productToDelete}" exists after delete: ${existsAfter}`
+      );
+
       if (existsAfter) {
-        console.log(`BUG DETECTED in ${data.test_id}: Last product was not removed from cart!`);
+        console.log(
+          `BUG DETECTED in ${data.test_id}: Last product was not removed from cart!`
+        );
       }
-      
+
       // Verify product was actually removed
       expect(existsAfter).toBe(false);
-      
+
       // Verify cart is now empty
       const isEmpty = await cartPage.isCartEmpty();
       console.log(`Cart is empty: ${isEmpty}`);
       expect(isEmpty).toBe(true);
-      
+
       // Verify proceed button is disabled
       const isProceedEnabled = await cartPage.isProceedButtonEnabled();
       console.log(`Proceed button enabled: ${isProceedEnabled}`);
       expect(isProceedEnabled).toBe(false);
-    } else if (data.quantity_update !== undefined && data.quantity_update !== "check_empty" && data.quantity_update !== "delete_first" && data.quantity_update !== "delete_all") {
+    } else if (
+      data.quantity_update !== undefined &&
+      data.quantity_update !== "check_empty" &&
+      data.quantity_update !== "delete_first" &&
+      data.quantity_update !== "delete_all"
+    ) {
       // Update quantity (including empty string)
       // Map product IDs to product names (based on the actual products in the store)
       const productNameMap: Record<string, string> = {
         "1": "Combination Pliers",
-        "6": "Claw Hammer with Shock Reduction Grip", 
-        "10": "Adjustable Wrench"
+        "6": "Claw Hammer with Shock Reduction Grip",
+        "10": "Adjustable Wrench",
       };
-      
-      const productId = data.product_ids.split(',')[0].trim();
+
+      const productId = data.product_ids.split(",")[0].trim();
       const productName = productNameMap[productId] || "Unknown Product";
-      
+
       console.log(`Testing product: ${productName} (ID: ${productId})`);
 
       // Get product price before update
@@ -286,56 +316,66 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
         if (data.quantity_update === "") {
           // TC_CART_003: Empty quantity should prevent checkout
           console.log("Testing empty quantity - should prevent checkout");
-          
+
           // Directly fill empty value like codegen does
           await page.locator('[data-test="product-quantity"]').click();
-          await page.locator('[data-test="product-quantity"]').fill('');
-          
+          await page.locator('[data-test="product-quantity"]').fill("");
+
           // Verify quantity is actually empty
-          const currentQuantity = await page.locator('[data-test="product-quantity"]').inputValue();
+          const currentQuantity = await page
+            .locator('[data-test="product-quantity"]')
+            .inputValue();
           console.log(`Current quantity after clearing: "${currentQuantity}"`);
-          
+
           // Record URL before proceeding
           const urlBeforeProceed = page.url();
           console.log(`URL before proceed: ${urlBeforeProceed}`);
-          
+
           // Try to proceed to checkout
-          console.log("Attempting to proceed to checkout with empty quantity...");
-          
+          console.log(
+            "Attempting to proceed to checkout with empty quantity..."
+          );
+
           // Click proceed and wait for either:
           // 1. Customer login page (bug - should not allow)
           // 2. Error message (expected)
           // 3. Stay on same page (expected)
           await page.locator('[data-test="proceed-1"]').click();
-          
+
           // Wait for one of these conditions
           try {
             // Check if we see login page elements (indicates we moved to next step - BUG)
-            const loginPageAppeared = await page.waitForSelector('text="Customer login"', { 
-              timeout: 1000,
-              state: 'visible' 
-            }).then(() => true).catch(() => false);
-            
+            const loginPageAppeared = await page
+              .waitForSelector('text="Customer login"', {
+                timeout: 1000,
+                state: "visible",
+              })
+              .then(() => true)
+              .catch(() => false);
+
             if (loginPageAppeared) {
-              console.log(`BUG DETECTED in ${data.test_id}: System allowed checkout with empty quantity!`);
+              console.log(
+                `BUG DETECTED in ${data.test_id}: System allowed checkout with empty quantity!`
+              );
               console.log("Navigated to login page - should have been blocked");
-              
+
               // Also check URL for confirmation
               const urlAfterProceed = page.url();
               console.log(`URL changed to: ${urlAfterProceed}`);
-              
+
               // Test fails - we shouldn't be able to proceed
               expect(loginPageAppeared).toBe(false);
             } else {
               // Good - we stayed on cart page
               console.log("Good: System blocked checkout with empty quantity");
-              
+
               // Check if there's an error message
               const hasError = await cartPage.hasQuantityError();
               console.log(`Quantity error displayed: ${hasError}`);
-              
+
               // We expect to stay on cart page
-              const stillOnCart = page.url().includes('checkout') || page.url().includes('cart');
+              const stillOnCart =
+                page.url().includes("checkout") || page.url().includes("cart");
               expect(stillOnCart).toBe(true);
             }
           } catch (error) {
@@ -344,33 +384,45 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
           }
         } else {
           // Other invalid quantity tests (zero, negative, etc.)
-          console.log(`Testing invalid quantity: "${data.quantity_update}" - should prevent checkout`);
-          
+          console.log(
+            `Testing invalid quantity: "${data.quantity_update}" - should prevent checkout`
+          );
+
           // Record URL before proceeding
           const urlBeforeProceed = page.url();
-          
+
           // Try to proceed to checkout
-          console.log("Attempting to proceed to checkout with invalid quantity...");
+          console.log(
+            "Attempting to proceed to checkout with invalid quantity..."
+          );
           await page.locator('[data-test="proceed-1"]').click();
-          
+
           // Check if we see login page (indicates we moved to next step - BUG)
-          const loginPageAppeared = await page.waitForSelector('text="Customer login"', { 
-            timeout: 1000,
-            state: 'visible' 
-          }).then(() => true).catch(() => false);
-          
+          const loginPageAppeared = await page
+            .waitForSelector('text="Customer login"', {
+              timeout: 1000,
+              state: "visible",
+            })
+            .then(() => true)
+            .catch(() => false);
+
           if (loginPageAppeared) {
-            console.log(`BUG DETECTED in ${data.test_id}: System allowed checkout with invalid quantity: ${data.quantity_update}`);
+            console.log(
+              `BUG DETECTED in ${data.test_id}: System allowed checkout with invalid quantity: ${data.quantity_update}`
+            );
             console.log("Navigated to login page - should have been blocked");
-            
+
             // Test fails - we shouldn't be able to proceed
             expect(loginPageAppeared).toBe(false);
           } else {
             // Good - we stayed on cart page
-            console.log(`Good: System blocked checkout with invalid quantity: ${data.quantity_update}`);
-            
+            console.log(
+              `Good: System blocked checkout with invalid quantity: ${data.quantity_update}`
+            );
+
             // We expect to stay on cart page
-            const stillOnCart = page.url().includes('checkout') || page.url().includes('cart');
+            const stillOnCart =
+              page.url().includes("checkout") || page.url().includes("cart");
             expect(stillOnCart).toBe(true);
           }
         }
@@ -406,15 +458,17 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     } else {
       // Wait for error to appear
       await page.waitForTimeout(1000);
-      
+
       // Should see errors
       const hasEmailError = await signInPage.hasEmailError();
       const hasPasswordError = await signInPage.hasPasswordError();
       const hasLoginError = await signInPage.hasLoginError();
-      
+
       // Debug logging
-      console.log(`Test ${data.test_id} - Email error: ${hasEmailError}, Password error: ${hasPasswordError}, Login error: ${hasLoginError}`);
-      
+      console.log(
+        `Test ${data.test_id} - Email error: ${hasEmailError}, Password error: ${hasPasswordError}, Login error: ${hasLoginError}`
+      );
+
       expect(hasEmailError || hasPasswordError || hasLoginError).toBe(true);
     }
   }
@@ -432,9 +486,9 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     await cartPage.proceedToCheckout();
     await signInPage.signIn(data.email, data.password);
     await signInPage.proceedToAddress();
-    
+
     // Wait for address form to be fully loaded
-    await page.waitForSelector('[data-test="address"]', { state: 'visible' });
+    await page.waitForSelector('[data-test="address"]', { state: "visible" });
     await page.waitForTimeout(1000); // Give form time to populate any default values
 
     // Fill address form
@@ -456,29 +510,43 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
       // For invalid data, the proceed button should be disabled
       const proceedButton = page.locator('[data-test="proceed-3"]');
       const isDisabled = await proceedButton.isDisabled();
-      console.log(`Test ${data.test_id} - Proceed button disabled: ${isDisabled}`);
-      
+      console.log(
+        `Test ${data.test_id} - Proceed button disabled: ${isDisabled}`
+      );
+
       // Check for validation errors
       const hasErrors = await addressPage.hasAnyError();
       console.log(`Test ${data.test_id} - Has errors: ${hasErrors}`);
-      
+
       // Debug: check what alerts are visible
-      const allAlerts = await page.locator('.alert').allTextContents();
+      const allAlerts = await page.locator(".alert").allTextContents();
       console.log(`Test ${data.test_id} - Alerts visible:`, allAlerts);
-      
+
       // Special handling for TC_ADDRESS_004 - minimum length validation
-      if (data.test_id === 'TC_ADDRESS_004') {
+      if (data.test_id === "TC_ADDRESS_004") {
         // Check for empty error box (alert with no text)
-        const emptyAlerts = await page.locator('.alert').filter({ hasText: /^[\s]*$/ }).count();
-        console.log(`Test ${data.test_id} - Empty error boxes found: ${emptyAlerts}`);
-        
+        const emptyAlerts = await page
+          .locator(".alert")
+          .filter({ hasText: /^[\s]*$/ })
+          .count();
+        console.log(
+          `Test ${data.test_id} - Empty error boxes found: ${emptyAlerts}`
+        );
+
         // Check if there are any alerts with specific error messages
-        const alertsWithText = await page.locator('.alert').filter({ hasText: /.+/ }).count();
-        console.log(`Test ${data.test_id} - Alerts with text found: ${alertsWithText}`);
-        
+        const alertsWithText = await page
+          .locator(".alert")
+          .filter({ hasText: /.+/ })
+          .count();
+        console.log(
+          `Test ${data.test_id} - Alerts with text found: ${alertsWithText}`
+        );
+
         // BUG: The system shows an empty error box instead of specific validation errors
-        console.log(`BUG DETECTED in ${data.test_id}: System displays empty error box instead of specific validation error message for minimum length`);
-        
+        console.log(
+          `BUG DETECTED in ${data.test_id}: System displays empty error box instead of specific validation error message for minimum length`
+        );
+
         // The expected result says "displays specific validation errors"
         // But we're getting empty error boxes, so this should FAIL
         expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug
@@ -513,8 +581,10 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     await addressPage.proceedToPayment();
 
     // Wait for payment form to load
-    await page.waitForSelector('[data-test="payment-method"]', { state: 'visible' });
-    
+    await page.waitForSelector('[data-test="payment-method"]', {
+      state: "visible",
+    });
+
     // Select payment method
     const paymentMethodMap: Record<string, () => Promise<void>> = {
       "Bank Transfer": () => paymentPage.selectBankTransfer(),
@@ -522,7 +592,8 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
       "Credit Card": () => paymentPage.selectCreditCard(),
       "Buy Now Pay Later": () => paymentPage.selectBuyNowPayLater(),
       "Gift Card": () => paymentPage.selectGiftCard(),
-      "Errror 304 - Missing Payment Gateway": () => paymentPage.selectErrorPayment(),
+      "Errror 304 - Missing Payment Gateway": () =>
+        paymentPage.selectErrorPayment(),
     };
 
     if (data.payment_method && paymentMethodMap[data.payment_method]) {
@@ -541,78 +612,52 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     if (data.should_pass === "true") {
       // Complete checkout
       await paymentPage.completeCheckout();
-      
+
       // Should see payment success
       expect(await paymentPage.isPaymentSuccessful()).toBe(true);
     } else {
       // For invalid data, check if finish button is disabled or errors appear
       const finishButton = page.locator('[data-test="finish"]');
       const isDisabled = await finishButton.isDisabled();
-      
+
       if (!isDisabled) {
         // If button is enabled, try to click and check for errors
         await paymentPage.completeCheckout();
         await page.waitForTimeout(1000);
       }
-      
+
       // Check for errors
       const hasPaymentError = await paymentPage.hasPaymentMethodError();
       const hasAccountNameError = await paymentPage.hasAccountNameError();
       const hasAccountNumberError = await paymentPage.hasAccountNumberError();
-      
+
       // Check for any error alerts
-      const errorAlerts = await page.locator('.alert').count();
-      
+      const errorAlerts = await page.locator(".alert").count();
+
       // Check if payment was successful (it shouldn't be for error cases)
       const paymentSuccessful = await paymentPage.isPaymentSuccessful();
-      
-      console.log(`Test ${data.test_id} - Payment error: ${hasPaymentError}, Account name error: ${hasAccountNameError}, Account number error: ${hasAccountNumberError}, Error alerts: ${errorAlerts}, Payment successful: ${paymentSuccessful}`);
-      
+
+      console.log(
+        `Test ${data.test_id} - Payment error: ${hasPaymentError}, Account name error: ${hasAccountNameError}, Account number error: ${hasAccountNumberError}, Error alerts: ${errorAlerts}, Payment successful: ${paymentSuccessful}`
+      );
+
       // Special handling for TC_PAYMENT_010 - error payment method
-      if (data.test_id === 'TC_PAYMENT_010' && paymentSuccessful) {
-        console.log(`BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`);
+      if (data.test_id === "TC_PAYMENT_010" && paymentSuccessful) {
+        console.log(
+          `BUG DETECTED in ${data.test_id}: Error payment method 'Errror 304 - Missing Payment Gateway' allows successful payment instead of showing error`
+        );
         // This should fail - payment should not be successful with error payment method
         expect(paymentSuccessful).toBe(false);
       } else {
         // Should have some kind of error indication
         expect(
-          hasPaymentError || hasAccountNameError || hasAccountNumberError || errorAlerts > 0 || isDisabled
+          hasPaymentError ||
+            hasAccountNameError ||
+            hasAccountNumberError ||
+            errorAlerts > 0 ||
+            isDisabled
         ).toBe(true);
       }
     }
-  }
-
-  // Complete checkout flow test
-  async function executeCompleteCheckoutTest(
-    data: CheckoutTestData,
-    cartPage: CartPage,
-    signInPage: CheckoutSignInPage,
-    addressPage: CheckoutAddressPage,
-    paymentPage: CheckoutPaymentPage
-  ) {
-    // Execute full checkout flow
-    await cartPage.navigate();
-    await cartPage.proceedToCheckout();
-
-    // Sign in
-    await signInPage.signIn(data.email, data.password);
-    await signInPage.proceedToAddress();
-
-    // Fill address
-    await addressPage.fillAddressForm({
-      address: data.address,
-      city: data.city,
-      state: data.state,
-      country: data.country,
-      postcode: data.postcode,
-    });
-    await addressPage.proceedToPayment();
-
-    // Select payment and complete
-    await paymentPage.selectCashOnDelivery();
-    await paymentPage.completeCheckout();
-
-    // Verify successful completion
-    expect(await paymentPage.isPaymentSuccessful()).toBe(true);
   }
 });

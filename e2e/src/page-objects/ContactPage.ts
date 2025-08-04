@@ -78,8 +78,8 @@ export class ContactPage {
       // For empty string, we need to select the option with empty value
       if (value === "") {
         // Try to select by the option text instead of value
-        await this.page.selectOption(this.selectors.subjectSelect, { 
-          label: "Error 202: Translation error" 
+        await this.page.selectOption(this.selectors.subjectSelect, {
+          label: "Error 202: Translation error",
         });
       } else {
         // Normal selection for other values

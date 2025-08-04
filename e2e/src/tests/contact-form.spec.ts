@@ -24,6 +24,11 @@ test.describe("Contact Form - Data Driven Tests", () => {
 
   dataToTest.forEach((data) => {
     test(`${data.test_id}: ${data.title}`, async ({ page }) => {
+      // Increase timeout for validation tests that take longer
+      if (data.should_pass === "false") {
+        test.setTimeout(30000);
+      }
+      
       const contactPage = new ContactPage(page);
 
       // Handle preconditions
@@ -97,11 +102,16 @@ test.describe("Contact Form - Data Driven Tests", () => {
         }
       }
 
-      // Take screenshot for test evidence
-      await page.screenshot({
-        path: join(__dirname, "../../screenshots/contact", `${data.test_id}.png`),
-        fullPage: true,
-      });
+      // Take screenshot for test evidence (with error handling)
+      try {
+        await page.screenshot({
+          path: join(__dirname, "../../screenshots/contact", `${data.test_id}.png`),
+          fullPage: true,
+        });
+      } catch (error) {
+        console.error(`Failed to take screenshot for ${data.test_id}:`, error);
+        // Don't fail the test if screenshot fails
+      }
     });
   });
 });

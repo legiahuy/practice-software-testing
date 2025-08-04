@@ -1,4 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 /**
  * Enhanced Playwright configuration for Contact Form testing
@@ -10,8 +13,8 @@ export default defineConfig({
   /* Test execution settings */
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.TEST_RETRIES ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  retries: Number(process.env.TEST_RETRIES) || 0,
+  workers: Number(process.env.PARALLEL_WORKERS) || 4,
 
   /* Test timeout settings */
   timeout: 30 * 1000,
