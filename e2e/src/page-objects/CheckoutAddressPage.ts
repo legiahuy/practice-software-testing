@@ -11,16 +11,19 @@ export class CheckoutAddressPage {
     countryInput: '[data-test="country"]',
     postcodeInput: '[data-test="postcode"]',
     proceedButton: '[data-test="proceed-3"]',
-    addressError: '[data-test="address-error"]',
-    cityError: '[data-test="city-error"]',
-    stateError: '[data-test="state-error"]',
-    countryError: '[data-test="country-error"]',
-    postcodeError: '[data-test="postcode-error"]',
+    addressError: '.alert:has-text("Address is required")',
+    cityError: '.alert:has-text("City is required")',
+    stateError: '.alert:has-text("State is required")',
+    countryError: '.alert:has-text("Country is required")',
+    postcodeError: '.alert:has-text("Postcode is required")',
   };
 
   // Fill address form
   async fillAddress(address: string) {
-    await this.page.fill(this.selectors.addressInput, address);
+    const addressInput = this.page.locator(this.selectors.addressInput);
+    await addressInput.click();
+    await addressInput.press('ControlOrMeta+a');
+    await addressInput.fill(address);
   }
 
   async fillCity(city: string) {
@@ -31,11 +34,17 @@ export class CheckoutAddressPage {
   }
 
   async fillState(state: string) {
-    await this.page.fill(this.selectors.stateInput, state);
+    const stateInput = this.page.locator(this.selectors.stateInput);
+    await stateInput.click();
+    await stateInput.press('ControlOrMeta+a');
+    await stateInput.fill(state);
   }
 
   async fillCountry(country: string) {
-    await this.page.fill(this.selectors.countryInput, country);
+    const countryInput = this.page.locator(this.selectors.countryInput);
+    await countryInput.click();
+    await countryInput.press('ControlOrMeta+a');
+    await countryInput.fill(country);
   }
 
   async fillPostcode(postcode: string) {
@@ -52,11 +61,12 @@ export class CheckoutAddressPage {
     country: string;
     postcode: string;
   }) {
-    if (data.address) await this.fillAddress(data.address);
-    if (data.city) await this.fillCity(data.city);
-    if (data.state) await this.fillState(data.state);
-    if (data.country) await this.fillCountry(data.country);
-    if (data.postcode) await this.fillPostcode(data.postcode);
+    // Always fill fields, even with empty values to properly test validation
+    if (data.address !== undefined) await this.fillAddress(data.address);
+    if (data.city !== undefined) await this.fillCity(data.city);
+    if (data.state !== undefined) await this.fillState(data.state);
+    if (data.country !== undefined) await this.fillCountry(data.country);
+    if (data.postcode !== undefined) await this.fillPostcode(data.postcode);
   }
 
   async proceedToPayment() {
@@ -86,20 +96,18 @@ export class CheckoutAddressPage {
   }
 
   async hasAnyError(): Promise<boolean> {
-    const errors = [
-      this.selectors.addressError,
-      this.selectors.cityError,
-      this.selectors.stateError,
-      this.selectors.countryError,
-      this.selectors.postcodeError,
-    ];
-
-    for (const errorSelector of errors) {
-      if (await this.page.locator(errorSelector).isVisible()) {
-        return true;
-      }
-    }
-    return false;
+    // Check for any alert (including empty ones for minimum length validation)
+    const allAlerts = await this.page.locator('.alert').count();
+    
+    // Also check for alerts with specific error text
+    const alertsWithErrors = this.page.locator('.alert').filter({ 
+      hasText: /required|invalid/i 
+    });
+    
+    const errorAlertCount = await alertsWithErrors.count();
+    
+    // Return true if there are any alerts (empty or with text)
+    return allAlerts > 0 || errorAlertCount > 0;
   }
 
   async getFieldError(field: string): Promise<string | null> {

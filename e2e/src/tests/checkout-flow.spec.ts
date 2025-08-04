@@ -81,7 +81,7 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
           break;
 
         case "address":
-          await executeAddressTest(data, cartPage, signInPage, addressPage);
+          await executeAddressTest(data, cartPage, signInPage, addressPage, page);
           break;
 
         case "payment":
@@ -423,13 +423,18 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
     data: CheckoutTestData,
     cartPage: CartPage,
     signInPage: CheckoutSignInPage,
-    addressPage: CheckoutAddressPage
+    addressPage: CheckoutAddressPage,
+    page: any
   ) {
     // Navigate through previous steps
     await cartPage.navigate();
     await cartPage.proceedToCheckout();
     await signInPage.signIn(data.email, data.password);
     await signInPage.proceedToAddress();
+    
+    // Wait for address form to be fully loaded
+    await page.waitForSelector('[data-test="address"]', { state: 'visible' });
+    await page.waitForTimeout(1000); // Give form time to populate any default values
 
     // Fill address form
     await addressPage.fillAddressForm({
@@ -440,15 +445,46 @@ test.describe("Multi-Step Checkout Flow - Data Driven Tests", () => {
       postcode: data.postcode,
     });
 
-    await addressPage.proceedToPayment();
-
     // Verify results
     if (data.should_pass === "true") {
-      // Should proceed to payment step
+      // Should be able to proceed to payment step
+      await addressPage.proceedToPayment();
+      // Should proceed without errors
       expect(await addressPage.hasAnyError()).toBe(false);
     } else {
-      // Should see validation errors
-      expect(await addressPage.hasAnyError()).toBe(true);
+      // For invalid data, the proceed button should be disabled
+      const proceedButton = page.locator('[data-test="proceed-3"]');
+      const isDisabled = await proceedButton.isDisabled();
+      console.log(`Test ${data.test_id} - Proceed button disabled: ${isDisabled}`);
+      
+      // Check for validation errors
+      const hasErrors = await addressPage.hasAnyError();
+      console.log(`Test ${data.test_id} - Has errors: ${hasErrors}`);
+      
+      // Debug: check what alerts are visible
+      const allAlerts = await page.locator('.alert').allTextContents();
+      console.log(`Test ${data.test_id} - Alerts visible:`, allAlerts);
+      
+      // Special handling for TC_ADDRESS_004 - minimum length validation
+      if (data.test_id === 'TC_ADDRESS_004') {
+        // Check for empty error box (alert with no text)
+        const emptyAlerts = await page.locator('.alert').filter({ hasText: /^[\s]*$/ }).count();
+        console.log(`Test ${data.test_id} - Empty error boxes found: ${emptyAlerts}`);
+        
+        // Check if there are any alerts with specific error messages
+        const alertsWithText = await page.locator('.alert').filter({ hasText: /.+/ }).count();
+        console.log(`Test ${data.test_id} - Alerts with text found: ${alertsWithText}`);
+        
+        // BUG: The system shows an empty error box instead of specific validation errors
+        console.log(`BUG DETECTED in ${data.test_id}: System displays empty error box instead of specific validation error message for minimum length`);
+        
+        // The expected result says "displays specific validation errors"
+        // But we're getting empty error boxes, so this should FAIL
+        expect(alertsWithText).toBeGreaterThan(0); // This will fail, documenting the bug
+      } else {
+        // The button should be disabled when there are validation errors
+        expect(isDisabled).toBe(true);
+      }
     }
   }
 
