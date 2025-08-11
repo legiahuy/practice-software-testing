@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "total": 2,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 1,
+    "duration": 4862,
+    "startTime": "2025-08-04T15:31:39.884Z",
+    "endTime": "2025-08-04T15:31:44.746Z"
+  },
+  "results": [
+    {
+      "testId": "TC_CART_001",
+      "title": "TC_CART_001: Verify quantity update with valid value",
+      "status": "failed",
+      "duration": 3171,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:31:44.261Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_002",
+      "title": "TC_CART_002: Verify quantity update with minimum valid value",
+      "status": "skipped",
+      "duration": 0,
+      "errors": [],
+      "timestamp": "2025-08-04T15:31:44.730Z",
+      "browser": "chromium"
+    }
+  ]
+}

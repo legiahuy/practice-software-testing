@@ -1,0 +1,11 @@
+Test ID,Title,Status,Browser,Duration (ms),Errors
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",passed,firefox,3030,""
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",passed,chromium,3936,""
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",passed,Mobile Chrome,4148,""
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",passed,firefox,2466,""
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",passed,chromium,1493,""
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",passed,Mobile Chrome,2580,""
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",interrupted,webkit,1069,"Error: browserContext.newPage: Test ended."
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",interrupted,Mobile Chrome,1318,""
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",interrupted,chromium,2604,""
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",interrupted,firefox,3000,""

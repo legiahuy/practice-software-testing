@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "total": 1,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 1706,
+    "startTime": "2025-08-04T15:32:35.126Z",
+    "endTime": "2025-08-04T15:32:36.832Z"
+  },
+  "results": [
+    {
+      "testId": "TC_CART_001",
+      "title": "TC_CART_001: Verify quantity update with valid value",
+      "status": "interrupted",
+      "duration": 433,
+      "errors": [
+        "Error: browserContext.newPage: Test ended."
+      ],
+      "timestamp": "2025-08-04T15:32:36.812Z",
+      "browser": "chromium"
+    }
+  ]
+}

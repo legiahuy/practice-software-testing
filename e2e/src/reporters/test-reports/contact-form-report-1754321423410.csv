@@ -1,0 +1,17 @@
+Test ID,Title,Status,Browser,Duration (ms),Errors
+TC_CART_001,"TC_CART_001: Verify quantity update with valid value",failed,chromium,3062,"Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m70.75[39m
+Received: [31m0[39m"
+TC_CART_002,"TC_CART_002: Verify quantity update with minimum valid value",failed,chromium,2837,"Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m13.41[39m
+Received: [31m0[39m"
+TC_CART_003,"TC_CART_003: Verify checkout is blocked with empty quantity value",failed,chromium,2847,"Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32mfalse[39m
+Received: [31mtrue[39m"
+TC_CART_004,"TC_CART_004: Verify checkout is blocked with zero quantity value",interrupted,chromium,2436,"Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('tr:has-text(""Claw Hammer with Shock Reduction Grip"")').locator('[data-test=""product-quantity""]')[22m
+"

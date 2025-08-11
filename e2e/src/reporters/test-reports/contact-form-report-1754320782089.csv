@@ -1,0 +1,986 @@
+Test ID,Title,Status,Browser,Duration (ms),Errors
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",failed,webkit,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",failed,chromium,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_004,"TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_004,"TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_004,"TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_004,"TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_005,"TC_CONTACT_005: Verify form validation with no subject selected",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_005,"TC_CONTACT_005: Verify form validation with no subject selected",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_005,"TC_CONTACT_005: Verify form validation with no subject selected",failed,firefox,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_005,"TC_CONTACT_005: Verify form validation with no subject selected",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_006,"TC_CONTACT_006: Verify form validation with empty message",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_006,"TC_CONTACT_006: Verify form validation with empty message",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_006,"TC_CONTACT_006: Verify form validation with empty message",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_006,"TC_CONTACT_006: Verify form validation with empty message",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_007,"TC_CONTACT_007: Verify form validation with message below minimum length",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_007,"TC_CONTACT_007: Verify form validation with message below minimum length",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_007,"TC_CONTACT_007: Verify form validation with message below minimum length",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_007,"TC_CONTACT_007: Verify form validation with message below minimum length",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_008,"TC_CONTACT_008: Verify form validation with message at exact minimum length",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_008,"TC_CONTACT_008: Verify form validation with message at exact minimum length",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_008,"TC_CONTACT_008: Verify form validation with message at exact minimum length",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_008,"TC_CONTACT_008: Verify form validation with message at exact minimum length",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_009,"TC_CONTACT_009: Verify form validation with message at exact maximum length",failed,firefox,6,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_009,"TC_CONTACT_009: Verify form validation with message at exact maximum length",failed,Mobile Chrome,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_009,"TC_CONTACT_009: Verify form validation with message at exact maximum length",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_009,"TC_CONTACT_009: Verify form validation with message at exact maximum length",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_010,"TC_CONTACT_010: Verify form validation with message exceeding maximum length",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_010,"TC_CONTACT_010: Verify form validation with message exceeding maximum length",failed,webkit,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_010,"TC_CONTACT_010: Verify form validation with message exceeding maximum length",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_010,"TC_CONTACT_010: Verify form validation with message exceeding maximum length",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_011,"TC_CONTACT_011: Verify form submission with attachment well below maximum size",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_011,"TC_CONTACT_011: Verify form submission with attachment well below maximum size",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_011,"TC_CONTACT_011: Verify form submission with attachment well below maximum size",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_011,"TC_CONTACT_011: Verify form submission with attachment well below maximum size",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_012,"TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_012,"TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_012,"TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_012,"TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_013,"TC_CONTACT_013: Verify form validation with invalid file type",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_013,"TC_CONTACT_013: Verify form validation with invalid file type",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_013,"TC_CONTACT_013: Verify form validation with invalid file type",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_013,"TC_CONTACT_013: Verify form validation with invalid file type",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_014,"TC_CONTACT_014: Verify form submission with valid PDF file",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_014,"TC_CONTACT_014: Verify form submission with valid PDF file",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_014,"TC_CONTACT_014: Verify form submission with valid PDF file",failed,chromium,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_014,"TC_CONTACT_014: Verify form submission with valid PDF file",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_015,"TC_CONTACT_015: Verify form submission with valid JPG file",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_015,"TC_CONTACT_015: Verify form submission with valid JPG file",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_015,"TC_CONTACT_015: Verify form submission with valid JPG file",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_015,"TC_CONTACT_015: Verify form submission with valid JPG file",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_016,"TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_016,"TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_016,"TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_016,"TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_017,"TC_CONTACT_017: Verify successful form submission with 'Return' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_017,"TC_CONTACT_017: Verify successful form submission with 'Return' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_017,"TC_CONTACT_017: Verify successful form submission with 'Return' subject",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_017,"TC_CONTACT_017: Verify successful form submission with 'Return' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_018,"TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_018,"TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_018,"TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_018,"TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_019,"TC_CONTACT_019: Verify successful form submission with 'Payments' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_019,"TC_CONTACT_019: Verify successful form submission with 'Payments' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_019,"TC_CONTACT_019: Verify successful form submission with 'Payments' subject",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_019,"TC_CONTACT_019: Verify successful form submission with 'Payments' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_020,"TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_020,"TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_020,"TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_020,"TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_021,"TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_021,"TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_021,"TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",failed,firefox,1,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_021,"TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_022,"TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject",failed,firefox,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_022,"TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject",failed,Mobile Chrome,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_022,"TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject",failed,webkit,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_022,"TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject",failed,chromium,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+UNKNOWN,"List available test cases",passed,webkit,5,""
+UNKNOWN,"List available test cases",passed,Mobile Chrome,5,""
+UNKNOWN,"List available test cases",passed,firefox,5,""
+UNKNOWN,"List available test cases",passed,chromium,3,""
+TC_CONTACT_001,"TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_002,"TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_003,"TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_004,"TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_005,"TC_CONTACT_005: Verify form validation with no subject selected",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_006,"TC_CONTACT_006: Verify form validation with empty message",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_007,"TC_CONTACT_007: Verify form validation with message below minimum length",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_008,"TC_CONTACT_008: Verify form validation with message at exact minimum length",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_009,"TC_CONTACT_009: Verify form validation with message at exact maximum length",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_010,"TC_CONTACT_010: Verify form validation with message exceeding maximum length",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_011,"TC_CONTACT_011: Verify form submission with attachment well below maximum size",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_012,"TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_013,"TC_CONTACT_013: Verify form validation with invalid file type",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_014,"TC_CONTACT_014: Verify form submission with valid PDF file",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_015,"TC_CONTACT_015: Verify form submission with valid JPG file",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_016,"TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_017,"TC_CONTACT_017: Verify successful form submission with 'Return' subject",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_018,"TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_019,"TC_CONTACT_019: Verify successful form submission with 'Payments' subject",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_020,"TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"
+TC_CONTACT_021,"TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",failed,Mobile Safari,0,"Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝"

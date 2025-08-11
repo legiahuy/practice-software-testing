@@ -1,0 +1,61 @@
+{
+  "stats": {
+    "total": 4,
+    "passed": 0,
+    "failed": 3,
+    "skipped": 0,
+    "duration": 16852,
+    "startTime": "2025-08-04T15:29:01.405Z",
+    "endTime": "2025-08-04T15:29:18.257Z"
+  },
+  "results": [
+    {
+      "testId": "TC_CART_001",
+      "title": "TC_CART_001: Verify quantity update with valid value",
+      "status": "failed",
+      "duration": 4024,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:29:08.494Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_002",
+      "title": "TC_CART_002: Verify quantity update with minimum valid value",
+      "status": "failed",
+      "duration": 3061,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:29:12.489Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_003",
+      "title": "TC_CART_003: Verify checkout is blocked with empty quantity value",
+      "status": "failed",
+      "duration": 2981,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:29:16.142Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_004",
+      "title": "TC_CART_004: Verify checkout is blocked with zero quantity value",
+      "status": "interrupted",
+      "duration": 1416,
+      "errors": [
+        "Error: locator.click: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\"product-6\"]')\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"card\" href=\"#/product/6\" _ngcontent-wkf-c76=\"\" data-test=\"product-6\" ng-reflect-router-link=\"/product/6\">…</a>\u001b[22m\n"
+      ],
+      "timestamp": "2025-08-04T15:29:18.217Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-chromium/test-failed-1.png"
+    }
+  ]
+}

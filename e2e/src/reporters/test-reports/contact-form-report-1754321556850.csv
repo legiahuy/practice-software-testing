@@ -1,0 +1,2 @@
+Test ID,Title,Status,Browser,Duration (ms),Errors
+TC_CART_001,"TC_CART_001: Verify quantity update with valid value",interrupted,chromium,433,"Error: browserContext.newPage: Test ended."

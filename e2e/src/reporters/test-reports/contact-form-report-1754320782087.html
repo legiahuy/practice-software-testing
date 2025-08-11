@@ -1,0 +1,3258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Test Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .passed { color: #27ae60; }
+        .failed { color: #e74c3c; }
+        .skipped { color: #f39c12; }
+        .test-table {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        .status-passed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-failed {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .status-skipped {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .error-message {
+            color: #e74c3c;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin: 30px 0 20px 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Form Test Report</h1>
+        <p>Generated: 8/4/2025, 10:19:42 PM</p>
+        <p>Duration: 15.64 seconds</p>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-label">Total Tests</div>
+            <div class="stat-number">113</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Passed</div>
+            <div class="stat-number passed">4</div>
+            <div>3.5%</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Failed</div>
+            <div class="stat-number failed">109</div>
+            <div>96.5%</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Skipped</div>
+            <div class="stat-number skipped">0</div>
+        </div>
+    </div>
+
+    
+    <h2 class="section-title">Failed Tests</h2>
+    <div class="test-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Test ID</th>
+                    <th>Title</th>
+                    <th>Browser</th>
+                    <th>Duration</th>
+                    <th>Error</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>webkit</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>chromium</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>firefox</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>firefox</td>
+                    <td>6ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>Mobile Chrome</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>webkit</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>chromium</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>firefox</td>
+                    <td>1ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/firefox-1489/firefox/Nightly.app/Contents/MacOS/firefox
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                    <td>
+                        <div class="error-message">Error: browserType.launch: Executable doesn't exist at /Users/bonpaul/Library/Caches/ms-playwright/webkit-2191/pw_run.sh
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+
+    <h2 class="section-title">All Test Results</h2>
+    <div class="test-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Test ID</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Browser</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>6ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>1ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_022</strong></td>
+                    <td>TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>UNKNOWN</strong></td>
+                    <td>List available test cases</td>
+                    <td>
+                        <span class="status-badge status-passed">PASSED</span>
+                    </td>
+                    <td>webkit</td>
+                    <td>5ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>UNKNOWN</strong></td>
+                    <td>List available test cases</td>
+                    <td>
+                        <span class="status-badge status-passed">PASSED</span>
+                    </td>
+                    <td>Mobile Chrome</td>
+                    <td>5ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>UNKNOWN</strong></td>
+                    <td>List available test cases</td>
+                    <td>
+                        <span class="status-badge status-passed">PASSED</span>
+                    </td>
+                    <td>firefox</td>
+                    <td>5ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>UNKNOWN</strong></td>
+                    <td>List available test cases</td>
+                    <td>
+                        <span class="status-badge status-passed">PASSED</span>
+                    </td>
+                    <td>chromium</td>
+                    <td>3ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_001</strong></td>
+                    <td>TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_002</strong></td>
+                    <td>TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_003</strong></td>
+                    <td>TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_004</strong></td>
+                    <td>TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_005</strong></td>
+                    <td>TC_CONTACT_005: Verify form validation with no subject selected</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_006</strong></td>
+                    <td>TC_CONTACT_006: Verify form validation with empty message</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_007</strong></td>
+                    <td>TC_CONTACT_007: Verify form validation with message below minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_008</strong></td>
+                    <td>TC_CONTACT_008: Verify form validation with message at exact minimum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_009</strong></td>
+                    <td>TC_CONTACT_009: Verify form validation with message at exact maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_010</strong></td>
+                    <td>TC_CONTACT_010: Verify form validation with message exceeding maximum length</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_011</strong></td>
+                    <td>TC_CONTACT_011: Verify form submission with attachment well below maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_012</strong></td>
+                    <td>TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_013</strong></td>
+                    <td>TC_CONTACT_013: Verify form validation with invalid file type</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_014</strong></td>
+                    <td>TC_CONTACT_014: Verify form submission with valid PDF file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_015</strong></td>
+                    <td>TC_CONTACT_015: Verify form submission with valid JPG file</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_016</strong></td>
+                    <td>TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_017</strong></td>
+                    <td>TC_CONTACT_017: Verify successful form submission with 'Return' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_018</strong></td>
+                    <td>TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_019</strong></td>
+                    <td>TC_CONTACT_019: Verify successful form submission with 'Payments' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_020</strong></td>
+                    <td>TC_CONTACT_020: Verify successful form submission with 'Warranty' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>TC_CONTACT_021</strong></td>
+                    <td>TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject</td>
+                    <td>
+                        <span class="status-badge status-failed">FAILED</span>
+                    </td>
+                    <td>Mobile Safari</td>
+                    <td>0ms</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+    

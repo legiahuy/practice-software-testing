@@ -1,0 +1,283 @@
+{
+  "stats": {
+    "total": 27,
+    "passed": 18,
+    "failed": 9,
+    "skipped": 0,
+    "duration": 52767,
+    "startTime": "2025-08-04T15:33:18.114Z",
+    "endTime": "2025-08-04T15:34:10.881Z"
+  },
+  "results": [
+    {
+      "testId": "TC_CART_008",
+      "title": "TC_CART_008: Verify checkout button state with empty cart",
+      "status": "passed",
+      "duration": 3261,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:22.962Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CART_001",
+      "title": "TC_CART_001: Verify quantity update with valid value",
+      "status": "failed",
+      "duration": 4863,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:24.796Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_PAYMENT_005",
+      "title": "TC_PAYMENT_005: Verify successful payment with 'Bank Transfer' method",
+      "status": "passed",
+      "duration": 6430,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:26.129Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_ADDRESS_002",
+      "title": "TC_ADDRESS_002: Verify address submission with missing address field",
+      "status": "passed",
+      "duration": 7583,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:27.285Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_SIGNIN_001",
+      "title": "TC_SIGNIN_001: Verify sign-in with valid credentials",
+      "status": "passed",
+      "duration": 6491,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:29.453Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CART_002",
+      "title": "TC_CART_002: Verify quantity update with minimum valid value",
+      "status": "failed",
+      "duration": 3953,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:30.673Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_PAYMENT_006",
+      "title": "TC_PAYMENT_006: Verify successful payment with 'Cash on Delivery' method",
+      "status": "passed",
+      "duration": 5010,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:31.140Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_ADDRESS_003",
+      "title": "TC_ADDRESS_003: Verify address submission with missing city field",
+      "status": "passed",
+      "duration": 5540,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:32.835Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_SIGNIN_002",
+      "title": "TC_SIGNIN_002: Verify sign-in with empty email",
+      "status": "passed",
+      "duration": 4488,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:33.942Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_007",
+      "title": "TC_PAYMENT_007: Verify successful payment with 'Credit Card' method",
+      "status": "passed",
+      "duration": 4301,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:35.450Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CART_003",
+      "title": "TC_CART_003: Verify checkout is blocked with empty quantity value",
+      "status": "failed",
+      "duration": 3665,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:35.947Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_ADDRESS_004",
+      "title": "TC_ADDRESS_004: Verify address submission with minimum valid input length",
+      "status": "failed",
+      "duration": 5311,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:38.293Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_SIGNIN_003",
+      "title": "TC_SIGNIN_003: Verify sign-in with invalid email format",
+      "status": "passed",
+      "duration": 4410,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:38.355Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_008",
+      "title": "TC_PAYMENT_008: Verify successful payment with 'Buy Now Pay Later' method",
+      "status": "passed",
+      "duration": 4692,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:40.147Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CART_004",
+      "title": "TC_CART_004: Verify checkout is blocked with zero quantity value",
+      "status": "failed",
+      "duration": 3561,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:40.774Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_SIGNIN_004",
+      "title": "TC_SIGNIN_004: Verify sign-in with empty password",
+      "status": "passed",
+      "duration": 4553,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:42.910Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_001",
+      "title": "TC_PAYMENT_001: Verify payment submission with all valid inputs",
+      "status": "passed",
+      "duration": 4672,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:44.124Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_009",
+      "title": "TC_PAYMENT_009: Verify successful payment with 'Gift Card' method",
+      "status": "passed",
+      "duration": 4508,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:44.656Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CART_005",
+      "title": "TC_CART_005: Verify checkout is blocked with negative quantity value",
+      "status": "failed",
+      "duration": 3227,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:45.000Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_SIGNIN_005",
+      "title": "TC_SIGNIN_005: Verify sign-in with incorrect password",
+      "status": "passed",
+      "duration": 4554,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:47.469Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_010",
+      "title": "TC_PAYMENT_010: Verify payment submission with 'Errror 304 - Missing Payment Gateway' method",
+      "status": "failed",
+      "duration": 5357,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:50.117Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_006",
+      "title": "TC_CART_006: Verify item removal when multiple items exist",
+      "status": "failed",
+      "duration": 4754,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:50.992Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_ADDRESS_001",
+      "title": "TC_ADDRESS_001: Verify address submission with all fields completed",
+      "status": "passed",
+      "duration": 4613,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:52.090Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_002",
+      "title": "TC_PAYMENT_002: Verify payment submission with no payment method selected",
+      "status": "passed",
+      "duration": 8981,
+      "errors": [],
+      "timestamp": "2025-08-04T15:33:53.113Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CART_007",
+      "title": "TC_CART_007: Verify item removal when only one item exists",
+      "status": "failed",
+      "duration": 3014,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:33:54.816Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_PAYMENT_003",
+      "title": "TC_PAYMENT_003: Verify payment submission with empty account name",
+      "status": "passed",
+      "duration": 8805,
+      "errors": [],
+      "timestamp": "2025-08-04T15:34:01.918Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_PAYMENT_004",
+      "title": "TC_PAYMENT_004: Verify payment submission with empty account number",
+      "status": "passed",
+      "duration": 8797,
+      "errors": [],
+      "timestamp": "2025-08-04T15:34:10.716Z",
+      "browser": "chromium"
+    }
+  ]
+}

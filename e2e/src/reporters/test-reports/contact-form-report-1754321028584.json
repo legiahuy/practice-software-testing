@@ -1,0 +1,229 @@
+{
+  "stats": {
+    "total": 23,
+    "passed": 20,
+    "failed": 3,
+    "skipped": 0,
+    "duration": 150776,
+    "startTime": "2025-08-04T15:21:17.788Z",
+    "endTime": "2025-08-04T15:23:48.564Z"
+  },
+  "results": [
+    {
+      "testId": "TC_CONTACT_001",
+      "title": "TC_CONTACT_001: Verify successful form submission with valid inputs (non-logged in user)",
+      "status": "passed",
+      "duration": 1451,
+      "errors": [],
+      "timestamp": "2025-08-04T15:21:19.756Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_002",
+      "title": "TC_CONTACT_002: Verify successful form submission with valid inputs (logged in user)",
+      "status": "passed",
+      "duration": 1132,
+      "errors": [],
+      "timestamp": "2025-08-04T15:21:20.890Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_003",
+      "title": "TC_CONTACT_003: Verify form validation with empty first name (non-logged in user)",
+      "status": "passed",
+      "duration": 11316,
+      "errors": [],
+      "timestamp": "2025-08-04T15:21:32.206Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_004",
+      "title": "TC_CONTACT_004: Verify form validation with invalid email format (non-logged in user)",
+      "status": "passed",
+      "duration": 18512,
+      "errors": [],
+      "timestamp": "2025-08-04T15:21:50.718Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_005",
+      "title": "TC_CONTACT_005: Verify form validation with no subject selected",
+      "status": "passed",
+      "duration": 11363,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:02.081Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_006",
+      "title": "TC_CONTACT_006: Verify form validation with empty message",
+      "status": "passed",
+      "duration": 11331,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:13.413Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_007",
+      "title": "TC_CONTACT_007: Verify form validation with message below minimum length",
+      "status": "passed",
+      "duration": 11349,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:24.766Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_008",
+      "title": "TC_CONTACT_008: Verify form validation with message at exact minimum length",
+      "status": "passed",
+      "duration": 1201,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:25.968Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_009",
+      "title": "TC_CONTACT_009: Verify form validation with message at exact maximum length",
+      "status": "passed",
+      "duration": 1061,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:27.030Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_010",
+      "title": "TC_CONTACT_010: Verify form validation with message exceeding maximum length",
+      "status": "passed",
+      "duration": 18424,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:45.457Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_011",
+      "title": "TC_CONTACT_011: Verify form submission with attachment well below maximum size",
+      "status": "passed",
+      "duration": 1140,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:46.598Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_012",
+      "title": "TC_CONTACT_012: Verify form validation with attachment significantly exceeding maximum size",
+      "status": "passed",
+      "duration": 11271,
+      "errors": [],
+      "timestamp": "2025-08-04T15:22:57.871Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_013",
+      "title": "TC_CONTACT_013: Verify form validation with invalid file type",
+      "status": "passed",
+      "duration": 18457,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:16.329Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_014",
+      "title": "TC_CONTACT_014: Verify form submission with valid PDF file",
+      "status": "failed",
+      "duration": 6178,
+      "errors": [
+        "Error: Expected success message for TC_CONTACT_014\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:23:22.525Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-4e164-mission-with-valid-PDF-file-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CONTACT_015",
+      "title": "TC_CONTACT_015: Verify form submission with valid JPG file",
+      "status": "failed",
+      "duration": 6192,
+      "errors": [
+        "Error: Expected success message for TC_CONTACT_015\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:23:29.320Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-f4935-mission-with-valid-JPG-file-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CONTACT_016",
+      "title": "TC_CONTACT_016: Verify successful form submission with 'Webmaster' subject",
+      "status": "passed",
+      "duration": 1165,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:30.882Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_017",
+      "title": "TC_CONTACT_017: Verify successful form submission with 'Return' subject",
+      "status": "passed",
+      "duration": 1160,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:32.044Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_018",
+      "title": "TC_CONTACT_018: Verify form validation with 'Error 101: Subject not found' subject",
+      "status": "failed",
+      "duration": 1225,
+      "errors": [
+        "Error: Expected no success message for TC_CONTACT_018\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m"
+      ],
+      "timestamp": "2025-08-04T15:23:33.283Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-contact-form-Con-e0259-1-Subject-not-found-subject-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CONTACT_019",
+      "title": "TC_CONTACT_019: Verify successful form submission with 'Payments' subject",
+      "status": "passed",
+      "duration": 1160,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:34.831Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_020",
+      "title": "TC_CONTACT_020: Verify successful form submission with 'Warranty' subject",
+      "status": "passed",
+      "duration": 1162,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:35.995Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_021",
+      "title": "TC_CONTACT_021: Verify successful form submission with 'Status of my order' subject",
+      "status": "passed",
+      "duration": 1181,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:37.177Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "TC_CONTACT_022",
+      "title": "TC_CONTACT_022: Verify form validation with 'Error 202: Translation error' subject",
+      "status": "passed",
+      "duration": 11340,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:48.519Z",
+      "browser": "chromium"
+    },
+    {
+      "testId": "UNKNOWN",
+      "title": "List available test cases",
+      "status": "passed",
+      "duration": 2,
+      "errors": [],
+      "timestamp": "2025-08-04T15:23:48.520Z",
+      "browser": "chromium"
+    }
+  ]
+}

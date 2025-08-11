@@ -1,0 +1,5 @@
+Test ID,Title,Status,Browser,Duration (ms),Errors
+TC_PAYMENT_005,"TC_PAYMENT_005: Verify successful payment with 'Bank Transfer' method",interrupted,chromium,4262,"Error: page.waitForLoadState: Test ended."
+TC_ADDRESS_002,"TC_ADDRESS_002: Verify address submission with missing address field",interrupted,chromium,4644,"Error: page.waitForLoadState: Test ended."
+TC_CART_001,"TC_CART_001: Verify quantity update with valid value",interrupted,chromium,4382,"Error: page.waitForLoadState: Test ended."
+TC_CART_008,"TC_CART_008: Verify checkout button state with empty cart",interrupted,chromium,3467,"Error: page.waitForLoadState: Test ended."

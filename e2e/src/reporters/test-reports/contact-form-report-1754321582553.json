@@ -1,0 +1,61 @@
+{
+  "stats": {
+    "total": 4,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 6592,
+    "startTime": "2025-08-04T15:32:55.938Z",
+    "endTime": "2025-08-04T15:33:02.530Z"
+  },
+  "results": [
+    {
+      "testId": "TC_PAYMENT_005",
+      "title": "TC_PAYMENT_005: Verify successful payment with 'Bank Transfer' method",
+      "status": "interrupted",
+      "duration": 4262,
+      "errors": [
+        "Error: page.waitForLoadState: Test ended."
+      ],
+      "timestamp": "2025-08-04T15:33:02.415Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-be640-t-with-Bank-Transfer-method-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_ADDRESS_002",
+      "title": "TC_ADDRESS_002: Verify address submission with missing address field",
+      "status": "interrupted",
+      "duration": 4644,
+      "errors": [
+        "Error: page.waitForLoadState: Test ended."
+      ],
+      "timestamp": "2025-08-04T15:33:02.431Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-980db--with-missing-address-field-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_001",
+      "title": "TC_CART_001: Verify quantity update with valid value",
+      "status": "interrupted",
+      "duration": 4382,
+      "errors": [
+        "Error: page.waitForLoadState: Test ended."
+      ],
+      "timestamp": "2025-08-04T15:33:02.434Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/test-failed-1.png"
+    },
+    {
+      "testId": "TC_CART_008",
+      "title": "TC_CART_008: Verify checkout button state with empty cart",
+      "status": "interrupted",
+      "duration": 3467,
+      "errors": [
+        "Error: page.waitForLoadState: Test ended."
+      ],
+      "timestamp": "2025-08-04T15:33:02.437Z",
+      "browser": "chromium",
+      "screenshot": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-12f70-utton-state-with-empty-cart-chromium/test-failed-1.png"
+    }
+  ]
+}
