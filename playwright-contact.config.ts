@@ -13,8 +13,8 @@ export default defineConfig({
   /* Test execution settings */
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: Number(process.env.TEST_RETRIES) || 0,
-  workers: Number(process.env.PARALLEL_WORKERS) || 4,
+  retries: 0,
+  workers: 4,
 
   /* Test timeout settings */
   timeout: 30 * 1000,

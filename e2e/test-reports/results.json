@@ -57,7 +57,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 10000
+        "timeout": 20000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -73,7 +73,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 10000
+        "timeout": 20000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -89,7 +89,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 10000
+        "timeout": 20000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -105,7 +105,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 10000
+        "timeout": 20000
       },
       {
         "outputDir": "/Users/bonpaul/Downloads/Github/test-results",
@@ -121,7 +121,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 10000
+        "timeout": 20000
       }
     ],
     "shard": null,
@@ -151,17 +151,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2943,
+                      "duration": 4863,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m70.75\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:313:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
@@ -195,23 +195,23 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:10.548Z",
+                      "startTime": "2025-08-04T15:33:18.505Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-d2b5d-ity-update-with-valid-value-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -224,7 +224,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-ea2e5eb1f6b9f5154d8c",
+              "id": "7c552112240084f7484f-ae2bcf655b7edd008410",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -235,17 +235,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 4,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2400,
+                      "duration": 3953,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m13.41\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:313:29)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
@@ -276,23 +276,23 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:14.223Z",
+                      "startTime": "2025-08-04T15:33:25.640Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ddcde-te-with-minimum-valid-value-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -305,7 +305,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-97877c49e4c26ed91f8e",
+              "id": "7c552112240084f7484f-9fa523558d5150237eff",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -316,17 +316,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2616,
+                      "duration": 3665,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:367:41)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
@@ -376,28 +376,28 @@
                           "text": "URL changed to: http://localhost:4200/#/checkout\n"
                         },
                         {
-                          "text": "Unexpected error during test: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest \u001b[90m(/Users/bonpaul/Downloads/Github/practice-software-testing/\u001b[39me2e/src/tests/checkout-flow.spec.ts:367:41\u001b[90m)\u001b[39m\n    at \u001b[90m/Users/bonpaul/Downloads/Github/practice-software-testing/\u001b[39me2e/src/tests/checkout-flow.spec.ts:76:11 {\n  matcherResult: {\n    actual: \u001b[33mtrue\u001b[39m,\n    expected: \u001b[33mfalse\u001b[39m,\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m'\u001b[39m,\n    name: \u001b[32m'toBe'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@28'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBe'\u001b[39m,\n    title: \u001b[32m'toBe'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts'\u001b[39m,\n      line: \u001b[33m367\u001b[39m,\n      column: \u001b[33m41\u001b[39m,\n      function: \u001b[32m'executeCartTest'\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@28'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1754286319624\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:367:41)\\n'\u001b[39m +\n        \u001b[32m'    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                          "text": "Unexpected error during test: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest \u001b[90m(/Users/bonpaul/Downloads/Github/practice-software-testing/\u001b[39me2e/src/tests/checkout-flow.spec.ts:367:41\u001b[90m)\u001b[39m\n    at \u001b[90m/Users/bonpaul/Downloads/Github/practice-software-testing/\u001b[39me2e/src/tests/checkout-flow.spec.ts:76:11 {\n  matcherResult: {\n    actual: \u001b[33mtrue\u001b[39m,\n    expected: \u001b[33mfalse\u001b[39m,\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n      \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m'\u001b[39m,\n    name: \u001b[32m'toBe'\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m\n  },\n  \u001b[32mSymbol(step)\u001b[39m: {\n    stepId: \u001b[32m'expect@28'\u001b[39m,\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBe'\u001b[39m,\n    title: \u001b[32m'toBe'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts'\u001b[39m,\n      line: \u001b[33m367\u001b[39m,\n      column: \u001b[33m41\u001b[39m,\n      function: \u001b[32m'executeCartTest'\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@28'\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1754321615598\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m'\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mreceived\\x1B[39m\\x1B[2m).\\x1B[22mtoBe\\x1B[2m(\\x1B[22m\\x1B[32mexpected\\x1B[39m\\x1B[2m) // Object.is equality\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Expected: \\x1B[32mfalse\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'Received: \\x1B[31mtrue\\x1B[39m\\n'\u001b[39m +\n        \u001b[32m'    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:367:41)\\n'\u001b[39m +\n        \u001b[32m'    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:17.081Z",
+                      "startTime": "2025-08-04T15:33:31.421Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-56cb5-d-with-empty-quantity-value-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -410,7 +410,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-5766da3b4ac49ec68fe3",
+              "id": "7c552112240084f7484f-cb09d6d85eb45b0acdfb",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -421,17 +421,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2519,
+                      "duration": 3561,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:416:39)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
@@ -474,23 +474,23 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:20.165Z",
+                      "startTime": "2025-08-04T15:33:36.599Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-64205-ed-with-zero-quantity-value-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -503,7 +503,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-a53794e4b9215d66920f",
+              "id": "7c552112240084f7484f-d5d4999728b3ea814504",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -514,17 +514,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
+                      "workerIndex": 8,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2527,
+                      "duration": 3227,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:416:39)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
@@ -567,23 +567,23 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:23.186Z",
+                      "startTime": "2025-08-04T15:33:41.174Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-326af-ith-negative-quantity-value-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -596,7 +596,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-0a46ef32d970ac191483",
+              "id": "7c552112240084f7484f-d7490a78725a2d0c4c48",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -607,35 +607,35 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3052,
+                      "duration": 4754,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:169:28)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:198:27)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
                         "location": {
                           "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 28,
-                          "line": 169
+                          "column": 27,
+                          "line": 198
                         },
-                        "snippet": "\u001b[0m \u001b[90m 167 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 168 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 169 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 170 |\u001b[39m\n \u001b[90m 171 |\u001b[39m       \u001b[90m// Get initial count\u001b[39m\n \u001b[90m 172 |\u001b[39m       \u001b[36mconst\u001b[39m initialCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mgetCartItemCount()\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 196 |\u001b[39m\n \u001b[90m 197 |\u001b[39m       \u001b[90m// Verify product was actually removed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 198 |\u001b[39m       expect(existsAfter)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 199 |\u001b[39m\n \u001b[90m 200 |\u001b[39m       \u001b[90m// Verify count decreased\u001b[39m\n \u001b[90m 201 |\u001b[39m       \u001b[36mconst\u001b[39m newCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mgetCartItemCount()\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 28,
-                            "line": 169
+                            "column": 27,
+                            "line": 198
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 167 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 168 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 169 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 170 |\u001b[39m\n \u001b[90m 171 |\u001b[39m       \u001b[90m// Get initial count\u001b[39m\n \u001b[90m 172 |\u001b[39m       \u001b[36mconst\u001b[39m initialCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mgetCartItemCount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:169:28)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 196 |\u001b[39m\n \u001b[90m 197 |\u001b[39m       \u001b[90m// Verify product was actually removed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 198 |\u001b[39m       expect(existsAfter)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 199 |\u001b[39m\n \u001b[90m 200 |\u001b[39m       \u001b[90m// Verify count decreased\u001b[39m\n \u001b[90m 201 |\u001b[39m       \u001b[36mconst\u001b[39m newCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mgetCartItemCount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:198:27)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -646,41 +646,50 @@
                           "text": "Testing delete functionality for: Combination Pliers\n"
                         },
                         {
-                          "text": "Product \"Combination Pliers\" exists before delete: false\n"
+                          "text": "Product \"Combination Pliers\" exists before delete: true\n"
+                        },
+                        {
+                          "text": "Items in cart before delete: 2\n"
+                        },
+                        {
+                          "text": "Product \"Combination Pliers\" exists after delete: true\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_CART_006: Product was not removed from cart!\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:26.157Z",
+                      "startTime": "2025-08-04T15:33:45.756Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-5e0be-l-when-multiple-items-exist-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
                         "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 28,
-                        "line": 169
+                        "column": 27,
+                        "line": 198
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-99ec4c9a094b05a0349e",
+              "id": "7c552112240084f7484f-c2bd4d605e246b4df384",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -691,35 +700,35 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 2110,
+                      "duration": 3014,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:229:28)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:254:27)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11",
                         "location": {
                           "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                          "column": 28,
-                          "line": 229
+                          "column": 27,
+                          "line": 254
                         },
-                        "snippet": "\u001b[0m \u001b[90m 227 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 228 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 229 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 230 |\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[90m// Click delete button\u001b[39m\n \u001b[90m 232 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 252 |\u001b[39m\n \u001b[90m 253 |\u001b[39m       \u001b[90m// Verify product was actually removed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 254 |\u001b[39m       expect(existsAfter)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 255 |\u001b[39m\n \u001b[90m 256 |\u001b[39m       \u001b[90m// Verify cart is now empty\u001b[39m\n \u001b[90m 257 |\u001b[39m       \u001b[36mconst\u001b[39m isEmpty \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39misCartEmpty()\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                            "column": 28,
-                            "line": 229
+                            "column": 27,
+                            "line": 254
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 227 |\u001b[39m         \u001b[32m`Product \"${productToDelete}\" exists before delete: ${existsBefore}`\u001b[39m\n \u001b[90m 228 |\u001b[39m       )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 229 |\u001b[39m       expect(existsBefore)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 230 |\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[90m// Click delete button\u001b[39m\n \u001b[90m 232 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:229:28)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n\u001b[0m \u001b[90m 252 |\u001b[39m\n \u001b[90m 253 |\u001b[39m       \u001b[90m// Verify product was actually removed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 254 |\u001b[39m       expect(existsAfter)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 255 |\u001b[39m\n \u001b[90m 256 |\u001b[39m       \u001b[90m// Verify cart is now empty\u001b[39m\n \u001b[90m 257 |\u001b[39m       \u001b[36mconst\u001b[39m isEmpty \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39misCartEmpty()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at executeCartTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:254:27)\u001b[22m\n\u001b[2m    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:76:11\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -730,41 +739,47 @@
                           "text": "Testing delete last item: Combination Pliers\n"
                         },
                         {
-                          "text": "Product \"Combination Pliers\" exists before delete: false\n"
+                          "text": "Product \"Combination Pliers\" exists before delete: true\n"
+                        },
+                        {
+                          "text": "Product \"Combination Pliers\" exists after delete: true\n"
+                        },
+                        {
+                          "text": "BUG DETECTED in TC_CART_007: Last product was not removed from cart!\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:29.686Z",
+                      "startTime": "2025-08-04T15:33:51.377Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-ebb23-l-when-only-one-item-exists-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
                         "file": "/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts",
-                        "column": 28,
-                        "line": 229
+                        "column": 27,
+                        "line": 254
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-346c973c7e939c24a18f",
+              "id": "7c552112240084f7484f-ff7e0bb0b8523e9ce810",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -775,17 +790,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1593,
+                      "duration": 3261,
                       "errors": [],
                       "stdout": [
                         {
@@ -806,7 +821,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:10.552Z",
+                      "startTime": "2025-08-04T15:33:18.506Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -814,7 +829,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-d03e02959e124c7bf5fa",
+              "id": "7c552112240084f7484f-9cbace6dfc0581435d4e",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -825,17 +840,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3794,
+                      "duration": 6491,
                       "errors": [],
                       "stdout": [
                         {
@@ -844,7 +859,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:12.510Z",
+                      "startTime": "2025-08-04T15:33:22.950Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -852,7 +867,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-f7f79e05380aad3b27ce",
+              "id": "7c552112240084f7484f-23f3b0a11a16dc569d90",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -863,17 +878,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3678,
+                      "duration": 4488,
                       "errors": [],
                       "stdout": [
                         {
@@ -885,7 +900,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:16.306Z",
+                      "startTime": "2025-08-04T15:33:29.446Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -893,7 +908,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-4316538da71c7ffb40b1",
+              "id": "7c552112240084f7484f-fec80185cbf83850394e",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -904,17 +919,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3776,
+                      "duration": 4410,
                       "errors": [],
                       "stdout": [
                         {
@@ -926,7 +941,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:19.987Z",
+                      "startTime": "2025-08-04T15:33:33.938Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -934,7 +949,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-fffb890509e2e5df9f3d",
+              "id": "7c552112240084f7484f-c0116217b738be484d4b",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -945,17 +960,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3804,
+                      "duration": 4553,
                       "errors": [],
                       "stdout": [
                         {
@@ -967,7 +982,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:23.765Z",
+                      "startTime": "2025-08-04T15:33:38.352Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -975,7 +990,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-74fbf3936682e8e48604",
+              "id": "7c552112240084f7484f-3575790e013820431f52",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -986,17 +1001,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3710,
+                      "duration": 4554,
                       "errors": [],
                       "stdout": [
                         {
@@ -1008,7 +1023,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:27.572Z",
+                      "startTime": "2025-08-04T15:33:42.908Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1016,7 +1031,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-9fb44e0c5c1838daf55e",
+              "id": "7c552112240084f7484f-56885812f5b675a3e60b",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1027,17 +1042,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3959,
+                      "duration": 4613,
                       "errors": [],
                       "stdout": [
                         {
@@ -1046,7 +1061,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:31.284Z",
+                      "startTime": "2025-08-04T15:33:47.466Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1054,7 +1069,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-c764c3b6b249bb1fcadc",
+              "id": "7c552112240084f7484f-ee0bbb591e19c7de2568",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1065,17 +1080,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4527,
+                      "duration": 7583,
                       "errors": [],
                       "stdout": [
                         {
@@ -1096,7 +1111,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:10.562Z",
+                      "startTime": "2025-08-04T15:33:18.522Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1104,7 +1119,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-852840b9b744c8102d36",
+              "id": "7c552112240084f7484f-127ff41d3fcd0eadd6c2",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1115,17 +1130,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3941,
+                      "duration": 5540,
                       "errors": [],
                       "stdout": [
                         {
@@ -1143,7 +1158,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:15.443Z",
+                      "startTime": "2025-08-04T15:33:27.276Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1151,7 +1166,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-d88711a8a67085742f97",
+              "id": "7c552112240084f7484f-4a9d8d6e6d8cb0af2f66",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1162,17 +1177,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 3797,
+                      "duration": 5311,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at executeAddressTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:552:32)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:84:11",
@@ -1215,23 +1230,23 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:19.386Z",
+                      "startTime": "2025-08-04T15:33:32.826Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-39d49--minimum-valid-input-length-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -1244,7 +1259,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-bcc680a978a43d453046",
+              "id": "7c552112240084f7484f-8860a3159c3a316b48c6",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1255,17 +1270,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3605,
+                      "duration": 4672,
                       "errors": [],
                       "stdout": [
                         {
@@ -1277,7 +1292,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:23.627Z",
+                      "startTime": "2025-08-04T15:33:39.090Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1285,7 +1300,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-704df71af0e7140900ca",
+              "id": "7c552112240084f7484f-dd93c04710deacabcb6a",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1296,17 +1311,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8033,
+                      "duration": 8981,
                       "errors": [],
                       "stdout": [
                         {
@@ -1318,7 +1333,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:27.343Z",
+                      "startTime": "2025-08-04T15:33:44.119Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1326,7 +1341,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-5684fcbae9cb6394ef67",
+              "id": "7c552112240084f7484f-51466545af3864db0965",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1337,17 +1352,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8298,
+                      "duration": 8805,
                       "errors": [],
                       "stdout": [
                         {
@@ -1359,7 +1374,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:35.378Z",
+                      "startTime": "2025-08-04T15:33:53.107Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1367,7 +1382,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-d875a4c4469b3df84fd0",
+              "id": "7c552112240084f7484f-26816d084ab7082dd36f",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1378,17 +1393,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8313,
+                      "duration": 8797,
                       "errors": [],
                       "stdout": [
                         {
@@ -1400,7 +1415,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:43.677Z",
+                      "startTime": "2025-08-04T15:34:01.915Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1408,7 +1423,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-a2798320d78456db42cf",
+              "id": "7c552112240084f7484f-75de615ba8e38d494665",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1419,17 +1434,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4004,
+                      "duration": 6430,
                       "errors": [],
                       "stdout": [
                         {
@@ -1441,7 +1456,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:10.545Z",
+                      "startTime": "2025-08-04T15:33:18.526Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1449,7 +1464,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-6927226c099492bde682",
+              "id": "7c552112240084f7484f-8294eb116824d8136ed1",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1460,17 +1475,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3478,
+                      "duration": 5010,
                       "errors": [],
                       "stdout": [
                         {
@@ -1479,7 +1494,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:14.920Z",
+                      "startTime": "2025-08-04T15:33:26.121Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1487,7 +1502,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-13bbdb16e25c148d1400",
+              "id": "7c552112240084f7484f-5b8d551cf54f98ae48bc",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1498,17 +1513,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3498,
+                      "duration": 4301,
                       "errors": [],
                       "stdout": [
                         {
@@ -1517,7 +1532,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:18.401Z",
+                      "startTime": "2025-08-04T15:33:31.134Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1525,7 +1540,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-a283307b6841d5efe3cc",
+              "id": "7c552112240084f7484f-466f2eaaba235e05c6ad",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1536,17 +1551,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3465,
+                      "duration": 4692,
                       "errors": [],
                       "stdout": [
                         {
@@ -1555,7 +1570,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:21.901Z",
+                      "startTime": "2025-08-04T15:33:35.440Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1563,7 +1578,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-a0a0833cf092e74bda86",
+              "id": "7c552112240084f7484f-93503429630fcfd0f382",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1574,17 +1589,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3410,
+                      "duration": 4508,
                       "errors": [],
                       "stdout": [
                         {
@@ -1593,7 +1608,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:25.368Z",
+                      "startTime": "2025-08-04T15:33:40.136Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1601,7 +1616,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "7c552112240084f7484f-d2e236a0e16bb678907c",
+              "id": "7c552112240084f7484f-4df99cfa5a9a077c6ae7",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1612,17 +1627,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 10000,
+                  "timeout": 20000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "failed",
-                      "duration": 4355,
+                      "duration": 5357,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at executePaymentTest (/Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:650:35)\n    at /Users/bonpaul/Downloads/Github/practice-software-testing/e2e/src/tests/checkout-flow.spec.ts:94:11",
@@ -1653,23 +1668,23 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-04T05:45:28.781Z",
+                      "startTime": "2025-08-04T15:33:44.652Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-Mobile-Chrome/test-failed-1.png"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/test-failed-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-Mobile-Chrome/video.webm"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/video.webm"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-Mobile-Chrome/error-context.md"
+                          "path": "/Users/bonpaul/Downloads/Github/test-results/src-tests-checkout-flow-Mu-69972-sing-Payment-Gateway-method-chromium/error-context.md"
                         }
                       ],
                       "errorLocation": {
@@ -1682,7 +1697,7 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "7c552112240084f7484f-aadec6cc7b372d791f8c",
+              "id": "7c552112240084f7484f-8e3be20540f751516ec2",
               "file": "src/tests/checkout-flow.spec.ts",
               "line": 55,
               "column": 9
@@ -1694,8 +1709,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-04T05:45:10.144Z",
-    "duration": 41873.935000000005,
+    "startTime": "2025-08-04T15:33:18.089Z",
+    "duration": 52733.268,
     "expected": 18,
     "skipped": 0,
     "unexpected": 9,

@@ -8,6 +8,7 @@ This comprehensive automation testing project implements end-to-end test coverag
 2. **Multi-Step Checkout Feature** - Complete e-commerce purchase flow
 
 ### Key Achievements
+
 - **50 automated test cases** implemented with data-driven approach
 - **90% overall pass rate** with 45 passing and 5 failing tests
 - **5 critical bugs discovered** and documented
@@ -15,6 +16,7 @@ This comprehensive automation testing project implements end-to-end test coverag
 - **Page Object Model architecture** for maintainable test code
 
 ### Test Execution Video
+
 🎥 **[View Complete Test Execution Demo](https://youtu.be/demo-link)**
 
 ---
@@ -22,12 +24,14 @@ This comprehensive automation testing project implements end-to-end test coverag
 ## 1. Test Environment Setup
 
 ### 1.1 Hardware Specifications
+
 - **Operating System:** macOS Darwin 24.5.0
 - **Processor:** Apple Silicon / Intel
 - **RAM:** 16GB
 - **Storage:** SSD with 10GB available space
 
 ### 1.2 Software Stack
+
 - **Automation Framework:** Playwright v1.40.0
 - **Programming Language:** TypeScript 5.x
 - **IDE:** Visual Studio Code
@@ -35,15 +39,17 @@ This comprehensive automation testing project implements end-to-end test coverag
 - **Package Manager:** npm v9.x
 
 ### 1.3 Browser Versions
+
 - **Chrome:** 120.x
 - **Firefox:** 121.x
 - **Microsoft Edge:** 120.x
 - **Safari:** 17.x (WebKit)
 
 ### 1.4 Test Application
+
 - **URL:** http://localhost:4200
 - **Version:** Sprint 5 (with bugs)
-- **Test Credentials:** 
+- **Test Credentials:**
   - Email: customer@practicesoftwaretesting.com
   - Password: welcome01
 
@@ -54,52 +60,60 @@ This comprehensive automation testing project implements end-to-end test coverag
 ### 2.1 Contact Form Feature
 
 #### Business Importance
+
 The contact form is a critical customer touchpoint enabling:
+
 - Customer support inquiries
 - Product information requests
 - Issue reporting
 - General feedback collection
 
 #### Test Strategy
+
 - **Positive Testing:** Valid form submissions for logged-in and anonymous users
 - **Negative Testing:** Field validation, error handling
 - **Boundary Testing:** Message length limits (50-250 characters)
 - **File Upload Testing:** Attachment size and type validation
 
 #### Test Coverage Matrix
-| Test Category | Test Cases | Coverage |
-|--------------|------------|----------|
-| Valid Submissions | 2 | Login states |
-| Field Validation | 6 | All form fields |
-| Boundary Tests | 4 | Min/max lengths |
-| File Upload | 3 | Size/type limits |
-| Edge Cases | 7 | Special scenarios |
-| **Total** | **22** | **100%** |
+
+| Test Category     | Test Cases | Coverage          |
+| ----------------- | ---------- | ----------------- |
+| Valid Submissions | 2          | Login states      |
+| Field Validation  | 6          | All form fields   |
+| Boundary Tests    | 4          | Min/max lengths   |
+| File Upload       | 3          | Size/type limits  |
+| Edge Cases        | 7          | Special scenarios |
+| **Total**         | **22**     | **100%**          |
 
 ### 2.2 Multi-Step Checkout Feature
 
 #### Business Importance
+
 The checkout process directly impacts:
+
 - Revenue generation
 - Customer satisfaction
 - Cart abandonment rates
 - Payment processing accuracy
 
 #### Test Strategy
+
 - **Flow Testing:** Complete end-to-end purchase scenarios
 - **Step Validation:** Individual checkout step verification
 - **Payment Testing:** Multiple payment method validation
 - **Error Recovery:** Handling of invalid inputs at each step
 
 #### Test Coverage Matrix
-| Checkout Step | Test Cases | Focus Areas |
-|--------------|------------|-------------|
-| Cart Management | 5 | Add/remove, quantities |
-| Sign-In | 5 | Authentication flows |
-| Address | 4 | Field validation |
-| Payment | 10 | Payment methods |
-| Complete Flow | 4 | E2E scenarios |
-| **Total** | **28** | **All steps** |
+
+| Checkout Step   | Test Cases | Focus Areas            |
+| --------------- | ---------- | ---------------------- |
+| Cart Management | 5          | Add/remove, quantities |
+| Sign-In         | 5          | Authentication flows   |
+| Address         | 4          | Field validation       |
+| Payment         | 10         | Payment methods        |
+| Complete Flow   | 4          | E2E scenarios          |
+| **Total**       | **28**     | **All steps**          |
 
 ---
 
@@ -117,7 +131,7 @@ The automation project was structured following industry best practices with cle
 practice-software-testing/
 ├── e2e/                          # Main automation directory
 │   ├── src/
-│   │   ├── page-objects/        # Page Object Model classes  
+│   │   ├── page-objects/        # Page Object Model classes
 │   │   │   ├── ContactPage.ts
 │   │   │   ├── HomePage.ts
 │   │   │   ├── CartPage.ts
@@ -159,6 +173,7 @@ npm install dotenv --save-dev
 ```
 
 Package.json configuration:
+
 ```json
 {
   "scripts": {
@@ -184,26 +199,27 @@ Two main configuration files were created:
 2. **playwright-contact.config.ts** - Specialized configuration for contact form tests
 
 Key configuration elements:
+
 ```typescript
 export default defineConfig({
-  testDir: './e2e/src/tests',
+  testDir: "./e2e/src/tests",
   fullyParallel: true,
   retries: 0,
   workers: 4,
   timeout: 30 * 1000,
-  
+
   use: {
-    baseURL: process.env.BASE_URL || 'http://localhost:4200',
-    trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    baseURL: process.env.BASE_URL || "http://localhost:4200",
+    trace: "on-first-retry",
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
   },
-  
+
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-    { name: 'webkit', use: { ...devices['Desktop Safari'] } }
-  ]
+    { name: "chromium", use: { ...devices["Desktop Chrome"] } },
+    { name: "firefox", use: { ...devices["Desktop Firefox"] } },
+    { name: "webkit", use: { ...devices["Desktop Safari"] } },
+  ],
 });
 ```
 
@@ -225,21 +241,23 @@ export default defineConfig({
 ### 3.2 Page Object Model Implementation
 
 #### Base Page Structure
+
 ```typescript
 export class BasePage {
   constructor(protected page: Page) {}
-  
+
   async navigate(path: string) {
     await this.page.goto(`${process.env.BASE_URL}${path}`);
   }
-  
+
   async waitForElement(selector: string) {
-    await this.page.waitForSelector(selector, { state: 'visible' });
+    await this.page.waitForSelector(selector, { state: "visible" });
   }
 }
 ```
 
 #### Example: Contact Form Page Object
+
 ```typescript
 export class ContactFormPage extends BasePage {
   private selectors = {
@@ -250,8 +268,8 @@ export class ContactFormPage extends BasePage {
     messageTextarea: '[data-test="message"]',
     attachmentInput: '[data-test="attachment"]',
     submitButton: '[data-test="contact-submit"]',
-    successMessage: '.alert-success',
-    errorMessage: '.alert-danger'
+    successMessage: ".alert-success",
+    errorMessage: ".alert-danger",
   };
 
   async fillContactForm(data: ContactFormData) {
@@ -275,6 +293,7 @@ export class ContactFormPage extends BasePage {
 ### 3.3 Data-Driven Testing Implementation
 
 #### Test Data Structure (CSV)
+
 ```csv
 test_id,title,first_name,last_name,email,subject,message,attachment,expected_result,should_pass
 TC_CONTACT_001,Valid submission,John,Doe,john@email.com,customer-service,Valid message text...,,,true
@@ -282,6 +301,7 @@ TC_CONTACT_002,Empty first name,,Doe,john@email.com,customer-service,Valid messa
 ```
 
 #### Data Loading Implementation
+
 ```typescript
 export class TestDataLoader {
   static loadContactTestData(): ContactTestData[] {
@@ -296,17 +316,18 @@ export class TestDataLoader {
 ```
 
 #### Test Execution with Data
+
 ```typescript
 const testData = TestDataLoader.loadContactTestData();
 
 testData.forEach((data) => {
   test(`${data.test_id}: ${data.title}`, async ({ page }) => {
     const contactPage = new ContactFormPage(page);
-    
+
     await contactPage.navigate();
     await contactPage.fillContactForm(data);
     await contactPage.submitForm();
-    
+
     if (data.should_pass === "true") {
       expect(await contactPage.isSuccessMessageVisible()).toBe(true);
     } else {
@@ -323,6 +344,7 @@ testData.forEach((data) => {
 ### 4.1 Assertion Strategy
 
 #### Types of Assertions Used
+
 1. **Visibility Assertions** - Element presence validation
 2. **Text Assertions** - Content verification
 3. **State Assertions** - Element enabled/disabled status
@@ -332,35 +354,44 @@ testData.forEach((data) => {
 ### 4.2 Critical Checkpoints
 
 #### Contact Form Validation
+
 ```typescript
 // Success Message Assertion
-expect(await page.locator('.alert-success').isVisible()).toBe(true);
-expect(await page.locator('.alert-success').textContent())
-  .toContain('Thanks for your message!');
+expect(await page.locator(".alert-success").isVisible()).toBe(true);
+expect(await page.locator(".alert-success").textContent()).toContain(
+  "Thanks for your message!"
+);
 
 // Field Error Assertion
-expect(await page.locator('[data-test="first-name-error"]').isVisible()).toBe(true);
-expect(await page.locator('[data-test="first-name-error"]').textContent())
-  .toBe('First name is required');
+expect(await page.locator('[data-test="first-name-error"]').isVisible()).toBe(
+  true
+);
+expect(await page.locator('[data-test="first-name-error"]').textContent()).toBe(
+  "First name is required"
+);
 
 // File Upload Validation
-expect(await page.locator('[data-test="attachment-error"]').textContent())
-  .toContain('File should be smaller than 500KB');
+expect(
+  await page.locator('[data-test="attachment-error"]').textContent()
+).toContain("File should be smaller than 500KB");
 ```
 
 #### Checkout Flow Validation
+
 ```typescript
 // Cart State Assertion
 expect(await cartPage.getCartItemCount()).toBe(3);
-expect(await cartPage.getCartTotal()).toBe('$156.99');
+expect(await cartPage.getCartTotal()).toBe("$156.99");
 
 // Address Form Validation
 expect(await page.locator('[data-test="proceed-3"]').isDisabled()).toBe(true);
-expect(await page.locator('.alert').count()).toBeGreaterThan(0);
+expect(await page.locator(".alert").count()).toBeGreaterThan(0);
 
 // Payment Success Assertion
-expect(await page.getByText('Payment was successful').isVisible()).toBe(true);
-expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(true);
+expect(await page.getByText("Payment was successful").isVisible()).toBe(true);
+expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
+  true
+);
 ```
 
 ---
@@ -369,39 +400,43 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 
 ### 5.1 Browser Compatibility Matrix
 
-| Test Feature | Chrome ✅ | Firefox ✅ | Edge ✅ | Safari ⚠️ |
-|-------------|----------|-----------|---------|-----------|
-| Contact Form - Valid Submission | Pass | Pass | Pass | Pass |
-| Contact Form - Field Validation | Pass | Pass | Pass | Pass |
-| Contact Form - File Upload | Pass | Pass | Pass | Limited* |
-| Cart - Add/Remove Items | Pass | Pass | Pass | Pass |
-| Cart - Quantity Update | Pass | Pass | Pass | Pass |
-| Checkout - Sign In | Pass | Pass | Pass | Pass |
-| Checkout - Address Form | Pass | Pass | Pass | Pass |
-| Checkout - Payment Methods | Pass | Pass | Pass | Pass |
+| Test Feature                    | Chrome ✅ | Firefox ✅ | Edge ✅ | Safari ⚠️ |
+| ------------------------------- | --------- | ---------- | ------- | --------- |
+| Contact Form - Valid Submission | Pass      | Pass       | Pass    | Pass      |
+| Contact Form - Field Validation | Pass      | Pass       | Pass    | Pass      |
+| Contact Form - File Upload      | Pass      | Pass       | Pass    | Limited\* |
+| Cart - Add/Remove Items         | Pass      | Pass       | Pass    | Pass      |
+| Cart - Quantity Update          | Pass      | Pass       | Pass    | Pass      |
+| Checkout - Sign In              | Pass      | Pass       | Pass    | Pass      |
+| Checkout - Address Form         | Pass      | Pass       | Pass    | Pass      |
+| Checkout - Payment Methods      | Pass      | Pass       | Pass    | Pass      |
 
-*Safari has limited file upload automation support
+\*Safari has limited file upload automation support
 
 ### 5.2 Browser-Specific Issues
 
 #### Chrome (Version 120.x)
+
 - **Performance:** Fastest execution time
 - **Stability:** 100% stable
 - **Issues:** None identified
 
 #### Firefox (Version 121.x)
+
 - **Performance:** 10% slower than Chrome
 - **Stability:** 99% stable
-- **Issues:** 
+- **Issues:**
   - Occasional timing issues with rapid form submissions
   - Required additional wait for file upload completion
 
 #### Edge (Version 120.x)
+
 - **Performance:** Similar to Chrome
 - **Stability:** 100% stable
 - **Issues:** None identified
 
 #### Safari/WebKit
+
 - **Performance:** 15% slower than Chrome
 - **Stability:** 95% stable
 - **Issues:**
@@ -415,6 +450,7 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 ### 6.1 Critical Bugs Found
 
 #### Bug #1: Empty Error Box for Minimum Length Validation
+
 - **Test Case:** TC_ADDRESS_004
 - **Severity:** High
 - **Description:** When entering single characters in address fields, an empty error box appears instead of a specific validation message
@@ -424,6 +460,7 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 - **Browsers Affected:** All browsers
 
 #### Bug #2: Error Payment Method Allows Success
+
 - **Test Case:** TC_PAYMENT_010
 - **Severity:** Critical
 - **Description:** Selecting "Errror 304 - Missing Payment Gateway" allows successful payment completion
@@ -435,6 +472,7 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 ### 6.2 Medium Priority Bugs
 
 #### Bug #3: Empty Quantity Allows Checkout
+
 - **Test Case:** TC_CART_003
 - **Severity:** Medium
 - **Description:** Cart allows proceeding to checkout with empty quantity field
@@ -443,6 +481,7 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 - **Impact:** Order processing errors
 
 #### Bug #4: Zero Quantity Allows Checkout
+
 - **Test Case:** TC_CART_004
 - **Severity:** Medium
 - **Description:** Cart allows proceeding with zero quantity
@@ -451,6 +490,7 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 - **Impact:** Invalid orders with zero items
 
 #### Bug #5: Negative Quantity Allows Checkout
+
 - **Test Case:** TC_CART_005
 - **Severity:** Medium
 - **Description:** Cart accepts negative quantity values
@@ -478,22 +518,22 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 
 ### 7.2 Feature-wise Breakdown
 
-| Feature | Total | Pass | Fail | Pass Rate | Avg Time |
-|---------|-------|------|------|-----------|----------|
-| Contact Form | 22 | 22 | 0 | 100% | 8.2s |
-| Cart Management | 5 | 2 | 3 | 40% | 3.1s |
-| Sign-In | 5 | 5 | 0 | 100% | 4.5s |
-| Address Form | 4 | 3 | 1 | 75% | 4.8s |
-| Payment | 10 | 9 | 1 | 90% | 5.2s |
-| Complete Flow | 4 | 4 | 0 | 100% | 12.3s |
+| Feature         | Total | Pass | Fail | Pass Rate | Avg Time |
+| --------------- | ----- | ---- | ---- | --------- | -------- |
+| Contact Form    | 22    | 22   | 0    | 100%      | 8.2s     |
+| Cart Management | 5     | 2    | 3    | 40%       | 3.1s     |
+| Sign-In         | 5     | 5    | 0    | 100%      | 4.5s     |
+| Address Form    | 4     | 3    | 1    | 75%       | 4.8s     |
+| Payment         | 10    | 9    | 1    | 90%       | 5.2s     |
+| Complete Flow   | 4     | 4    | 0    | 100%      | 12.3s    |
 
 ### 7.3 Test Categories Analysis
 
-| Category | Total | Pass | Fail | Notes |
-|----------|-------|------|------|-------|
-| Positive Tests | 20 | 20 | 0 | All happy paths work |
-| Negative Tests | 25 | 20 | 5 | Validation issues found |
-| Boundary Tests | 5 | 5 | 0 | Edge cases handled well |
+| Category       | Total | Pass | Fail | Notes                   |
+| -------------- | ----- | ---- | ---- | ----------------------- |
+| Positive Tests | 20    | 20   | 0    | All happy paths work    |
+| Negative Tests | 25    | 20   | 5    | Validation issues found |
+| Boundary Tests | 5     | 5    | 0    | Edge cases handled well |
 
 ---
 
@@ -502,6 +542,7 @@ expect(await page.locator('[data-test="order-confirmation"]').isVisible()).toBe(
 ### 8.1 Configuration Management
 
 #### Environment Configuration (.env)
+
 ```env
 # Application Settings
 BASE_URL=http://localhost:4200
@@ -540,16 +581,18 @@ export default class CustomReporter implements Reporter {
 
   onBegin(config: FullConfig, suite: Suite) {
     this.startTime = new Date();
-    console.log('\n📋 Test Execution Started\n');
+    console.log("\n📋 Test Execution Started\n");
   }
 
   onTestEnd(test: TestCase, result: TestResult) {
     this.testResults.push(result);
-    const status = result.status === 'passed' ? '✅' : '❌';
+    const status = result.status === "passed" ? "✅" : "❌";
     const duration = result.duration;
-    
-    console.log(`${status} ${test.title} - ${result.status.toUpperCase()} (${duration}ms)`);
-    
+
+    console.log(
+      `${status} ${test.title} - ${result.status.toUpperCase()} (${duration}ms)`
+    );
+
     if (result.error) {
       console.log(`   └─ Error: ${result.error.message}`);
     }
@@ -588,17 +631,17 @@ async function retryAction(action: () => Promise<void>, retries = 3) {
 
 // Safe element interaction
 async function safeClick(page: Page, selector: string) {
-  await page.waitForSelector(selector, { state: 'visible' });
-  await page.waitForSelector(selector, { state: 'enabled' });
+  await page.waitForSelector(selector, { state: "visible" });
+  await page.waitForSelector(selector, { state: "enabled" });
   await page.click(selector);
 }
 
 // Screenshot on failure
 test.afterEach(async ({ page }, testInfo) => {
-  if (testInfo.status === 'failed') {
+  if (testInfo.status === "failed") {
     await page.screenshot({
       path: `screenshots/failures/${testInfo.title}.png`,
-      fullPage: true
+      fullPage: true,
     });
   }
 });
@@ -611,11 +654,13 @@ test.afterEach(async ({ page }, testInfo) => {
 ### 9.1 For Development Team
 
 1. **Critical Fixes Required:**
+
    - Fix empty error messages for field validation
    - Prevent error payment method from completing successfully
    - Add quantity validation in cart
 
 2. **UI/UX Improvements:**
+
    - Add clear minimum length indicators for form fields
    - Implement real-time validation feedback
    - Disable proceed buttons when validation fails
@@ -628,11 +673,13 @@ test.afterEach(async ({ page }, testInfo) => {
 ### 9.2 For Testing Process
 
 1. **Expand Test Coverage:**
+
    - Add performance testing for checkout flow
    - Implement visual regression testing
    - Add API-level validation tests
 
 2. **Framework Enhancements:**
+
    - Implement parallel execution for faster feedback
    - Add automatic retry for known flaky tests
    - Integrate with CI/CD pipeline
@@ -645,6 +692,7 @@ test.afterEach(async ({ page }, testInfo) => {
 ### 9.3 For Product Team
 
 1. **User Experience:**
+
    - Review and improve error messaging
    - Add progress indicators for multi-step processes
    - Implement better form validation feedback
@@ -667,18 +715,21 @@ This automation testing project successfully achieved its objectives:
 ✅ **Detailed Reporting:** Multiple report formats with evidence
 
 ### Key Successes
+
 1. 100% automation of identified test cases
 2. Clear reproduction steps for all bugs
 3. Reusable framework for future testing
 4. Comprehensive documentation
 
 ### Areas for Improvement
+
 1. Add mobile device testing
 2. Implement visual regression testing
 3. Expand API-level testing
 4. Add performance benchmarks
 
 ### Final Assessment
+
 The Practice Software Testing application shows good overall quality with a 90% pass rate. However, the critical bugs in payment processing and validation feedback require immediate attention. The automation framework developed provides a solid foundation for continuous testing and quality assurance.
 
 ---
