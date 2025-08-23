@@ -3245,16 +3245,17 @@
             "FavoriteResponse": {
                 "title": "FavoriteResponse",
                 "properties": {
-                    "product": {
-                        "type": "string",
-                        "example": "new-brand"
+                    "product_id": {
+                        "type": "integer",
+                        "example": 1234
                     },
-                    "created_at": {
-                        "type": "string",
-                        "example": "2022-08-01 08:24:56"
+                    "user_id": {
+                        "type": "integer",
+                        "example": 1234
                     },
                     "id": {
-                        "$ref": "#/components/schemas/ProductResponse"
+                        "type": "integer",
+                        "example": 1234
                     }
                 },
                 "type": "object"
@@ -3447,11 +3448,11 @@
                         "example": 1
                     },
                     "is_location_offer": {
-                        "type": "boolean",
+                        "type": "integer",
                         "example": 1
                     },
                     "is_rental": {
-                        "type": "boolean",
+                        "type": "integer",
                         "example": 0
                     }
                 },
@@ -3477,11 +3478,11 @@
                         "example": 9.99
                     },
                     "is_location_offer": {
-                        "type": "boolean",
+                        "type": "integer",
                         "example": 1
                     },
                     "is_rental": {
-                        "type": "boolean",
+                        "type": "integer",
                         "example": 0
                     },
                     "brand": {
@@ -3569,6 +3570,10 @@
                     "email": {
                         "type": "string",
                         "example": "john@doe.example"
+                    },
+                    "password": {
+                        "type": "string",
+                        "example": "super-secret"
                     }
                 },
                 "type": "object"
