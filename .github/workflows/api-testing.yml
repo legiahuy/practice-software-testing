@@ -28,7 +28,7 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
         run: |
           echo "Creating Laravel .env file..."
-          envsubst < .env.ci > .env
+          envsubst < sprint5-with-bugs/API/.env.ci > sprint5-with-bugs/API/.env
           echo ".env file created successfully."
 
       # Step 3. Start Docker services
@@ -41,8 +41,16 @@ jobs:
         shell: bash
 
       # Step 5. Run database migrations + seed
-      - name: Setup database
-        run: docker compose exec -T laravel-api php artisan migrate:fresh --seed --force
+      - name: Setup Application
+        run: |
+          echo "Installing Composer dependencies..."
+          docker compose run --rm composer
+
+          echo "Fixing permissions..."
+          docker compose exec -T -u root laravel-api chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+
+          echo "Running database migrations and seeding..."
+          docker compose exec -T laravel-api php artisan migrate:fresh --seed --force
 
       # Step 6. Setup Node.js
       - name: Setup Node.js
