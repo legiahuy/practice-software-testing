@@ -1,0 +1,10 @@
+ID,endpoint,email,password
+TC_LOGIN_001,users/login,customer@practicesoftwaretesting.com,welcome01
+TC_LOGIN_002,users/login,nonexistent@test.com,welcome01
+TC_LOGIN_003,users/login,customer@practicesoftwaretesting.com,wrongpassword
+TC_LOGIN_004,users/login,customer@practicesoftwaretesting.com,
+TC_LOGIN_005,users/login,,welcome01
+TC_LOGIN_006,users/login,,
+TC_LOGIN_007,users/login,CUSTOMER@PRACTICESOFTWARETESTING.COM,welcome01
+TC_LOGIN_008,users/login,<script>alert('xss')</script>@test.com,welcome01
+TC_LOGIN_009,users/login,customer@practicesoftwaretesting.com,"jB@#bCKign*gD_,Qp1%H,UuP_dnG[f(mF&j{:&vrTHmAkpnR+,6eZ/r8S#m3R-r*rM3FmzN3nhLu(ew]}e(cep$.h/gpWXM:y8A%k4q!E/GZ:Q1rw!9};43EUhZ4D4nKwDA[@a=AVS,wX-1%).&%r]5rbtc#]Eu)P.(fV0m6fd,-E)MbXCPnGPV[}VTG(&/wpD)?6Ub_;8!TZ32BMYgf=?]CbnU+F-:9VF[/D8r,:FN4#,UMCm(g+12LZHXhd.e(FS)=K$yJ;G)Y[na1mHf].W7k&U$e(R&_nw.F4z_=NJB+],T1w,DJF/Lt,uNYx_rV5dd[Q8ah(28}EjajKxTu@BuGhVc:4[UCKi7&(ftu-ftjz1+VWX_!VF)}+RGfx:*i]S66#@3Ygp44U%!_L(10=SuC7XS3T2qJuwN*[z(nGPD?8*]:WV0%Rf)q$FhX%*V5c0Wn!PuDEeN=,$S@+$e:N%m,H*&[7:%f),)[:%V(U5PK!d6Ur-Kvgg2-A_VdF1t/at]tqqhFY&*CNXS:fdc3e(S0WiQ$eJ{JGm]#?a#;+V,T}ya@Ca%AY3@LA[R3:.51w6BK_n)2A$n[DKH5cPw{_;5F8R=zTp*BQyR]M.MJ?2xWbNB.Z*S,9PXX&:,E0DwJC%uvzzJ;PecK*8#w]zk[hrVjA9&%g1][gZ#yW6Q]fFyi}9:y9pPkYdDWwnQ]/?!#;?Y*UE@/W%4VaQ2N(]$S)8W)?hCC=X]aht*}/Qj0F=7WcU8t]c:zg:nppRwH4NP**/B]qbGCtJW#d/D4Gt)2X%e$b?]*!+G3SYTh1km7$)xz&?7ihr#RGq7]fN%LV3X3d=61(Q+Rn,5get%51TeM9GXd(g[X}iRHue.UjFm}*w7SYM=F!*$PtVw/SF*2}F=:&CGdYhkT#$E#]K}7,MwBH6xuq;q:!6bR-.u;WB.Pc[6_p8}M{BxRG-Zi-C0+6Nd;0M]z,GzP2ar}2bKkW2HyW]g.-[j0T3S{(czdtyJ["

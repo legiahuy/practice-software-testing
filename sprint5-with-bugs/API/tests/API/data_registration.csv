@@ -1,0 +1,12 @@
+ID,endpoint,firstName,lastName,address,city,state,country,postcode,phone,dob,email,password
+TC_REG_001,users/register,Jane,Smith,456 Oak Ave,Boston,MA,USA,2101,9876543210,1985-12-25,jane.smith@test.com,super-secret
+TC_REG_002,users/register,,Doe,Street 1,City,State,Country,1234AA,987654321,1970-01-01,john2@doe.example,super-secret
+TC_REG_003,users/register,John,Doe,Street 1,City,State,Country,1234AA,987654321,1970-01-01,invalid-email-format,super-secret
+TC_REG_004,users/register,John,Doe,Street 1,City,State,Country,1234AA,987654321,invalid-date,john2@doe.example,super-secret
+TC_REG_005,users/register,João,O'Connor-Smith,"Rua São João, 123",São Paulo,SP,Brasil,01234-567,5511987654321,1985-03-20,joao@test.com,super-secret
+TC_REG_006,users/register,,,,,,,,,,,
+TC_REG_007,users/register,Jane,Smith,"Street 2",City2,State2,Country2,5678BB,1234567890,1980-05-15,customer@practicesoftwaretesting.com,another-secret
+TC_REG_008,users/register,xCDVuYHMtkgjuaccWicYQpcuBPgznHaKYAAhTULPmZhpeceQQdjEHpnmKQFRAJXgFkncMHjpCmFfyrEYSwEFCDnrBDqTZMzwMtwTytaKZLuMDEMAUwvfBhLBXcBCnNjqpQvGzrqaLKDaYAEdnXuUaCDCawqKiBpWizPLBMDuyXyYfGgPjNmpibediZQCZhaMzhLYknXBffuShJbTeSXXMbEMGfMhanfPUtHjiQbNykGLQfGCjwgdgvGtpiqERxekCMaU,Doe,"Street 1",City,State,Country,1234AA,0987654321,1970-01-01,longname@test.com,super-secret
+TC_REG_009,users/register,John,Doe,"Street 1",City,State,Country,1234AA,0987654321,2030-01-01,future@test.com,super-secret
+TC_REG_010,users/register,"'; DROP TABLE users; --",Doe,"Street 1",City,State,Country,1234AA,0987654321,1970-01-01,sql@test.com,super-secret
+TC_REG_011,users/register,John,Doe,"Street 1",City,State,Country,1234AA,0987654321,1970-01-01,weak@test.com,123
