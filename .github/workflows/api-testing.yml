@@ -1,218 +1,120 @@
-name: Automated API Validation Suite
+name: API Testing CI/CD
 
 on:
   push:
-    branches:
-      - main
-      - api-testing
+    branches: [main, api-testing]
   pull_request:
-    branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      debug_mode:
-        description: "Enable debug logging"
-        required: false
-        default: "false"
-
-env:
-  PROJECT_PATH: sprint5-with-bugs/API
-  TEST_DATA_DIR: sprint5-with-bugs/API/tests/API
-  NODE_VERSION: "22"
-  WAIT_TIMEOUT: 60
+    branches: [main]
+  workflow_dispatch: # allow manual run
 
 jobs:
-  execute-api-validation:
-    name: Execute API Test Suite
+  api-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
     permissions:
-      contents: read
       checks: write
-      pull-requests: write
 
     steps:
-      - name: Initialize Workspace
+      # Step 1. Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Configure Application Environment
-        id: setup-env
+      # Step 2. Create .env file from template and secrets
+      - name: Create Laravel .env file 🔧
         env:
-          APPLICATION_KEY: ${{ secrets.APP_KEY }}
-          DATABASE_NAME: ${{ secrets.DB_DATABASE }}
-          DATABASE_USER: ${{ secrets.DB_USERNAME }}
-          DATABASE_PASS: ${{ secrets.DB_PASSWORD }}
-          JWT_TOKEN: ${{ secrets.JWT_SECRET }}
+          APP_KEY: ${{ secrets.APP_KEY }}
+          DB_DATABASE: ${{ secrets.DB_DATABASE }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
         run: |
-          echo "::group::Environment Configuration"
-          echo "Preparing application configuration..."
+          echo "Creating Laravel .env file..."
+          envsubst < sprint5-with-bugs/API/.env.ci > sprint5-with-bugs/API/.env
+          echo ".env file created successfully."
 
-          export APP_KEY="${APPLICATION_KEY}"
-          export DB_DATABASE="${DATABASE_NAME}"
-          export DB_USERNAME="${DATABASE_USER}"
-          export DB_PASSWORD="${DATABASE_PASS}"
-          export JWT_SECRET="${JWT_TOKEN}"
+      # Step 3. Start Docker services
+      - name: Start Docker containers
+        run: docker compose up -d
 
-          envsubst < ${PROJECT_PATH}/.env.ci > ${PROJECT_PATH}/.env
+      # Step 4. Wait for Laravel API to be ready
+      - name: Wait for Services
+        run: sleep 60
+        shell: bash
 
-          echo "Configuration prepared successfully"
-          echo "::endgroup::"
-
-      - name: Initialize Infrastructure Services
-        id: docker-init
+      # Step 5. Run database migrations + seed
+      - name: Setup Application
         run: |
-          echo "::group::Docker Infrastructure"
-          echo "Launching containerized services..."
-          docker compose up -d --quiet-pull
-          echo "Services launched"
-          echo "::endgroup::"
+          echo "Installing Composer dependencies..."
+          docker compose run --rm composer
 
-      - name: Service Health Check
-        run: |
-          echo "::group::Service Readiness"
-          echo "Waiting for services to initialize (${WAIT_TIMEOUT}s)..."
-          sleep ${WAIT_TIMEOUT}
-          echo "Services ready"
-          echo "::endgroup::"
+          echo "Fixing permissions..."
+          docker compose exec -T -u root laravel-api chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
-      - name: Database Initialization
-        id: db-setup
-        run: |
-          echo "::group::Database Setup"
+          echo "Running database migrations and seeding..."
+          docker compose exec -T laravel-api php artisan migrate:fresh --seed --force
 
-          echo "Installing PHP dependencies via Composer..."
-          docker compose run --rm --no-TTY composer
-
-          echo "Configuring file permissions..."
-          docker compose exec -T -u root laravel-api \
-            chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
-
-          echo "Executing database schema and seed data..."
-          docker compose exec -T laravel-api \
-            php artisan migrate:fresh --seed --force --no-interaction
-
-          echo "Database initialization complete"
-          echo "::endgroup::"
-
-      - name: Configure NodeJS Runtime
+      # Step 6. Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: "npm"
-          cache-dependency-path: "**/package-lock.json"
+          node-version: "22"
 
-      - name: Deploy Postman Testing Framework
-        id: postman-setup
-        run: |
-          echo "::group::Postman CLI Installation"
-          curl -s -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
-          echo "Postman CLI installed"
-          echo "::endgroup::"
+      # Step 7. Install Postman CLI
+      - name: Install Postman CLI
+        run: curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
 
-      - name: Authenticate Testing Platform
-        run: |
-          echo "::group::Authentication"
-          postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
-          echo "Authentication successful"
-          echo "::endgroup::"
+      # Step 8. Login Postman CLI (API Key from secrets)
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
 
-      - name: Execute User Registration Tests
-        id: test-registration
-        continue-on-error: true
+      # Step 9a. Run REGISTER collection
+      - name: Run REGISTER API Tests
         run: |
-          echo "::group::Registration API Tests"
           postman collection run "${{ secrets.POSTMAN_COLLECTION_REGISTER }}" \
-            --environment "${{ secrets.POSTMAN_ENV_ID }}" \
-            --iteration-data "${TEST_DATA_DIR}/data_registration.csv" \
-            --reporters cli,junit,htmlextra \
-            --reporter-junit-export results/registration-test-report.xml \
-            --reporter-htmlextra-export results/registration-test-report.html \
-            --suppress-exit-code
-          echo "::endgroup::"
+            -e "${{ secrets.POSTMAN_ENV_ID }}" \
+            -d sprint5-with-bugs/API/tests/API/data_registration.csv \
+            --reporters cli,junit,html \
+            --reporter-junit-export register-results.xml \
+            --reporter-html-export register-results.html || true
 
-      - name: Execute Authentication Tests
-        id: test-authentication
-        continue-on-error: true
+      # Step 9b. Run LOGIN collection
+      - name: Run LOGIN API Tests
         run: |
-          echo "::group::Authentication API Tests"
           postman collection run "${{ secrets.POSTMAN_COLLECTION_LOGIN }}" \
-            --environment "${{ secrets.POSTMAN_ENV_ID }}" \
-            --iteration-data "${TEST_DATA_DIR}/data_login.csv" \
-            --reporters cli,junit,htmlextra \
-            --reporter-junit-export results/authentication-test-report.xml \
-            --reporter-htmlextra-export results/authentication-test-report.html \
-            --suppress-exit-code
-          echo "::endgroup::"
+            -e "${{ secrets.POSTMAN_ENV_ID }}" \
+            -d sprint5-with-bugs/API/tests/API/data_login.csv \
+            --reporters cli,junit,html \
+            --reporter-junit-export login-results.xml \
+            --reporter-html-export login-results.html || true
 
-      - name: Execute User Profile Tests
-        id: test-profile
-        continue-on-error: true
+      # Step 9c. Run ME collection
+      - name: Run ME API Tests
         run: |
-          echo "::group::User Profile API Tests"
           postman collection run "${{ secrets.POSTMAN_COLLECTION_ME }}" \
-            --environment "${{ secrets.POSTMAN_ENV_ID }}" \
-            --iteration-data "${TEST_DATA_DIR}/data_profile.csv" \
-            --reporters cli,junit,htmlextra \
-            --reporter-junit-export results/profile-test-report.xml \
-            --reporter-htmlextra-export results/profile-test-report.html \
-            --suppress-exit-code
-          echo "::endgroup::"
+            -e "${{ secrets.POSTMAN_ENV_ID }}" \
+            -d sprint5-with-bugs/API/tests/API/data_profile.csv \
+            --reporters cli,junit,html \
+            --reporter-junit-export me-results.xml \
+            --reporter-html-export me-results.html || true
 
-      - name: Consolidate Test Results
-        if: always()
-        run: |
-          echo "::group::Test Summary"
-          mkdir -p results
-
-          # Create summary report
-          echo "## API Test Execution Summary" > results/SUMMARY.md
-          echo "- Registration Tests: ${{ steps.test-registration.outcome }}" >> results/SUMMARY.md
-          echo "- Authentication Tests: ${{ steps.test-authentication.outcome }}" >> results/SUMMARY.md
-          echo "- Profile Tests: ${{ steps.test-profile.outcome }}" >> results/SUMMARY.md
-
-          cat results/SUMMARY.md
-          echo "::endgroup::"
-
-      - name: Archive Test Artifacts
-        if: always()
+      # Step 10. Upload Test Reports as artifacts
+      - name: Upload Test Reports 📊
         uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: api-test-results-${{ github.run_number }}
+          name: postman-reports
           path: |
-            results/*.xml
-            results/*.html
-            results/SUMMARY.md
-          retention-days: 30
+            *.xml
+            *.html
 
-      - name: Publish Test Results
-        if: always()
+      # Step 11. Generate GitHub-friendly test summary
+      - name: Verdict on test report 📊
         uses: mikepenz/action-junit-report@v4
+        if: always()
         with:
-          report_paths: "results/*.xml"
-          check_name: "API Test Results"
+          report_paths: "*.xml"
           fail_on_failure: true
-          detailed_summary: true
-          include_passed: true
 
-      - name: Environment Cleanup
+      # Step 12. Cleanup containers & volumes
+      - name: Cleanup
         if: always()
-        run: |
-          echo "::group::Cleanup"
-          echo "Terminating containerized services..."
-          docker compose down --volumes --remove-orphans
-          echo "Cleanup complete"
-          echo "::endgroup::"
-
-      - name: Final Status Report
-        if: always()
-        run: |
-          echo "::notice title=Workflow Complete::All API validation tasks have been executed"
-
-          if [ "${{ job.status }}" == "success" ]; then
-            echo "::notice title=Status::✅ All tests passed successfully"
-          else
-            echo "::warning title=Status::⚠️ Some tests may have failed - review artifacts for details"
-          fi
+        run: docker compose down -v
