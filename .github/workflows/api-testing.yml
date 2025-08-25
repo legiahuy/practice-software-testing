@@ -2,23 +2,23 @@ name: Automated API Validation Suite
 
 on:
   push:
-    branches: 
+    branches:
       - main
       - api-testing
   pull_request:
-    branches: 
+    branches:
       - main
   workflow_dispatch:
     inputs:
       debug_mode:
-        description: 'Enable debug logging'
+        description: "Enable debug logging"
         required: false
-        default: 'false'
+        default: "false"
 
 env:
   PROJECT_PATH: sprint5-with-bugs/API
   TEST_DATA_DIR: sprint5-with-bugs/API/tests/API
-  NODE_VERSION: '22'
+  NODE_VERSION: "22"
   WAIT_TIMEOUT: 60
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
     name: Execute API Test Suite
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
+
     permissions:
       contents: read
       checks: write
@@ -49,15 +49,15 @@ jobs:
         run: |
           echo "::group::Environment Configuration"
           echo "Preparing application configuration..."
-          
+
           export APP_KEY="${APPLICATION_KEY}"
           export DB_DATABASE="${DATABASE_NAME}"
           export DB_USERNAME="${DATABASE_USER}"
           export DB_PASSWORD="${DATABASE_PASS}"
           export JWT_SECRET="${JWT_TOKEN}"
-          
+
           envsubst < ${PROJECT_PATH}/.env.ci > ${PROJECT_PATH}/.env
-          
+
           echo "Configuration prepared successfully"
           echo "::endgroup::"
 
@@ -82,18 +82,18 @@ jobs:
         id: db-setup
         run: |
           echo "::group::Database Setup"
-          
+
           echo "Installing PHP dependencies via Composer..."
           docker compose run --rm --no-TTY composer
-          
+
           echo "Configuring file permissions..."
           docker compose exec -T -u root laravel-api \
             chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
-          
+
           echo "Executing database schema and seed data..."
           docker compose exec -T laravel-api \
             php artisan migrate:fresh --seed --force --no-interaction
-          
+
           echo "Database initialization complete"
           echo "::endgroup::"
 
@@ -101,8 +101,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
 
       - name: Deploy Postman Testing Framework
         id: postman-setup
@@ -166,13 +166,13 @@ jobs:
         run: |
           echo "::group::Test Summary"
           mkdir -p results
-          
+
           # Create summary report
           echo "## API Test Execution Summary" > results/SUMMARY.md
           echo "- Registration Tests: ${{ steps.test-registration.outcome }}" >> results/SUMMARY.md
           echo "- Authentication Tests: ${{ steps.test-authentication.outcome }}" >> results/SUMMARY.md
           echo "- Profile Tests: ${{ steps.test-profile.outcome }}" >> results/SUMMARY.md
-          
+
           cat results/SUMMARY.md
           echo "::endgroup::"
 
@@ -191,8 +191,8 @@ jobs:
         if: always()
         uses: mikepenz/action-junit-report@v4
         with:
-          report_paths: 'results/*.xml'
-          check_name: 'API Test Results'
+          report_paths: "results/*.xml"
+          check_name: "API Test Results"
           fail_on_failure: true
           detailed_summary: true
           include_passed: true
@@ -210,7 +210,7 @@ jobs:
         if: always()
         run: |
           echo "::notice title=Workflow Complete::All API validation tasks have been executed"
-          
+
           if [ "${{ job.status }}" == "success" ]; then
             echo "::notice title=Status::✅ All tests passed successfully"
           else
