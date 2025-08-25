@@ -2,13 +2,13 @@ name: Run Playwright Tests 🎭
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 concurrency: production_environment
 
 jobs:
   test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22
     steps:
       - name: Checkout ⚙️
         uses: actions/checkout@v4
